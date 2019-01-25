@@ -2,7 +2,7 @@ var shopper = {
     firstName: "Olivia",
     lastName: "Meiring",
     shopperID: 2100198,
-    isMember: true,
+    isMember: false,
     fullname: function() {
         return(this.firstName + " " + this.lastName + "!");
     },
