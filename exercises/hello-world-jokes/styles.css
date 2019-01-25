@@ -1,0 +1,54 @@
+* {
+    font-family: Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+body {
+    margin: 20px 0px;
+}
+img#logo {
+    width: 30%;
+    height: auto;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    margin: 5% 10%;
+    border: 1px solid #000000;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+li.first {
+    background-color: #bbbbbb;
+}
+li.second {
+    background-color: #dddddd;
+}
+li.third {
+    background-color: #eeeeee;
+}
+li:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+hr {
+    margin: 0px 10%;
+    height: 1px;
+    border: none;
+    background-color: #bbbbbb;
+}
+span {
+    font-size: 85%;
+}
+a {
+    font-style: italic;
+    color: #aaaaaa;
+    transition: all 0.3s ease;
+}
+a:hover {
+    color: #000000;
+    transition: all 0.3s ease;
+}
