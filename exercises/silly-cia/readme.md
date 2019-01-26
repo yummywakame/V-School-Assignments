@@ -3,7 +3,9 @@
 
 DEMO: <a href="http://htmlpreview.github.com/?https://github.com/yummywakame/assignments/blob/master/exercises/silly-cia/index.html" target="_blank">Silly CIA</a>
 
-####Completed according to assignment instructions: 
+Please note the design is exactly according to the spec.
+
+#### Completed according to assignment instructions: 
 - Part 1: https://coursework.vschool.io/silly-cia-part-1/
 - Part 2: https://coursework.vschool.io/silly-cia-part-2/
 
