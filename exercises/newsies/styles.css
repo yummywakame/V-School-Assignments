@@ -1,0 +1,152 @@
+* {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 10%;
+    line-height: 120%;
+}
+body {
+    margin: 5px;
+}
+p {
+    margin: 10px 0px;
+}
+a {
+    color: #4db2ec;
+}
+.padding-10-horizontal {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.padding-10-vertical {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.padding-5-horizontal {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.padding-5-vertical {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Header Stuff */
+header {
+    text-align: center;
+    background-color: #000000;
+    margin: 0px 5px;
+}
+p#strapline {
+    color: #999999;
+    font-style: italic;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+h1 a {
+    font-size: 40px;
+    display: block;
+    padding: 20px 0px 0px 0px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* columns */
+.col-3-3 {
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.col-3-2 {
+    width: 66.6%;
+    display: inline-block;
+    float: left;
+}
+.col-3-1 {
+    width: 33.3%;
+    display: inline-block;
+    float: left;
+}
+/* All Article Styles
+
+
+/* Main Article Styles */
+p.intro {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p.more a:before {
+    content: "\00BB";
+    font-size: 20px;
+}
+p.more a:after {
+    content: "\2026";
+}
+p.quote {
+    border-left: 5px solid #666666;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    font-style: italic;
+}
+p.quote:before {
+    content: "\201C";
+}
+p.quote:after {
+    content: "\201E";
+}
+
+/* fancy image stuff */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image-crop {
+    width:100%;
+    position:relative;
+    background:url() 50% 50% no-repeat;
+    background-size:cover;
+    background-clip:padding-box;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-top: 50px;
+}
+.home-image {
+    padding-top: 300px !important;
+}
+.image-crop a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.image-crop a:hover {
+    /* color: #4db2ec; */
+    transition: all 0.3s ease;
+    background-color: #000000;
+}
+#image-1 {
+    background-image:url('news-1.jpg');
+}
+#image-2 {
+    background-image:url('https://www.goodnewsnetwork.org/wp-content/uploads/2019/01/Cannabis-sativa-hemp-plant-cc-kat_geb.jpg');
+}
+#image-3 {
+    background-image:url('https://www.goodnewsnetwork.org/wp-content/uploads/2018/11/Coral-Reef-Public-Domain-via-Pixabay.jpg');
+}
+#image-4 {
+    background-image:url('https://www.goodnewsnetwork.org/wp-content/uploads/2019/01/Golden-Retriever-in-the-Streets-Pear-Video.jpeg');
+}
+.scrim {
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(80%, rgba(0,0,0,0.4)), color-stop(100%, rgba(0,0,0,0.4))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+}
