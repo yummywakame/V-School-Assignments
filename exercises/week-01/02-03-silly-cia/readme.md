@@ -1,7 +1,10 @@
 # Silly CIA (Parts 1 & 2)
 ### > For V School // Full Stack JavaScript // January 2019 Cohort
 
-DEMO: <a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-01/02-03-silly-cia/index.html">Silly CIA</a>
+*Demo:*
+
+- <a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-01/02-03-silly-cia/index.html">Silly CIA</a>
+*** Please note that the design is exactly according to the spec and does not necessarily represent best practices.
 
 Please note the design is exactly according to the spec.
 
