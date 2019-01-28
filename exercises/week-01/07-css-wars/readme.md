@@ -2,7 +2,7 @@
 ### > For V School // Full Stack JavaScript // January 2019 Cohort
 
 #### DEMO: 
-<a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-01/07-css-wars/index.html">CSS Wars</a>*
+- <a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-01/07-css-wars/index.html">CSS Wars</a>*
 
 #### Completed according to assignment instructions: 
 - http://coursework.vschool.io/css-wars-the-selector-awakens/
