@@ -4,9 +4,7 @@
 #### Completed according to assignment instructions: 
 - https://coursework.vschool.io/loop-olympics/
 
-*Run:* ~$ node <a href="https://github.com/yummywakame/assignments/blob/master/exercises/loop-olympics/app.js">app.js</a>
-
-*Console Output:*
+#### Console:
 
 ```console
 foo@bar:~/assignments/exercises/week-01/13-loop-olympics (master) $ node app.js
