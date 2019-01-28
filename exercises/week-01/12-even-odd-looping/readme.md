@@ -4,12 +4,10 @@
 #### Completed according to assignment instructions: 
 - https://coursework.vschool.io/evenodd-looping/
 
-*Run:* ~$ node <a href="https://github.com/yummywakame/assignments/blob/master/exercises/even-odd-looping/app.js">app.js</a>
-
 *Console Output:*
 
 ```console
-foo@bar:~$ node app.js
+foo@bar:~/assignments/exercises/week-01/12-even-odd-looping (master) $ node app.js
 0: Even
 1: Odd
 2: Even
