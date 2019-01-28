@@ -1,7 +1,14 @@
 # Grocery Store
 ### > For V School // Full Stack JavaScript // January 2019 Cohort
 
-DEMO: https://github.com/yummywakame/assignments/blob/master/exercises/grocery-store/app.js
+#### Console:
+```console
+foo@bar:~/assignments/exercises/week-01/06-grocery-store (master) $ node app
+.js
+Hello Olivia Meiring!
+Your grocery cart contains:
+[ 'apples', 'oranges', 'bananas', 'eggs' ]
+```
 
 #### Completed according to assignment instructions: 
 - http://coursework.vschool.io/grocery-store-js/
