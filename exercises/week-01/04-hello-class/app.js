@@ -1,8 +1,16 @@
 var name = "Olivia";
-var occupation = "student";
+var age = "42";
 
-function sayHello(name, occupation){
-    console.log("Hello " + name + "! How do you like being a " + occupation + "?");
+// function expression
+// var sayHello = function(){
+//     console.log("hello class")
+// }
+
+// function declaration
+// added name parameter
+// added age parameter
+function sayHello(name, age){
+    console.log("Hello " + name + "! How do you like being " + age + "?");
 }
 
-sayHello(name, occupation);
+sayHello(name, age);
