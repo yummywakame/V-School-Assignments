@@ -16,4 +16,5 @@ foo@bar:~/assignments/exercises/week-01/01-unix-terminal-practice/dir-two (maste
 foo@bar:~/assignments/exercises/week-01/01-unix-terminal-practice/dir-two (master) $ vi index.html
 ```
 *Demo:*
+
 <a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-01/01-unix-terminal-practice/dir-two/index.html" target="_blank">dir-two/index.html</a> *** Please note that the design is exactly according to the spec and does not necessarily represent best practices.
