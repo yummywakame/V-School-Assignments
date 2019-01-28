@@ -9,7 +9,7 @@
 *Console Output:*
 
 ```console
-foo@bar:~$ node app.js
+foo@bar:~/assignments/exercises/week-01/13-loop-olympics (master) $ node app.js
 PRELIMINARIES:
 
 1:
@@ -46,7 +46,7 @@ BRONZE MEDAL:
 
 1: myArray = [0,1,2,3,4,5,6,7,8,9]
 
-2: 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100 
+2: 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100
 
 3: newArray = [orange,kiwi,peach]
 
@@ -58,7 +58,7 @@ SILVER MEDAL:
 names = [Harrison Ford,Justin Bieber,Vladimir Putin,Oprah]
 occupations = [Actor,Singer,Politician,Entertainer]
 
-3: 
+3:
 array1 = [Harrison Ford,Vladimir Putin]
 array2 = [Singer,Entertainer]
 
