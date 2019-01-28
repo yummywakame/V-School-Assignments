@@ -4,7 +4,7 @@
 #### Completed according to assignment instructions: 
 - https://coursework.vschool.io/loop-olympics/
 
-*DEMO:* <a href="https://github.com/yummywakame/assignments/blob/master/exercises/loop-olympics/app.js">app.js</a>
+*DEMO:* ~$ node <a href="https://github.com/yummywakame/assignments/blob/master/exercises/loop-olympics/app.js">app.js</a>
 
 *CONSOLE:*
 
