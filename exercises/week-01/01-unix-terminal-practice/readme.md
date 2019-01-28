@@ -11,4 +11,7 @@ foo@bar:~/assignments/exercises/week-01/01-unix-terminal-practice (master) $ cd 
 foo@bar:~/assignments/exercises/week-01/01-unix-terminal-practice/dir-one (master) $ touch index.html app.js styles.css
 foo@bar:~/assignments/exercises/week-01/01-unix-terminal-practice/dir-one (master) $ cd ../
 foo@bar:~/assignments/exercises/week-01/01-unix-terminal-practice (master)$ cp -a dir-one/. dir-two/
+foo@bar:~/assignments/exercises/week-01/01-unix-terminal-practice (master) $ cd dir-two
+foo@bar:~/assignments/exercises/week-01/01-unix-terminal-practice/dir-two (master) $ster) $ mv app.js main.js
+foo@bar:~/assignments/exercises/week-01/01-unix-terminal-practice/dir-two (master) $ vi index.html
 ```
