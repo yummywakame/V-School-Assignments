@@ -27,4 +27,4 @@ GOLD MEDAL:
 ```
 
 #### Completed according to assignment instructions: 
-1. https://coursework.vschool.io/if-statement-olympics/
+- https://coursework.vschool.io/if-statement-olympics/
