@@ -12,4 +12,4 @@
 - http://coursework.vschool.io/pre-course-review-html/
 - http://coursework.vschool.io/pre-course-review-css/
 
-*_***Please note that the design is exactly according to the spec and does not necessarily represent best practices._*
+*_*Please note that the design is exactly according to the spec and does not necessarily represent best practices._*
