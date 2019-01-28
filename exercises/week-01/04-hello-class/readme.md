@@ -11,12 +11,12 @@ View js file: https://github.com/yummywakame/assignments/blob/master/exercises/h
 var name = "Matt";
 var age = "42";
 
-// function expression
+// ORIGINAL function expression:
 // var sayHello = function(){
 //     console.log("hello class")
 // }
 
-// function declaration
+// CHANGED to a function declaration with
 // added name parameter
 // added age parameter
 function sayHello(name, age){
