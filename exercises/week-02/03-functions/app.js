@@ -101,3 +101,9 @@ function getMax(str) {
 }
 console.log("\n\n6: The most frequent letter in the string '" + myStr + "' is: ")
 console.log("A: " + getMax(myStr))
+
+/*
+    BONUS 3: Write a function to solve the quadratic equation. 
+    (It should accept three numbers as parameters, and then return an array 
+    with the resulting x values.)
+*/
