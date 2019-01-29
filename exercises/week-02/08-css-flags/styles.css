@@ -32,28 +32,7 @@ section {
     position: relative;
     padding-top: 60%;
 }
-/* #france {
-}
-#germany {
-}
-#madagascar {
-}
-#switzerland {
-}
-#sweden {
-}
-#gambia {
-}
-#tonga {
-}
-#japan {
-}
-#greece {
-}
-#niger {
-}
-#maldives {
-} */
+
 
 /* Reusable Flag Elements */
 .expanse {
@@ -65,14 +44,22 @@ section {
 .col-33 {
     width: 33.3%;
     float: left;
-    border: none;
     height: 100%;
 }
 .row-33 {
     height: 33.3%;
     float: left;
-    border: none;
     width: 100%;
+}
+.col-50 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.row-50 {
+    height: 50%;
+    width: 100%;
+    float: left;
 }
 
 .black {
@@ -89,4 +76,55 @@ section {
 }
 .blue {
     background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.swedish-blue {
+    background-color: #006aa7;
+}
+.swedish-yellow {
+    background-color: #fecc00;
+}
+
+/* Flag Specific */
+#france {
+}
+#germany {
+}
+#madagascar {
+}
+#switzerland .cross-vert {
+    width: 15%;
+    height: 70%;
+    margin-top: 9%;
+    margin-left: 42.5%;
+}
+#switzerland .cross-horiz {
+    height: 23%;
+    width: 43%;
+    margin-left: 29%;
+    margin-top: -29%;
+}
+#sweden .cross-vert {
+    width: 15%;
+    height: 100%;
+    margin-left: 25%;
+}
+#sweden .cross-horiz {
+    height: 23%;
+    width: 100%;
+    margin: -38% 0;
+}
+#gambia {
+}
+#tonga {
+}
+#japan {
+}
+#greece {
+}
+#niger {
+}
+#maldives {
 }
