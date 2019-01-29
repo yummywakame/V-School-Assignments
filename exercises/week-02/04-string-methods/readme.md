@@ -70,19 +70,15 @@ console.log("A: " + capilizeAndLowercase(str))
 //    Make a function that takes any string and capitalizes any character 
 //    that follows a space.
 //      capitalize("hey friends! practice practice practice!") // -> "Hey Friends! Practice Practice Practice!"
-function toUpper(strArr) {
-    for (var i = 0; i < strArr.length; i++) {
-        strArr[i] = strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1)
-    }
-    return (strArr)
-}
 
 // Capitalize first letter in each word in the String array
 function capitalizeAfterSpace(str) {
     // convert input to lowercase and split each word into an array
     var myStr = str.toLowerCase().split(" ")
-    // convert the first letter of each word in the array to uppercase
-    myStr = toUpper(myStr);
+    // convert the first letter of each word in the array to uppercase and add the rest
+    for (var i = 0; i < myStr.length; i++) {
+        myStr[i] = myStr[i][0].toUpperCase() + myStr[i].slice(1)   
+    }
     // rejoin array into a single string and return
     return (myStr.join(" "))
 }
