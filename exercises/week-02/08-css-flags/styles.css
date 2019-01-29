@@ -34,6 +34,7 @@ section {
 }
 
 
+
 /* Reusable Flag Elements */
 .expanse {
     position: absolute;
@@ -41,6 +42,19 @@ section {
     width: 100%;
     top: 0;
 }
+.tiny-expanse {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 0;
+}
+.tiny-flag {
+    height: 0;
+    position: relative;
+    padding-top: 60%;
+
+}
+
 .col-33 {
     width: 33.3%;
     float: left;
@@ -66,10 +80,10 @@ section {
     background-color: black;
 }
 .red {
-    background-color: red;
+    background-color: #DD0000;
 }
 .yellow {
-    background-color: yellow;
+    background-color: #FFCE00;
 }
 .white {
     background-color: white;
@@ -78,7 +92,7 @@ section {
     background-color: blue;
 }
 .green {
-    background-color: green;
+    background-color: #007E3A;
 }
 .swedish-blue {
     background-color: #006aa7;
@@ -86,6 +100,28 @@ section {
 .swedish-yellow {
     background-color: #fecc00;
 }
+.gambia-red {
+    background-color: #D52B1E;
+}
+.gambia-blue {
+    background-color: #0C1C8C;
+}
+.gambia-green {
+    background-color: #3A7728;
+}
+.france-blue {
+    background-color: #002395;
+}
+.france-red {
+    background-color: #ED2939;
+}
+.tonga-red {
+    background-color: #C10000;
+}
+.japan-red {
+    background-color: #BC002D;
+}
+
 
 /* Flag Specific */
 #france {
@@ -94,13 +130,13 @@ section {
 }
 #madagascar {
 }
-#switzerland .cross-vert {
+#switzerland .cross-vert, #tonga .cross-vert {
     width: 15%;
     height: 70%;
     margin-top: 9%;
     margin-left: 42.5%;
 }
-#switzerland .cross-horiz {
+#switzerland .cross-horiz, #tonga .cross-horiz {
     height: 23%;
     width: 43%;
     margin-left: 29%;
@@ -116,12 +152,19 @@ section {
     width: 100%;
     margin: -38% 0;
 }
-#gambia {
+#gambia .gambia-blue {
+    height: 23.3%;
+    margin: 3% 0;
 }
-#tonga {
+#japan .circle {
+    background: #BC002D;
+    width: 40%;
+    height: 65%;
+    margin-top: 10%;
+    margin-left: 30%;
+    border-radius: 50%;
 }
-#japan {
-}
+
 #greece {
 }
 #niger {
