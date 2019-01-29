@@ -23,6 +23,7 @@ function capilizeAndLowercase (str) {
 console.log("1: Return string '" + str + "' in UPPERCASE then in lowercase:")
 console.log("A: " + capilizeAndLowercase(str))
 
+
 // 2. Make a function that returns a number half the length, and rounded down. 
 //    You'll need to use Math.floor().
 //      findMiddleIndex("Hello") // => 2
@@ -36,6 +37,7 @@ function findMiddleIndex(str) {
 console.log("\n2: Halve and round down the string length of '" + word + "':")
 console.log("A: " + findMiddleIndex(word))
 
+
 // 3. Make a function that uses slice() and the other functions you've 
 //    written to return the first half of the string
 //      returnFirstHalf("Hello") // => "He"
@@ -48,6 +50,7 @@ function returnFirstHalf(str) {
 }
 console.log("\n3: Slice and display the first half of the string '" + str + "'")
 console.log("A: " + returnFirstHalf(str))
+
 
 // 4. Make a function that takes a string and returns that string where 
 //    the first half is capitalized, and the second half is lower cased. 
@@ -65,6 +68,7 @@ function capilizeAndLowercase(str) {
 }
 console.log("\n4: For the string '" + str + "', uppercase the first half and lowercase the second half:")
 console.log("A: " + capilizeAndLowercase(str))
+
 
 // 5. Optional Code Challenge (This one is a step up in difficulty):
 //    Make a function that takes any string and capitalizes any character 
