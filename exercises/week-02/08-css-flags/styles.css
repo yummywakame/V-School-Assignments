@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 10%;
     line-height: 120%;
     box-sizing: border-box;
 }
@@ -30,11 +29,10 @@ section {
 .flag {
     border: 1px solid black;
     height: 0;
-    overflow: hidden;
     position: relative;
     padding-top: 60%;
 }
-#france {
+/* #france {
 }
 #germany {
 }
@@ -55,4 +53,40 @@ section {
 #niger {
 }
 #maldives {
+} */
+
+/* Reusable Flag Elements */
+.expanse {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.col-33 {
+    width: 33.3%;
+    float: left;
+    border: none;
+    height: 100%;
+}
+.row-33 {
+    height: 33.3%;
+    float: left;
+    border: none;
+    width: 100%;
+}
+
+.black {
+    background-color: black;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.white {
+    background-color: white;
+}
+.blue {
+    background-color: blue;
 }
