@@ -121,6 +121,9 @@ section {
 .japan-red {
     background-color: #BC002D;
 }
+.greece-blue {
+    background-color: #0D5EAF;
+}
 
 
 /* Flag Specific */
@@ -164,9 +167,32 @@ section {
     margin-left: 30%;
     border-radius: 50%;
 }
-
-#greece {
+#greece .row-greece-11 {
+    height: 11.1%;
+    width: 100%;
 }
+#greece .row-greece-22 {
+    height: 22.2%;
+    width: 100%;
+}
+#greece .square {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 55.5%;
+    width: 36%;
+}
+#greece .cross-vert {
+    width: 20%;
+    height: 100%;
+    margin-left: 40%;
+}
+#greece .cross-horiz {
+    height: 20%;
+    width: 100%;
+    margin: -56% 0;
+}
+
 #niger {
 }
 #maldives {
