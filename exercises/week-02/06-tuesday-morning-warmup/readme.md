@@ -4,8 +4,6 @@
 #### Completed according to assignment instructions: 
 - <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/06-tuesday-morning-warmup/instructions.js">instructions.js</a>
 
-*Run:* ~$ node <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/06-tuesday-morning-warmup/app.js">app.js</a>
-
 #### app.js:
 ```javascript
 /*
@@ -44,6 +42,8 @@ function sliceMe(str, num){
 
 console.log(sliceMe("This is the string to slice.", 10)) // This is th
 ```
+
+*Run:* ~$ node <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/06-tuesday-morning-warmup/app.js">app.js</a>
 
 #### Console:
 
