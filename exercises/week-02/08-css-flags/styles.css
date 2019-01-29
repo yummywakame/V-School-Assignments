@@ -1,0 +1,58 @@
+* {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 10%;
+    line-height: 120%;
+    box-sizing: border-box;
+}
+body {
+    margin: 50px;
+    color: darkslategray;
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid darkslategray;
+}
+h2 {
+    font-size: 20px;
+}
+section {
+    width: 33.3%;
+    float: left;
+    border: 20px solid #ffffff;
+}
+
+.flag {
+    border: 1px solid black;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    padding-top: 60%;
+}
+#france {
+}
+#germany {
+}
+#madagascar {
+}
+#switzerland {
+}
+#sweden {
+}
+#gambia {
+}
+#tonga {
+}
+#japan {
+}
+#greece {
+}
+#niger {
+}
+#maldives {
+}

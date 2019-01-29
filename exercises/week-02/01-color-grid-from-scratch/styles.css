@@ -7,7 +7,7 @@ body {
 }
 section {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 div {
     height: 100px;
