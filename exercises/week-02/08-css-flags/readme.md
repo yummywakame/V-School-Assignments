@@ -5,4 +5,4 @@
 - https://coursework.vschool.io/css-flags/
 
 #### Demo:
-http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/08-css-flags/index.html
+<a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/08-css-flags/index.html"><img src="screenshot.png" /></a>
