@@ -88,10 +88,10 @@ var isOn = false;
 var myArray = [9, 3, 4, 2];
 
 // function for adding two numbers
-const add = (a, b) => a + b;
+var add = (a, b) => a + b;
 
 // use reduce to sum our array
-const sum = myArray.reduce(add)
+var sum = myArray.reduce(add)
 
 if (sum % 2) {
   console.log("\n#3:\nThe light is on");
