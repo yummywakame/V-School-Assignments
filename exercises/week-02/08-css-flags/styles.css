@@ -19,21 +19,30 @@ h1 {
 }
 h2 {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 section {
     width: 33.3%;
     float: left;
-    border: 20px solid #ffffff;
+    border: 20px solid white;
 }
-
+footer {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    border-top: 1px solid darkslategray;
+}
+a {
+    color: darkslategray;
+}
 .flag {
-    border: 1px solid black;
+    border: 1px solid white;
     height: 0;
     position: relative;
     padding-top: 60%;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
-
-
 
 /* Reusable Flag Elements */
 .expanse {
@@ -54,7 +63,6 @@ section {
     padding-top: 60%;
 
 }
-
 .col-33 {
     width: 33.3%;
     float: left;
@@ -75,12 +83,24 @@ section {
     width: 100%;
     float: left;
 }
-
+.row-skinny {
+    height: 10%;
+    float: left;
+    width: 100%;
+}
+.row-fat {
+    height: 80%;
+    float: left;
+    width: 100%;
+}
 .black {
     background-color: black;
 }
 .red {
     background-color: #DD0000;
+}
+.swiss-red {
+    background-color: #D52B1E;
 }
 .yellow {
     background-color: #FFCE00;
@@ -124,14 +144,35 @@ section {
 .greece-blue {
     background-color: #0D5EAF;
 }
-
+.niger-orange {
+    background-color: #E05206;
+}
+.niger-green {
+    background-color: #0DB02B;
+}
+.maldives-red {
+    background-color: #D21034;
+}
+.maldives-green {
+    background-color: #007E3A;
+}
+.belize-red {
+    background-color: #CE1126;
+}
+.belize-blue {
+    background-color: #003F87;
+}
 
 /* Flag Specific */
-#france {
+#madagascar .left {
+    width: 34%;
+    height: 100%;
+    float: left;
 }
-#germany {
-}
-#madagascar {
+#madagascar .right {
+    width: 66%;
+    height: 100%;
+    float: left;
 }
 #switzerland .cross-vert, #tonga .cross-vert {
     width: 15%;
@@ -156,7 +197,7 @@ section {
     margin: -38% 0;
 }
 #gambia .gambia-blue {
-    height: 23.3%;
+    height: 24%;
     margin: 3% 0;
 }
 #japan .circle {
@@ -195,8 +236,42 @@ section {
     width: 100%;
     margin: -56% 0;
 }
-
-#niger {
+#niger .circle {
+    background: #E05206;
+    width: 15%;
+    height: 69%;
+    margin-top: 3%;
+    margin-left: 42%;
+    border-radius: 50%;
 }
-#maldives {
+#maldives .expanse {
+    margin-top: 16%;
+    margin-left: 24%;
+    height: 50%;
+    width: 50%;
+}
+#maldives .circle-white {
+    background: white;
+    width: 50%;
+    height: 80%;
+    margin-top: 6%;
+    margin-left: 34%;
+    border-radius: 50%;
+}
+#maldives .circle-green {
+    background: #007E3A;
+    width: 50%;
+    height: 80%;
+    margin-top: -48%;
+    margin-left: 44%;
+    border-radius: 50%;
+}
+#belize .circle {
+    background: url("belize-flag.svg") no-repeat center;
+    background-size: 230%;
+    width: 45%;
+    height: 88%;
+    margin-top: 3%;
+    margin-left: 27%;
+    border-radius: 50%;
 }
