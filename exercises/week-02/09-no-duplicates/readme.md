@@ -80,7 +80,7 @@ function removeAllVowels(str) {
 console.log("4. " + removeAllVowels("My Crazy String!"))
 ```
 
-*Run:* ~$ node <a href="https://github.com/yummywakame/assignments/blob/master/exercises/loop-olympics/app.js">app.js</a>
+*Run:* ~$ node <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/09-no-duplicates/app.js">app.js</a>
 
 #### Console:
 ```console
