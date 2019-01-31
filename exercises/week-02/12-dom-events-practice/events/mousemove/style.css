@@ -1,10 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+body {
+    margin: 50px;
+}
 .red-box {
     height: 400px;
     width: 400px;
-    background-color: #ef8989;
-    margin: auto;
+    background-color: #1785cf;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 h1, h3 {
     text-align: center;
+}
+#coords {
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    display: inline-block;
+    margin-top: 180px;
+}
+#coords p {
+    display: inline-block;
 }
