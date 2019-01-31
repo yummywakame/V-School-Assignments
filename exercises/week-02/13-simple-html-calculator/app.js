@@ -32,39 +32,45 @@ function addIt(e) {
 
     // create the p tags for the div
     var result1 = document.createElement('p')
+    
     // convert the strings to numbers and get the content ready
     result1.textContent = Number(addInput1.value) + Number(addInput2.value)
-    // if a previous result exists, replace it otherwise append it
-    if (doesAddResultExist) {
-        container.replaceChild(result1, container.childNodes[0])
-    } else {
-        container.appendChild(result1)
-        doesAddResultExist = true;
-    }
+    
+    // clear the current container back to an empty div
+    // which prevents continuous appending
+    // then append
+    container.innerHTML = ""
+    container.appendChild(result1)
+    
+    // Clear the form fields
+    formAdd.add1.value = ""
+    formAdd.add2.value = ""
 }
 function subtractIt(e) {
     e.preventDefault()
+    
     var container = document.getElementById('resultSubtract')
-
     var result2 = document.createElement('p')
+    
     result2.textContent = Number(subtractInput1.value) - Number(subtractInput2.value)
-    if (doesSubtractResultExist) {
-        container.replaceChild(result2, container.childNodes[0])
-    } else {
-        container.appendChild(result2)
-        doesSubtractResultExist = true;
-    }
+    
+    container.innerHTML = ""
+    container.appendChild(result2)
+    
+    formSubtract.subtract1.value = ""
+    formSubtract.subtract2.value = ""
 }
 function multiplyIt(e) {
     e.preventDefault()
+    
     var container = document.getElementById('resultMultiply')
-
     var result3 = document.createElement('p')
+    
     result3.textContent = Number(multiplyInput1.value) * Number(multiplyInput2.value)
-    if (doesMultiplyResultExist) {
-        container.replaceChild(result3, container.childNodes[0])
-    } else {
-        container.appendChild(result3)
-        doesMultiplyResultExist = true;
-    }
+    
+    container.innerHTML = ""
+    container.appendChild(result3)
+    
+    formMultiply.multiply1.value = ""
+    formMultiply.multiply2.value = ""
 }
