@@ -8,9 +8,9 @@
 </head>
 <body>
     <div>
-        <form id="submit-me">
-            <input id="name"/>
-            <input id="age"/>
+        <form name="submit-me">
+            <input name="name" type="text" placeholder="Name" value="" required/>
+            <input name="age" type="number" placeholder="Age" value="" required/>
             <button>Click Me</button>
             <!-- the button knows that it belongs to this form because it's nested in it. 
             A single button in a form will defualt to a submit button and will trigger a submit event -->
