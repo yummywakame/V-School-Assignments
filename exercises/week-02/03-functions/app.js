@@ -46,8 +46,9 @@ console.log("\n3: Is " + num1 + " odd or even?\nA: " + oddOrEven(num1));
     characters long, return the string concatenated with itself 
     (string + string). If the string is more than twenty characters 
     long, return the first half of the string.
-    var myStr = "abcdefghijklmnopqrstuvwxyz"
 */
+var myStr = "abcdefghijklmnopqrstuvwxyz"
+
 function stringTwerk(str) {
     if (str.length <= 20) {
         return(str + str)
@@ -119,3 +120,10 @@ console.log("A: " + getMax(myStr))
     (It should accept three numbers as parameters, and then return an array 
     with the resulting x values.)
 */
+function quadraticSolver(a, b, c) {
+    var result = (-1 * b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+    var result2 = (-1 * b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+    return [result, result2]
+}
+console.log("\n\n7: Quadratic of a=1, b=1, c=-1 is:")
+console.log("A: " + quadraticSolver(1, 1, -1))
