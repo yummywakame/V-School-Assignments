@@ -12,21 +12,19 @@ body {
     background-color: #e7e7e7;
 }
 form {
-    /* border: 1px solid white; */
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 5px;
-    margin: 20px 0;
+    margin: 20px auto;
+    width: 450px;
 }
+
 .result {
     display: inline-block;
     min-width: 30px;
 }
 
-.operator {
-
-}
 input, button {
     border-radius: 5px;
     border: 1px solid transparent;
@@ -38,7 +36,6 @@ input {
     width: 100px;
 }
 button {
-    /* text-transform: uppercase; */
     padding-left: 20px;
     padding-right: 20px;
     background-color: #343D46;
