@@ -21,4 +21,14 @@ A: odd
 
 4: Twerk the string - 'abcdefghijklmnopqrstuvwxyz':
 A: abcdefghijklm
+
+5: The number in position 12 of the fibonacci sequence = 144
+   Fibonacci sequence for n = 12: 1,1,2,3,5,8,13,21,34,55,89,144
+   The sum of the first 12 numbers = 376
+
+6: The most frequent letter in the string 'SASSAFRASS' is:
+A: SASSAFRASS
+
+7: Quadratic of a=1, b=1, c=-1 is:
+A: 0.6180339887498949,-1.618033988749895
 ```
