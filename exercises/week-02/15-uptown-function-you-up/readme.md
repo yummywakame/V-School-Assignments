@@ -2,7 +2,9 @@
 ### > For V School // Full Stack JavaScript // January 2019 Cohort
 
 #### Completed according to assignment instructions: 
-- https://coursework.vschool.io/uptown-function-you-up/
+- https://coursework.vschool.io/uptown-function-you-up
+
+*Run:* ~$ node <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/15-uptown-function-you-up/app.js">app.js</a>
 
 #### Terminal:
 ```console
