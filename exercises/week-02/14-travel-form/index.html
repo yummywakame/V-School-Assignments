@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Form</title>
+</head>
+
+<body>
+    <header>
+       <div><h1>Private Jet Rental</h1></div>
+    </header>
+
+    <form name="bookingForm">
+
+        <h2>Personal Info:</h2>
+        <input name="firstName" id="first-name" type="text" placeholder="First Name" class="wide" required />
+        <input name="lastName" id="last-name" type="text" placeholder="Last Name" class="wide" required />
+        <input name="age" id="age" type="number" placeholder="Age" class="narrow" required />
+        
+        <h2>Gender:</h2>
+        <input name="gender" id="radio-f" class="radio-box" type="radio" value="Female" />
+        <label for="radio-f">Female</label>
+        <input name="gender" id="radio-f" class="radio-box" type="radio" value="Male" />
+        <label for radio-m>Male</label>
+        <input name="gender" id="radio-n" class="radio-box" type="radio" value="Non-binary" />
+        <label for="radio-n">Non-binary</label>
+
+        <h2>Location:</h2>
+        <select name="destination" id="select-location">
+            <option value="Los Angeles, CA">Los Angeles, CA</option>
+            <option value="Austin, TX">Austin, TX</option>
+            <option value="Houston, TX">Houston, TX</option>
+            <option value="Seattle, WA">Seattle, WA</option>
+            <option value="New York, NY">New York, NY</option>
+            <option value="Boulder, CO">Boulder, CO</option>
+        </select>
+        
+        <h2>Dietary Restrictions:</h2>
+        <input name="restrictions" id="check-l" class="radio-box" type="checkbox" value="Lactose-free" />
+        <label for="check-l">Lactose-free</label>
+        <input name="restrictions" id="check-k" class="radio-box" type="checkbox" value="Kosher" />
+        <label for="check-k">Kosher</label>
+        <input name="restrictions" id="check-h" class="radio-box" type="checkbox" value="Halaal" />
+        <label for="check-h">Halaal</label>
+        <input name="restrictions" id="check-v" class="radio-box" type="checkbox" value="Vegan" />
+        <label for="check-v">Vegan</label>
+        
+        <button>Submit</button>
+
+    </form>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
