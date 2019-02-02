@@ -4,7 +4,7 @@
 #### Completed according to assignment instructions: 
 - http://coursework.vschool.io/exercise-loops/
 
-*Run:* ~$ node <a href="https://github.com/yummywakame/assignments/blob/master/exercises/loop-olympics/app.js">app.js</a>
+*Run:* ~$ node <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/19-loops-exercise/app.js">app.js</a>
 #### app.js:
 ```javascript
 /* 1. Write a function that accepts a string as input. Write a loop and
