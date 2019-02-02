@@ -10,17 +10,17 @@
 ```console
 foo@bar:~/assignments/exercises/week-02/20-random-password-generator (master) $ node app.js
 Random 16 character password:
-~!IK..h0Xl1Y5%LF
+>R%Md;zAHw;b37*~
 
-Random 16 character password containing all letters from 'Olivia':
+Random 16 character password including all letters from 'Olivia':
 (string length < charNum)
-vSi3uv~OliRaYJlm
+?;4LvSCOa@jipilo
 
 Random 10 character password containing all letters from 'HelloKitty':
 (string length = charNum)
-KiltoyHtel
+ytKHoieltl
 
 Random 5 character password containing only letters from 'MyCat1984':
 (string length > charNum)
-MCtay
+yMtaC
 ```
