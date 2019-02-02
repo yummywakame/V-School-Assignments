@@ -4,7 +4,7 @@
 #### Completed according to assignment instructions: 
 - https://coursework.vschool.io/for-within-for-within-for/
 
-*Run:* ~$ node <a href="https://github.com/yummywakame/assignments/blob/master/exercises/loop-olympics/app.js">app.js</a>
+*Run:* ~$ node <a href="app.js">app.js</a>
 
 #### app.js:
 ```javascript
