@@ -27,6 +27,7 @@
         var people = ["Jon", "Jacob", "Jingle", "Heimer", "Schmidt"]
         var alphabet = "abcdefghijklmnopqrstuvwxyz"
 */
+
 function forception(people, alphabet) {
     // new array to hold the final output so it can console.log in one line
     combinedArr = []
