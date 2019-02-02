@@ -81,10 +81,10 @@ function shuffleString(str) {
     return str;
 }
 
-console.log("\nRandom " + charNum + " character password containing letters from '" + word + "':\n(string length < charNum) \n" + randomPasswordGeneratorWithWord(charNum, word))
+console.log("\nRandom " + charNum + " character password including all letters from '" + word + "':\n(string length < charNum) \n" + randomPasswordGeneratorWithWord(charNum, word))
 charNum = 10
 word = "HelloKitty"
-console.log("\nRandom " + charNum + " character password containing letters from '" + word + "':\n(string length = charNum) \n" + randomPasswordGeneratorWithWord(charNum, word))
+console.log("\nRandom " + charNum + " character password containing all letters from '" + word + "':\n(string length = charNum) \n" + randomPasswordGeneratorWithWord(charNum, word))
 charNum = 5
 word = "MyCat1984"
-console.log("\nRandom " + charNum + " character password containing letters from '" + word + "':\n(string length > charNum) \n" + randomPasswordGeneratorWithWord(charNum, word))
+console.log("\nRandom " + charNum + " character password containing only letters from '" + word + "':\n(string length > charNum) \n" + randomPasswordGeneratorWithWord(charNum, word))
