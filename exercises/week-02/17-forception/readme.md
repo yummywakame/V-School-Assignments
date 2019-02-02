@@ -48,13 +48,6 @@ console.log(
 ```
 
 #### Console:
-
-```console
-foo@bar:~$ node app.js
-foo
-```
-
-
 ```console
 foo@bar:~/assignments/exercises/week-02/17-forception (master) $ node app.js
 [Jon,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,Jacob,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,
