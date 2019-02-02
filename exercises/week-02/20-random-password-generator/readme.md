@@ -12,15 +12,15 @@ foo@bar:~/assignments/exercises/week-02/20-random-password-generator (master) $ 
 Random 16 character password:
 ~!IK..h0Xl1Y5%LF
 
-Random 16 character password containing letters from 'Olivia':
+Random 16 character password containing all letters from 'Olivia':
 (string length < charNum)
 vSi3uv~OliRaYJlm
 
-Random 10 character password containing letters from 'HelloKitty':
+Random 10 character password containing all letters from 'HelloKitty':
 (string length = charNum)
 KiltoyHtel
 
-Random 5 character password containing letters from 'MyCat1984':
+Random 5 character password containing only letters from 'MyCat1984':
 (string length > charNum)
 MCtay
 ```
