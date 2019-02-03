@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mario Pest Control</title>
+</head>
+
+<body>
+    <div id="canvas">
+
+        <header>
+            <h1>Mario Pest Control</h1>
+        </header>
+
+        <main>
+            <form name="pestForm">
+                <div id="coin-bob-omb" class="coin"></div>
+                <div id="coin-goomba" class="coin"></div>
+                <div id="coin-cheep-cheep" class="coin"></div>
+                
+                <div id="bob-omb" class="character"></div>
+                <div id="goomba" class="character"></div>
+                <div id="cheep-cheep" class="character"></div>
+
+                <input name="inputBobomb" class="input-bob-omb" placeholder="0">
+                <input name="inputGoobma" class="input-goomba" placeholder="0">
+                <input name="inputCheepCheep" class="input-cheep-cheep" placeholder="0">
+                
+                <button id="submit"><span class="nodisplay">Submit</span></button>
+                <input name="result" id="result" placeholder="0" readonly>
+            </form>
+
+        </main>
+
+        <footer>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

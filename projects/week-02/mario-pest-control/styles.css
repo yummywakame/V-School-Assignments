@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #252525;
+}
+
+#canvas {
+    position: relative;
+    margin: auto;
+    background: url("./imgs/background.png");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    width: 1024px;
+    height: 1024px;
+}
+
+header {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    background: url("./imgs/mario-pest-control-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 347px;
+    height: 211px;
+}
+
+h1 {
+    display: none;
+}
+
+main {
+    width: 1024px;
+    height: 1024px;
+}
+
+form {
+    width: 1024px;
+    height: 1024px;
+
+}
+
+input {
+    position: absolute;
+    width: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    top: 790px;
+    border: transparent 0px solid;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+
+.input-bob-omb {
+    left: 310px;
+}
+
+.input-goomba {
+    left: 655px;
+}
+
+.input-cheep-cheep {
+    left: 900px;
+    top: 690px;
+}
+
+.coin {
+    position: absolute;
+    background-size: cover;
+    width: 89px;
+    height: 87px;
+    top: 750px;
+}
+
+#coin-bob-omb {
+    background-image: url("./imgs/coin-7.png");
+    left: 180px;
+}
+
+#coin-goomba {
+    background-image: url("./imgs/coin-5.png");
+    left: 525px;
+}
+
+#coin-cheep-cheep {
+    background-image: url("./imgs/coin-11.png");
+    left: 770px;
+    top: 650px;
+}
+
+#coin-cheep-cheep p {
+    left: 25px;
+}
+
+.character {
+    position: absolute;
+    background-size: contain;
+    background-repeat: none;
+    background-position: center;
+    width: 199px;
+    height: 196px;
+    transition: all 0.1s ease;
+}
+.character:hover {
+    transition: all 0.1s ease;
+    width: 189px;
+}
+
+#bob-omb {
+    background-image: url("./imgs/bo-bomb.png");
+    top: 640px;
+    left: 200px;
+
+}
+#bob-omb:hover {
+    width: 189px;
+}
+
+#goomba {
+    background-image: url("./imgs/goomba.png");
+    width: 176px;
+    height: 197px;
+    top: 640px;
+    left: 550px;
+}
+
+#goomba:hover {
+    width: 166px;
+}
+
+#cheep-cheep {
+    background-image: url("./imgs/cheep-cheep.png");
+    top: 550px;
+    left: 800px;
+}
+
+button {
+    background-image: url("./imgs/submit.png");
+    background-size: cover;
+    background-color: black;
+    border: none;
+    position: absolute;
+    bottom: 120px;
+    left: 33%;
+    font-size: 32px;
+    width: 155px;
+    height: 48px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.5);
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    bottom: 118px;
+    transition: all 0.1s ease;
+    background-color: #ff2a00;
+}
+
+button:focus {
+    outline: 0;
+}
+
+#result {
+    top: 858px;
+    width: 100px;
+    left: 50%;
+    background-color: #fed200;
+}
+
+footer {
+    text-align: center;
+}
+
+.nodisplay {
+    display: none;
+}
