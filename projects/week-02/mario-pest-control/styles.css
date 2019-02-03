@@ -109,6 +109,7 @@ input {
     width: 199px;
     height: 196px;
     transition: all 0.1s ease;
+    cursor: pointer;
 }
 .character:hover {
     transition: all 0.1s ease;
@@ -159,6 +160,7 @@ button {
     -moz-box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.5);
     box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.5);
     transition: all 0.1s ease;
+    cursor: pointer;
 }
 
 button:hover {

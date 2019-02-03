@@ -1,0 +1,160 @@
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    margin: 50px 100px;
+    background-color: #f8f8f8;
+}
+
+/* 
+    HEADER STUFF 
+*/
+header h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+header h1 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+header .strapline {
+    margin-bottom: 50px;
+}
+
+menu {
+    margin: auto;
+}
+
+menu ul {
+    background-color: #eeeeee;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+menu li {
+    display: inline-block;
+    padding: 20px;
+    color: black;
+    transition: all 0.3s ease;
+}
+menu li:hover {
+    /* color: white; */
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* 
+    MAIN CONTENT 
+*/
+main {
+    margin: auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 50px;
+    height: 50%;
+}
+.wrapper > div {
+    background-color: white;
+}
+
+.photo {
+    overflow: auto;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    transition: all 0.3s ease;
+  }
+  
+/* Disable grayscale on hover */
+img:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    transition: all 0.3s ease;
+}
+  
+.date {
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    margin: -36px auto 10px auto;
+    text-align: center;
+    padding-top: 12px;
+}
+
+h3, p {
+    margin: 20px;
+}
+
+p {
+    text-align: left;}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.location {
+    background-image: url("./icons/location.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: 2px;
+    font-size: 14px;
+    line-height: 22px;
+    color: gray;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.photographer {
+    background-image: url("./icons/camera.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: 2px;
+    font-size: 14px;
+    line-height: 22px;
+    color: gray;
+    padding-left: 30px;
+    text-align: left;
+}
+.photographer a {
+    color: gray;
+}
+
+/*
+    FOOTER STUFF
+*/
+footer p {
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-size: 14px;
+    color: gray;
+}
+footer a {
+    color: gray;
+}
