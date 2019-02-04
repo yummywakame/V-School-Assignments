@@ -22,16 +22,16 @@
                 <div id="coin-goomba" class="coin"></div>
                 <div id="coin-cheep-cheep" class="coin"></div>
                 
-                <div id="bob-omb" class="character"></div>
-                <div id="goomba" class="character"></div>
-                <div id="cheep-cheep" class="character"></div>
+                <div id="bob-omb" class="character" onclick="addOne('bobomb')"></div>
+                <div id="goomba" class="character" onclick="addOne('goomba')"></div>
+                <div id="cheep-cheep" class="character" onclick="addOne('cheepcheep')"></div>
 
-                <input name="inputBobomb" class="input-bob-omb" placeholder="0">
-                <input name="inputGoobma" class="input-goomba" placeholder="0">
-                <input name="inputCheepCheep" class="input-cheep-cheep" placeholder="0">
+                <input name="inputBobomb" class="input-bob-omb" type="number" placeholder="0">
+                <input name="inputGoomba" class="input-goomba" type="number" placeholder="0">
+                <input name="inputCheepCheep" class="input-cheep-cheep" type="number" placeholder="0">
                 
                 <button id="submit"><span class="nodisplay">Submit</span></button>
-                <input name="result" id="result" placeholder="0" readonly>
+                <input name="result" id="result" placeholder="0" type="number" readonly>
             </form>
 
         </main>
@@ -40,7 +40,8 @@
         </footer>
 
     </div>
-
+    
+    <audio id="audio" src="./sounds/mario-coin-sound.mp3" autoplay="false" ></audio>
     <script src="app.js"></script>
 </body>
 
