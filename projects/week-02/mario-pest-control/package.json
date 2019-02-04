@@ -1,0 +1,11 @@
+{
+  "name": "mario-pest-control",
+  "version": "1.0.0",
+  "description": "JS project created for V School's Full Stack Bootcamp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olivia Meiring",
+  "license": "ISC"
+}
