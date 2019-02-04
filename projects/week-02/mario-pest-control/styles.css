@@ -13,17 +13,16 @@ body {
     position: relative;
     margin: auto;
     background: url("./imgs/background.png");
-    background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 1024px;
-    height: 1024px;
+    height: 874px;
 }
 
 header {
     position: absolute;
-    top: 160px;
+    top: 40px;
     left: 40px;
     background: url("./imgs/mario-pest-control-logo.png");
     background-size: cover;
@@ -38,12 +37,12 @@ h1 {
 
 main {
     width: 1024px;
-    height: 1024px;
+    height: 874px;
 }
 
 form {
     width: 1024px;
-    height: 1024px;
+    height: 874px;
 
 }
 
@@ -55,7 +54,7 @@ input {
     padding: 10px;
     font-weight: bold;
     text-align: center;
-    top: 790px;
+    top: 640px;
     border: transparent 0px solid;
     box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
 }
@@ -70,7 +69,17 @@ input {
 
 .input-cheep-cheep {
     left: 900px;
-    top: 690px;
+    top: 540px;
+}
+
+#result {
+    top: 728px;
+    width: 100px;
+    left: 51%;
+    background-color: #ff2a00;
+    -webkit-box-shadow: 0px 0px 35px 9px rgba(254,210,0,1);
+    -moz-box-shadow: 0px 0px 35px 9px rgba(254,210,0,1);
+    box-shadow: 0px 0px 35px 9px rgba(254,210,0,1);
 }
 
 .coin {
@@ -78,7 +87,7 @@ input {
     background-size: cover;
     width: 89px;
     height: 87px;
-    top: 750px;
+    top: 600px;
 }
 
 #coin-bob-omb {
@@ -94,7 +103,7 @@ input {
 #coin-cheep-cheep {
     background-image: url("./imgs/coin-11.png");
     left: 770px;
-    top: 650px;
+    top: 500px;
 }
 
 #coin-cheep-cheep p {
@@ -104,7 +113,7 @@ input {
 .character {
     position: absolute;
     background-size: contain;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     width: 199px;
     height: 196px;
@@ -118,7 +127,7 @@ input {
 
 #bob-omb {
     background-image: url("./imgs/bo-bomb.png");
-    top: 640px;
+    top: 490px;
     left: 200px;
 
 }
@@ -130,7 +139,7 @@ input {
     background-image: url("./imgs/goomba.png");
     width: 176px;
     height: 197px;
-    top: 640px;
+    top: 490px;
     left: 550px;
 }
 
@@ -140,7 +149,7 @@ input {
 
 #cheep-cheep {
     background-image: url("./imgs/cheep-cheep.png");
-    top: 550px;
+    top: 400px;
     left: 800px;
 }
 
@@ -150,8 +159,8 @@ button {
     background-color: black;
     border: none;
     position: absolute;
-    bottom: 120px;
-    left: 33%;
+    bottom: 100px;
+    left: 34%;
     font-size: 32px;
     width: 155px;
     height: 48px;
@@ -167,20 +176,13 @@ button:hover {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    bottom: 118px;
+    bottom: 98px;
     transition: all 0.1s ease;
     background-color: #ff2a00;
 }
 
 button:focus {
     outline: 0;
-}
-
-#result {
-    top: 858px;
-    width: 100px;
-    left: 50%;
-    background-color: #fed200;
 }
 
 footer {
