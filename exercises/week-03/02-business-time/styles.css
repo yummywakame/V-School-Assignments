@@ -1,0 +1,96 @@
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+header {
+    position: relative;
+    height: 500px;
+    background-image: url("./images/header-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    color: white;
+}
+
+.outer-block {
+    position: relative;
+    padding: 20pt 40pt;
+}
+
+.inner-block {
+    position: relative;
+    background-color: #ffffff43;
+    margin: 100pt 20pt;
+    padding: 20pt;
+    border: 5px solid white;
+}
+
+h1 {
+    font-size: 40pt;
+    font-weight: 300;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    letter-spacing: 3pt;
+}
+
+.strapline {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+    /* set height to pixels if you want angle to change with screen width */
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 10pt 30pt;
+    font-size: 14pt;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav div {
+    letter-spacing: 3pt;
+}
+
+nav div a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5pt;
+}
+
+nav div a:hover {
+    transition: all 0.3s ease;
+    border-radius: 5pt;
+    background: -moz-linear-gradient(313deg, #9a0401 0%, #d71d02 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #9a0401), color-stop(100%, #d71d02)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(313deg, #9a0401 0%, #d71d02 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(313deg, #9a0401 0%, #d71d02 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(313deg, #9a0401 0%, #d71d02 100%); /* ie10+ */
+    background: linear-gradient(137deg, #9a0401 0%, #d71d02 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa0301', endColorstr='#d71d02',GradientType=0 ); /* ie6-9 */
+}
+
+main {}
+
+footer {}
