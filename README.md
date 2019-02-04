@@ -1,7 +1,7 @@
 # Full Stack JS Bootcamp - Jan '19
 ## &#10097; Featured Projects
 
-### WEEK 2: Mario Pest Control <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-02/mario-pest-control/index.html">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-02/mario-pest-control">Files</a>
+### WEEK 2: Mario Pest Control // <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-02/mario-pest-control/index.html">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-02/mario-pest-control">Files</a>
 
 <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-02/mario-pest-control/index.html"><img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/projects/week-02/mario-pest-control/screenshot.png"></a>
 
