@@ -5,4 +5,4 @@
 - https://coursework.vschool.io/design-a-blog/
 
 #### Demo:
-- <a href="http://htmlpreview.github.com/?#">blogalog</a>
+- <a href="http://htmlpreview.github.com/?#"><img src="screenshot.png"></a>
