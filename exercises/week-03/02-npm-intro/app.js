@@ -7,7 +7,7 @@
 
 // 2. Create package using Readline-sync
 // Install readline-sync
-// $ npm install readlne-sync
+// $ npm install readline-sync
 // all packages are stored in the "node_modules" folder
 
 // 2.b $ npm install
@@ -42,6 +42,3 @@ while(animalNotSelected) {
         animalNotSelected = false;
     }
 } 
-
-
-
