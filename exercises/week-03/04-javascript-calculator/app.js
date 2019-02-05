@@ -27,15 +27,15 @@ function add(num1, num2) {
 }
 
 function sub(num1, num2) {
-    return(num1 + ' - ' + num2 + " = " + num1 - num2)
+    return(num1 + ' - ' + num2 + " = " + (Number(num1) - Number(num2)))
 }
 
 function mul(num1, num2) {
-    return(num1 + ' x ' + num2 + " = " + num1 * num2)
+    return(num1 + ' x ' + num2 + " = " + (Number(num1) * Number(num2)))
 }
 
 function div(num1, num2) {
-    return(num1 + ' / ' + num2 + " = " + num1 / num2)
+    return(num1 + ' / ' + num2 + " = " + (Number(num1) / Number(num2)))
 }
 
 // Store the entire readline sync library in a variable

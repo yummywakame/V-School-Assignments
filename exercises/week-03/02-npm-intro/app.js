@@ -10,7 +10,7 @@
 // $ npm install readline-sync
 // all packages are stored in the "node_modules" folder
 
-// 2.b $ npm install
+// 2.b $ npm install readline-sync
 // will look at the package.json file and download everything
 // in the package list.
 
