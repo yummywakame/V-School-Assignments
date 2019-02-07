@@ -360,3 +360,9 @@ footer a:hover {
         color: #d71d02;
     }
 }
+
+/* Overlay that hides the glitch where the page looks weird before
+ the CSS is fully loaded */
+ #loadOverlay {
+    display: none;
+}
