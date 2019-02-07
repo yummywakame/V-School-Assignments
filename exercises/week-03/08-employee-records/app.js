@@ -6,11 +6,7 @@ function Employee(name, jobTitle, salary, status) {
     this.name = name
     this.jobTitle = jobTitle
     this.salary = salary
-    if (status) {
-        this.status = status
-    } else {
-        this.status = "Full Time"
-    }
+    this.status = status || "Full Time"
 }
 
 // Prototype function for Employee Constructor that prints
@@ -28,7 +24,7 @@ Employee.prototype.printEmployeeForm = function() {
 // Instantiate 3 employees
 // Override the status attribute of one of them to either "Part Time" or "Contract"
 var bob = new Employee("Bob", "V School Instructor", "$3000/hour", "Part Time")
-var helen = new Employee("Helen", "V School TA", "$15/hour", "Full Time")
+var helen = new Employee("Helen", "V School TA", "$15/hour")
 var mark = new Employee("Mark", "V School Administrator", "$35/hour", "Contract")
 
 // Call the printEmployeeForm method for each employee
