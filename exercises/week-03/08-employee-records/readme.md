@@ -1,8 +1,10 @@
 # Employee Records
 ### > For V School // Full Stack JavaScript // January 2019 Cohort
 
+#### JS Constructor Functions
+Notes: https://coursework.vschool.io/javascript-constructor-functions/
+
 #### Completed according to assignment instructions: 
-JS Constructor Functions
 - https://coursework.vschool.io/employee-records/
 
 *Run:* ~$ node <a href="app.js">app.js</a>
