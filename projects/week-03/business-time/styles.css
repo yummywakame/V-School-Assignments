@@ -1,6 +1,5 @@
 * {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -133,7 +132,7 @@ article {
     background: white;
     break-inside: avoid-column;
     margin-bottom: 20pt; 
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
+    -webkit-box-shadow: 0px 0px 5px 0px blackrgba(177, 177, 177, 0.5);
     -moz-box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
     box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
 }
@@ -259,7 +258,15 @@ footer a:hover {
     OVERRIDES FOR DIFFERENT MEDIA 
 */
 
+
 /* TINY PHONES */
+@media (min-width: 350px) and (max-width: 767px) {
+    img {
+        -webkit-filter: none;
+        filter: none;
+        cursor: auto;
+    }
+}
 @media (min-width: 768px) {
     header {
         height: 700px;
@@ -317,18 +324,9 @@ footer a:hover {
     /* 
         MENU / NAV ELEMENTS
     */
-    nav {
-        position: flex;
-        background-color: black;
-        z-index: 100;
-    }
     
     nav #hamburger {
         display: none;
-        height: 0;
-        width: 0;
-        margin: 0;
-        padding: 0;
     }
     
     #menu {
@@ -336,7 +334,6 @@ footer a:hover {
         list-style: none;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
         transition: none;
         border: none;
         width: 100vw;
