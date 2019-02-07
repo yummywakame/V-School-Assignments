@@ -3,12 +3,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-size: 16pt;
 }
 
 body {
     background-color: whitesmoke;
 }
 
+/* 
+    HEADER ELEMENTS 
+*/
 header {
     position: relative;
     height: 500px;
@@ -21,7 +26,7 @@ header {
 
 .outer-block {
     position: relative;
-    padding: 20pt 40pt;
+    padding: 20pt;
 }
 
 .inner-block {
@@ -45,53 +50,20 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3pt;
-    font-size: calc(2vmin + 1vmax);
+    font-size: calc(3vmin + 1vmax);
 }
 
 svg {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 10vw;
+    height: 20vw;
     /* set height to pixels if you want angle to change with screen width */
 }
 
-img {
-    width: 100%;
-}
-
-main {
-    position: relative;
-    columns: 200pt;
-    column-gap: 20pt; 
-    margin: -100pt 40pt 40pt 40pt;
-}
-
-article {
-    overflow: hidden;
-    border-radius: 10pt;
-    /* border: 1px solid white; */
-    background: white;
-    break-inside: avoid-column;
-    margin-bottom: 20pt; 
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
-    box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
-}
-
-article h3 {
-    margin: 10pt;
-    color: #d71d02;
-    text-transform: uppercase;
-}
-
-article p {
-    margin: 10pt;
-
-}
-
-footer {}
-
+/* 
+    MENU / NAV ELEMENTS
+*/
 nav {
     position: fixed;
     background-color: black;
@@ -147,6 +119,244 @@ nav li a:hover {
     color: #d71d02;
 }
 
-@media (min-width: 550pt){
+/* 
+    MAIN ELEMENTS 
+*/
+main {
+    position: relative;
+    columns: 300pt;
+    column-gap: 20pt; 
+    margin: -100pt 20pt 40pt 20pt;
+}
+
+article {
+    background: white;
+    break-inside: avoid-column;
+    margin-bottom: 20pt; 
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
+}
+
+article h3 {
+    margin: 10pt;
+    color: #d71d02;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+article h3 a {
+    color: #d71d02;
+    text-decoration: none;
+    display: block;
+    margin: -10pt;
+    padding: 10pt;
+    transition: all 0.3s ease;
+}
+
+article h3 a:hover {
+    text-decoration: none;
+    display: block;
+    background-color: black;
+    margin: -10pt;
+    padding: 10pt;
+    transition: all 0.3s ease;
+}
+
+article p {
+    margin: 10pt;
+}
+
+img {
+    width: 100%;
+    display: flex;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 
+    CONTACT FORM ELEMENTS
+*/
+form, #response {
+    position: relative;
+    background-color: silver;
+    padding: 20pt;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(177, 177, 177, 0.5);
+    margin: -100pt 20pt 40pt 20pt;
+}
+
+#response {
+    display: none; /* changes to display: block when activated */
+}
+
+form h3, #response p {
+    font-size: 25pt;
+    margin-bottom: 10pt;
+    font-weight: 400;
+}
+
+form input, form button {
+    width: 100%;
+    margin: 10pt 0pt;
+    font-size: 18pt;
+    padding: 5pt;
+    border: 1px solid black;
+}
+
+form button {
+    max-width: 200pt;
+    transition: all 0.3s ease;
+    color: #d71d02;
+    background-color: black;
+}
+form button:hover {
+    transition: all 0.3s ease;
+    color: black;
+    background-color: #d71d02;
+}
+
+/* 
+    FOOTER ELEMENTS
+*/
+footer {
+    position: relative;
+    background-color: black;
+    clear: both;
+    padding: 40pt;
+    color: white;
+    line-height: 30pt;
+}
+
+footer > ul {
+    list-style: none;
+    display: block;
+    text-align: right;
+}
+
+footer a {
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: #d71d02;
+    transition: all 0.3s ease;
+}
+
+/* 
+    OVERRIDES FOR DIFFERENT MEDIA 
+*/
+
+/* TINY PHONES */
+@media (min-width: 768px) {
+    header {
+        height: 700px;
+    }
     
+    .inner-block {
+        margin: 80pt 40pt;
+    }
+    
+    main {
+        column-gap: 40pt;
+        margin: -100pt 60pt 40pt 60pt;
+    }
+    
+    article {
+        margin-bottom: 60pt;
+    }
+    
+    form, #response {
+        padding: 40pt;
+        margin: -100pt 60pt 60pt 60pt;
+    }
+    
+    footer {
+        padding: 60pt;
+    }
+}
+
+/* TABLETS AND ABOVE */
+@media (min-width: 1024px) {
+    header {
+        height: 1000px;
+    }
+    
+    .outer-block {
+        padding: 60pt;
+        width: 80%;
+        margin: auto;
+    }
+    
+    main {
+        margin: -300pt 60pt 40pt 60pt;
+    }
+    
+    article {
+        margin-bottom: 40pt;
+    }
+    
+    form, #response {
+        margin: -300pt 60pt 60pt 60pt;
+    }
+}
+
+@media (min-width: 1300px) {
+    /* 
+        MENU / NAV ELEMENTS
+    */
+    nav {
+        position: flex;
+        background-color: black;
+        z-index: 100;
+    }
+    
+    nav #hamburger {
+        display: none;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #menu {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: none;
+        border: none;
+        width: 100vw;
+    }
+    
+    nav li {
+        letter-spacing: 3pt;;
+        border: 10px solid transparent;
+        font-size: 10px !important;
+    }
+    
+    nav li a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    nav li a:hover {
+        transition: all 0.3s ease;
+        color: #d71d02;
+    }
 }
