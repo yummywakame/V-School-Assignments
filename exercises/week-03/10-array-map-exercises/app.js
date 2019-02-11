@@ -208,7 +208,7 @@ console.log(readyToPutInTheDOM([
 */
 
 function readyToPutInTheDOM(arr) {
-    return arr.map(function(person) {
+    return arr.map(function (person) {
         return ("<h1>" + person.name + "</h1><h2>" + person.age + "</h2>")
     })
 }
