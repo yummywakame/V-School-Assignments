@@ -4,9 +4,10 @@
 #### Completed according to assignment instructions: 
 - https://coursework.vschool.io/jsons-deli/
 
-*Run:* ~$ node <a href="app.js">app.js</a>
+Validated via https://jsonlint.com/
 
-#### Console:
+
+#### JSON File:
 ```json
 {
     "title": "JSON's Deli",
