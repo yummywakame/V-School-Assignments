@@ -1,0 +1,111 @@
+{
+    "title": "JSON's Deli",
+    "menu": 
+    {
+        "salads": 
+        [
+            {
+            "name": "The Big Chef",
+            "ingredients": [
+                "Ham",
+                "Roasted Turkey Breast",
+                "Asiago",
+                "Cheddar",
+                "Grape Tomatoes",
+                "Kalamata Olives",
+                "Hard-boiled Egg Slices",
+                "Mixed Greens"
+            ],
+            "calories": [930, 470]
+            },
+            {
+                "name": "Chicken Club Salad",
+                "ingredients": [
+                    "Grilled, 100% antibiotic-free chicken breast",
+                    "Grape tomatoes",
+                    "Kalamata olives",
+                    "Cheddar",
+                    "Asiago",
+                    "Bacon",
+                    "Mixed salad greens"
+                ],
+                "calories": [1010, 540]
+            },
+            {
+                "name": "Chicken Caesar",
+                "ingredients": [
+                    "Grilled, 100% antibiotic-free chicken breast",
+                    "Romaine",
+                    "Asiago",
+                    "Croutons",
+                    "Creamy Caesar dressing",
+                    "toasted herb focaccia bread"
+                ],
+                "calories": [910, 450]
+            }
+        ],
+        "pasta, potatoes and more": 
+        [
+            {
+            "name": "Zucchini Garden Pasta",
+            "ingredients": [
+                "Bowtie Pasta",
+                "Roasted Zucchini",
+                "Fresco Mix of Roasted Tomatoes",
+                "Organic Spinach",
+                "Artichoke Hearts",
+                "Asagio",
+                "Herb Focaccia"
+            ],
+            "calories": [1010, 630]
+            },
+            {
+                "name": "Penne Pasta & Meatballs",
+                "ingredients": [
+                    "Penne pasta",
+                    "Marinara",
+                    "Asiago",
+                    "Herb Focaccia",
+                    "bread: 220/110 cal"
+                ],
+                "calories": [1080, 680]
+                }
+        ],
+        "Speciality Sandwiches": 
+        [
+            {
+            "name": "Zucchini Grillini",
+            "ingredients": [
+                "Roasted Zucchini",
+                "Muenster",
+                "Organic Spinach",
+                "Red Onions",
+                "Roma Tomatoes",
+                "etc."
+            ],
+            "calories": [570]
+            },
+            {
+                "name": "The Papa Joe",
+                "ingredients": [
+                    "Roasted turkey breast",
+                    "Asiago",
+                    "Roasted tomatoes",
+                    "Pesto aioli",
+                    "Toasted herb focaccia"
+                ],
+                "calories": [450]
+            },
+            {
+                "name": "MeataBalla",
+                "ingredients": [
+                    "Meatballs",
+                    "Italian red sauce",
+                    "Provolone",
+                    "Toasted on New Orleans French Bread"
+                ],
+                "calories": [1120]
+            }
+        ]
+    }
+}
