@@ -103,8 +103,13 @@ function swim() {
 
     // if number is 1 === player is attacked by enemy
     if (fate === 1) {
+    
         // create current enemy
-        currentEnemy = enemyCreation()
+        currentEnemy = undefined
+        while (currentEnemy === undefined) {
+            currentEnemy = enemyCreation()
+        }
+        
         // enemy's attack sequence
         enemyAttacks()
 
@@ -156,14 +161,16 @@ function randomSwimMessage() {
 function enemyCreation() {
     // randomly select an enemy character
     var num = getRandomNum(2, 4)
-    var currentEnemy = characters[num]
+    var newEnemy = characters[num]
     
     // check to see if selected enemy was previously defeated
     // and rerun function if it needs to reselect
-    if (currentEnemy.isAlive) {
-        return currentEnemy
-    } else {
+    if (!newEnemy.isAlive) {
         enemyCreation()
+        
+    } else {
+        return newEnemy
+        
     }
 
 }
@@ -239,7 +246,7 @@ function attackEnemy() {
         if (areAllDefeated) {
             // All the enemies are defeated and the game is won!
             console.log("\nCONGRATULATIONS!")
-            console.log("\nYou have defeated all the enemies and won the game. You never did find the portal to Atlantis, because the developer didn\'t have tme to code it.\n")
+            console.log("\nYou have defeated all the enemies and won the game. You never did find the portal to Atlantis, because the developer didn\'t have time to code it.\n")
             process.exit(1)
         }
 
