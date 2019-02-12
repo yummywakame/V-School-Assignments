@@ -6,7 +6,7 @@
 
 *Run:* ~$ node <a href="app.js">app.js</a>
 
-#### app.ks:
+#### app.js:
 
 ```javascript
 /* 
