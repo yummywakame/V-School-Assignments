@@ -6,8 +6,7 @@
     Return the count, including any substitutions for the letter "d".
 */
 function countCode(string) {  
-  var regex = /co.e/g
-  return ((string || '').match(regex) || []).length
+  return ((string || '').match(/co.e/g) || []).length
 }
 
 console.log(countCode("aaacodebbb"))
@@ -26,8 +25,7 @@ console.log("\n")
     Allow any uppercase characters to substitute for "c"
 */
 function countCode2(string) {  
-    var regex = /[A-Z,a-z]o.e/g
-    return ((string || '').match(regex) || []).length
+    return ((string || '').match(/[A-Z,a-z]o.e/g) || []).length
 }
 
 console.log(countCode2("aaaAodebbb"))
