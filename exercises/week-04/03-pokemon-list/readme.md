@@ -13,4 +13,6 @@
 >Step one - get the data
 >Step two - display the data
 
-- <a href="https://htmlpreview.github.io/?#”>Pokemon List</a>
+#### DEMO: <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-04/03-pokemon-list/index.html">Pokemon List</a>
+
+<img src="screenshot.png">
