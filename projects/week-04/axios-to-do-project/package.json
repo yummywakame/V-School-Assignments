@@ -1,0 +1,14 @@
+{
+  "name": "axios-to-do-project",
+  "version": "1.0.0",
+  "description": "Project for V School's Full Stack JS Course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olivia Meiring",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
