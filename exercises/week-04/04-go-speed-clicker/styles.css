@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+
+}
+body {
+    font-size: 20pt;
+    margin: 50pt;
+    
+    text-align: center;
+}
+button {
+    font-size: 20pt;
+    margin-bottom: 20pt;
+    margin-top: 20pt;
+    color: white;
+    background-color: #ff00ae;
+    padding: 10pt;
+    width: 40pt;
+    height: 40pt;
+    border-radius: 4pt;
+}
+h1 {
+    margin-bottom: 30pt;
+    color: gray;
+    letter-spacing: 2pt;
+}
+
+h2 {
+    font-size: 12pt;
+    width: 400pt;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+#reset {
+    width: auto;
+    color: white;
+    font-weight: 200;
+    background-color: mediumseagreen;
+    letter-spacing: 2pt;
+}
+
+#message {
+    margin-top: 30pt;
+    color: mediumseagreen;
+    letter-spacing: 2pt;
+}
+
+#main-container {
+    text-align: center;
+    width: 200px;
+    margin: auto;
+
+}
+
+div #container {
+    font-size: 40pt;
+    letter-spacing: 2pt;
+}
