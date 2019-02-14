@@ -1,0 +1,29 @@
+body {
+    background-color: whitesmoke;
+    Font-Family: 'Muli', Sans-Serif;
+    Font-Size: 14pt;
+}
+
+h1 {
+    Font-Family: 'Merriweather', Serif;
+    Font-Size: 22pt;
+}
+
+h2 {
+    Font-Family: 'Merriweather', Serif;
+    Font-Size: 16pt;
+}
+
+.section {
+
+}
+
+p {
+
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+

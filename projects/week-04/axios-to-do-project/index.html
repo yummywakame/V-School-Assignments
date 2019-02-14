@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection" />
     <link rel="stylesheet" href="styles.css">
     <title>To Do</title>
 </head>
 
 <body>
-    <div id="container"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col s6 list-container">
+                <h1>Today's Tasks</h1>
+
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">+ Add an Item</span>
+                    </div>
+                </div>
+
+                <div id="containerIncomplete">
+
+                </div>
+
+            </div>
+            
+            <div class="col s6 list-container">
+                <h1>Completed</h1>
+
+                <div id="containerComplete">
+
+                </div>
+
+            </div>            
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

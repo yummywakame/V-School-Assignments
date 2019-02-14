@@ -1,40 +1,55 @@
-var todoList = document.getElementById('container')
+var containerIncomplete = document.getElementById('containerIncomplete')
+var containerComplete = document.getElementById('containerComplete')
 
 // GET REQUEST WITH AXIOS
 function getData() {
     axios.get("https://api.vschool.io/oliviameiring/todo").then(function (response) {
         var todos = response.data
-        listTodos(todos)
+        listIncompleteToDos(todos)
         console.log(todos)
 
     }).catch(function (error) {
-        console.log(error)
+        throw new Error(error)
     })
 }
 
-function listTodos(todos) {
+function listIncompleteToDos(todos) {
     for (var i = 0; i < todos.length; i++) {
+
         // create HTML elements
-        var dataContainer = document.createElement("div")
-        var title = document.createElement('h2')
+        var card = document.createElement('div')
+        var cardContent = document.createElement('div')
+        var title = document.createElement('span')
         var description = document.createElement('p')
-        var image = document.createElement('img')
-    
-        //edit elements
+        // var image = document.createElement('img')
+
+        // edit elements
+        card.className = "card"
+        cardContent.className = "card-content"
+        title.classname = "card-title"
         title.textContent = todos[i].title
         description.textContent = todos[i].description
+
+        // // add to cardContent
+        // if (!(todos[i].imgUrl === undefined || todos[i].imgUrl === "")) {
+        //     // only display image if available
+        //     // set special attributes or styling and images
+        //     image.setAttribute("src", todos[i].imgUrl)
+        //     cardContent.appendChild(image)
+        // }
+
+        cardContent.appendChild(title)
+        cardContent.appendChild(description)
+
+        // add cardContent to main container
+        card.appendChild(cardContent)
         
-        // set special attributes or styling and images
-        image.setAttribute("src", todos[i].imgUrl)
-        dataContainer.className = "item"
-        
-        // add to dataContainer
-        dataContainer.appendChild(image)
-        dataContainer.appendChild(title)
-        dataContainer.appendChild(description)
-        
-        // add dataContainer to main container
-        container.appendChild(dataContainer)
+        if (todos[i].completed) {
+            containerComplete.appendChild(card)
+        } else {
+            containerIncomplete.appendChild(card)
+        }
+        console.log(todos[i].completed)
     }
 }
 
