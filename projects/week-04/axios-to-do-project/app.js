@@ -1,8 +1,10 @@
-var containerIncomplete = document.getElementById('containerIncomplete')
-var containerComplete = document.getElementById('containerComplete')
+const containerIncomplete = document.getElementById('containerIncomplete')
+const containerComplete = document.getElementById('containerComplete')
 const addForm = document.getElementById('addForm')
 const addEditContainers = document.getElementsByClassName('add-edit-container')
 const viewContainers = document.getElementsByClassName('view-container')
+const cardContent = document.getElementsByClassName('card-content')
+
 
 // GET REQUEST WITH AXIOS
 function getData() {
@@ -29,7 +31,14 @@ function listAllToDos(todos) {
         // edit elements
         card.className = "card"
         card.id = todos[i]._id
+        console.log(card.id)
+        // card.onclick = function (e) {
+        //     formToggleVisibility(e, card.id)
+        // }
+        card.addEventListener("click", formToggleVisibility)
+
         cardContent.classList = "view-container card-content"
+
         title.classList = "card-title"
         title.textContent = todos[i].title
         description.textContent = todos[i].description
@@ -41,13 +50,13 @@ function listAllToDos(todos) {
         //     image.setAttribute("src", todos[i].imgUrl)
         //     cardContent.appendChild(image)
         // }
-        
+
         // add edit form stuff
         const editFormContainer = document.createElement('div')
-        editFormContainer.classList = "card-content toggle-content add-edit-container"
-        editFormContainer.id = todos[i]._id
-        editFormContainer.innerHTML = 
-        `                            <form name="editForm">
+        editFormContainer.classList = "toggle-content add-edit-container"
+        editFormContainer.id = "add-edit-" + card.id
+        editFormContainer.innerHTML =
+            `                            <form name="editForm">
         <p>
             <input placeholder="Title" id="title" type="text" class="validate" required />
             <label for="title">Title</label>
@@ -84,27 +93,56 @@ function listAllToDos(todos) {
         } else {
             containerIncomplete.appendChild(card)
         }
-        
-        
 
     }
 }
 
-// Show Form - pass it the ID of the div you are showing/hiding
-function formToggleVisibility(id) {
+// add an eventListener for any ID that is a number
+// this listens for clicks on to do divs
+// containerIncomplete.addEventListener('click', function (event) {
+//     // alert(event.target.id)
+//     // formToggleVisibility(event.target.id)
+// });
 
-    const div = document.getElementById(id)
+
+// Show Form - pass it the ID of the div you are showing/hiding
+function formToggleVisibility(hardId) {
+
+    console.log(hardId)
+    let id
+    let cardContentById
+
+    if (hardId === "editContainer" || hardId === "addContainer") {
+        // grab the selected div by its hardcoded ID
+        id = hardId
+        cardContentById = document.getElementById("add-edit-" + hardId)
+
+    } else {
+        // grab the selected div by its db ID
+        id = this.id
+        cardContentById = document.getElementById("add-edit-" + id)
+    }
+    console.log("id: " + id)
+    console.log("cardContentById: " + cardContentById.id)
 
     // toggle visibility of add div
-    if (div.style.display === "block") {
+
+    // if container is visible? Hide it by ID and ALL divs by class
+    if (cardContentById.style.display === "block") {
 
         // initialize all add and edit containers to hidden
         for (let i = 0; i < addEditContainers.length; i++) {
             addEditContainers[i].style.display = "none"
             addEditContainers[i].style.height = 0
- 
+
         }
 
+        // show selected form
+        cardContentById.style.display = "none";
+        cardContentById.style.height = 0;
+
+
+        // block is invisible? show it by ID and hide all other divs by class
     } else {
 
         // initialize all add and edit containers to hidden
@@ -113,8 +151,9 @@ function formToggleVisibility(id) {
             addEditContainers[i].style.height = 0
         }
 
-        div.style.display = "block";
-        div.style.height = "auto";
+        // show selected div by its ID
+        cardContentById.style.display = "block";
+        cardContentById.style.height = "auto";
 
     }
 
@@ -122,4 +161,3 @@ function formToggleVisibility(id) {
 
 // RUN THE APP
 getData()
-console.log(viewContainers)
