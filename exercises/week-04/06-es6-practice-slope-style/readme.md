@@ -8,7 +8,7 @@
 
 #### Console:
 ```console
-foo@bar:~/assignments/assignments/exercises/week-04/06-es6-practice-slope-style (master) $ node app.js
+foo@bar:~/assignments/exercises/week-04/06-es6-practice-slope-style (master) $ node app.js
 
 1:
 [ 'dog', 'cat', 'mouse', 'jackolope', 'platypus' ]
@@ -26,4 +26,16 @@ cat
 
 5:
 My top three favorite activities are, magnets, snowboarding and, philanthropy
+
+6:
+[ 'dog', 'cat', 'mouse', 'jackolope', 'platypus' ]
+
+7:
+120
+[ 1, 2, 3, 4, 5, 'cat', 'dog', 'mouse' ]
+
+8:
+[ { firstName: 'Frank', lastName: 'Peterson' },
+  { firstName: 'Suzy', lastName: 'Degual' },
+  { firstName: 'Liza', lastName: 'Jones' } ]
 ```
