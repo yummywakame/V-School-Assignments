@@ -21,29 +21,97 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col s6 list-container">
+            <div class="col s12 l6 list-container">
                 <h1>Today's Tasks</h1>
 
                 <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">+ Add an Item</span>
+                    <div class="left-align pink">
+                        <a class="waves-effect waves-light white-text pink btn-flat" onclick="formToggleVisibility('addContainer')">
+                            <i class="material-icons left">add</i>Add a To Do</a>
+                    </div>
+                    <div class="card-content toggle-content add-edit-container" id="addContainer">
+                        <form name="addForm">
+                            <p>
+                                <input placeholder="Title" id="title" type="text" class="validate" required />
+                                <label for="title">Title</label>
+                            </p>
+
+                            <p>
+                                <input placeholder="Notes" id="description" type="text" class="validate" />
+                                <label for="description">Notes</label>
+                            </p>
+
+                            <p>
+                                <input placeholder="Price" id="number" type="number" class="validate" />
+                                <label for="number">Price</label>
+                            </p>
+
+                            <p>
+                                <input placeholder="Image URL" id="imgUrl" type="url" class="validate" />
+                                <label for="imgUrl">Image URL</label>
+                            </p>
+
+                            <button class="waves-effect waves-light light-blue btn"><i class="material-icons left">save</i>Save</button>
+                            <!-- <a class="waves-effect waves-light light-blue lighten-4 secondary-content btn blue-text"
+                                onclick="formToggleVisibility('addContainer')">
+                                <i class="material-icons left">cancel</i>Cancel</a> -->
+                        </form>
                     </div>
                 </div>
 
                 <div id="containerIncomplete">
 
+                    <a class="waves-effect waves-light lighten-4 secondary-content btn-flat blue-text" onclick="formToggleVisibility('editContainer')"><i
+                            class="material-icons right">edit</i></a>
+
+                    <div class="card" onclick="formToggleVisibility('editContainer')">
+                        <div class="view-container card-content">
+                            <span class="card-title">Hardcoded To Do</span>
+                            <p>Notes...</p>
+
+                        </div>
+                        <div class="card-content toggle-content add-edit-container" id="editContainer">
+                            <form name="editForm">
+                                <p>
+                                    <input placeholder="Title" id="title" type="text" class="validate" required />
+                                    <label for="title">Title</label>
+                                </p>
+
+                                <p>
+                                    <input placeholder="Notes" id="description" type="text" class="validate" />
+                                    <label for="description">Notes</label>
+                                </p>
+
+                                <p>
+                                    <input placeholder="Price" id="number" type="number" class="validate" />
+                                    <label for="number">Price</label>
+                                </p>
+
+                                <p>
+                                    <input placeholder="Image URL" id="imgUrl" type="url" class="validate" />
+                                    <label for="imgUrl">Image URL</label>
+                                </p>
+
+                                <button class="waves-effect waves-light light-blue btn"><i class="material-icons left">save</i>update</button>
+                                <button class="waves-effect waves-light pink secondary-content btn"><i class="material-icons left">delete</i>delete</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
-            
-            <div class="col s6 list-container">
+
+            <div class="col s12 l6 list-container">
                 <h1>Completed</h1>
 
                 <div id="containerComplete">
 
                 </div>
 
-            </div>            
+            </div>
 
         </div>
 

@@ -14,16 +14,22 @@ h2 {
     Font-Size: 16pt;
 }
 
-.section {
-
+.hide-me {
+    display: none !important;
 }
 
-p {
-
+label {
+    display: none;
 }
 
-img {
-    width: 100px;
-    height: auto;
+.toggle-content {
+	display: none;
+	height: 0;
+	overflow: hidden;
+	transition: height 350ms ease-in-out;
 }
 
+.toggle-content.is-visible {
+	display: block;
+	height: auto;
+}
