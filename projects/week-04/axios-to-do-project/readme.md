@@ -8,5 +8,6 @@
 - https://coursework.vschool.io/axios-todo-practice/
 
 #### Notes:
-Created in Vanilla JavaScript with Materialize using V School's To Do list API.
-We were required to add price.
+- Created in Vanilla JavaScript with Materialize using V School's To Do list API.
+- Fully responsive for desktop or phone.
+- We were required to add price.
