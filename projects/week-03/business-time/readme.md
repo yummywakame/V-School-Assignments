@@ -9,7 +9,9 @@
 
 #### Screenshots
 Desktop:
+
 <img src="screenshot2.png">
 
 Mobile:
+
 <img src="screenshot.png" width="50%">
