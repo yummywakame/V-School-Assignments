@@ -8,8 +8,8 @@
 - https://coursework.vschool.io/business-time/
 
 #### Screenshots
-Mobile:
-<img src="screenshot.png">
-
 Desktop:
 <img src="screenshot2.png">
+
+Mobile:
+<img src="screenshot.png" width="50%">
