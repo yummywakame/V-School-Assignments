@@ -27,51 +27,58 @@
                 <div class="card">
                     <div class="left-align pink">
                         <a class="waves-effect waves-light white-text pink btn-flat" onclick="formToggleVisibility('addContainer')">
-                            <i class="material-icons left">add</i>Add a To Do</a>
+                            <i class="material-icons left">add</i>Add a To Do
+                        </a>
                     </div>
                     <div class="card-content toggle-content add-edit-container" id="add-edit-addContainer">
                         <form name="addForm">
                             <p>
-                                <input placeholder="Title" id="title" type="text" class="validate" required />
-                                <label for="title">Title</label>
+                                <input placeholder="Title" id="title" name="title" type="text" class="validate" required />
+                                <label for="title" class="hide-me">Title</label>
                             </p>
 
                             <p>
-                                <input placeholder="Notes" id="description" type="text" class="validate" />
-                                <label for="description">Notes</label>
+                                <input placeholder="Notes" id="description" name="description" type="text" class="validate" />
+                                <label for="description" class="hide-me">Notes</label>
                             </p>
 
                             <p>
-                                <input placeholder="Price" id="number" type="number" class="validate" />
-                                <label for="number">Price</label>
+                                <input placeholder="Price" id="price" name="price" type="number" class="validate" />
+                                <label for="number" class="hide-me">Price</label>
                             </p>
 
                             <p>
-                                <input placeholder="Image URL" id="imgUrl" type="url" class="validate" />
-                                <label for="imgUrl">Image URL</label>
+                                <input placeholder="Image URL" id="imgUrl" name="imgUrl" type="url" class="validate" />
+                                <label for="imgUrl" class="hide-me">Image URL</label>
                             </p>
 
                             <button class="waves-effect waves-light light-blue btn"><i class="material-icons left">save</i>Save</button>
-                            <!-- <a class="waves-effect waves-light light-blue lighten-4 secondary-content btn blue-text"
-                                onclick="formToggleVisibility('addContainer')">
-                                <i class="material-icons left">cancel</i>Cancel</a> -->
+
                         </form>
                     </div>
                 </div>
 
                 <div id="containerIncomplete">
 
-                    <a class="waves-effect waves-light lighten-4 secondary-content btn-flat blue-text" onclick="formToggleVisibility('editContainer')"><i
-                            class="material-icons right">edit</i></a>
-
+<!--
                     <div class="card" onclick="formToggleVisibility('editContainer')">
-                        <div class="view-container card-content">
-                            <span class="card-title">Hardcoded To Do</span>
-                            <p>Notes...</p>
+                        <a class="waves-effect waves-light lighten-4 secondary-content btn-flat blue-text" onclick="formToggleVisibility('editContainer')"><i
+                                class="material-icons right">edit</i></a>
+                        <form name="editForm">
+                            <div class="view-container card-content">
 
-                        </div>
-                        <div class="card-content toggle-content add-edit-container" id="add-edit-editContainer">
-                            <form name="editForm">
+                                <p class="card-title">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Hardcoded To Do</span>
+                                    </label>
+                                </p>
+
+                                <p>Notes...</p>
+
+                            </div>
+                            <div class="card-content toggle-content add-edit-container" id="add-edit-editContainer">
+
                                 <p>
                                     <input placeholder="Title" id="title" type="text" class="validate" required />
                                     <label for="title">Title</label>
@@ -94,11 +101,11 @@
 
                                 <button class="waves-effect waves-light light-blue btn"><i class="material-icons left">save</i>update</button>
                                 <button class="waves-effect waves-light pink secondary-content btn"><i class="material-icons left">delete</i>delete</button>
-                            </form>
 
-                        </div>
+                            </div>
+                        </form>
 
-                    </div>
+                    </div>-->
 
                 </div>
 

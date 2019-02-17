@@ -1,0 +1,12 @@
+.todo-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.todo-container h1 {
+
+}

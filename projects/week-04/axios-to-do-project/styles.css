@@ -18,10 +18,6 @@ h2 {
     display: none !important;
 }
 
-label {
-    display: none;
-}
-
 .toggle-content {
 	display: none;
 	height: 0;
@@ -32,4 +28,10 @@ label {
 .toggle-content.is-visible {
 	display: block;
 	height: auto;
+}
+
+
+.card-title span {
+    font-size: 14pt !important;
+    color: black;
 }
