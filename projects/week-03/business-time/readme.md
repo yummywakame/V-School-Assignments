@@ -6,3 +6,5 @@
 
 #### Completed according to assignment instructions: 
 - https://coursework.vschool.io/business-time/
+
+<img src="screenshot.png">
