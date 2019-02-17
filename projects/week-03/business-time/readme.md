@@ -7,4 +7,9 @@
 #### Completed according to assignment instructions: 
 - https://coursework.vschool.io/business-time/
 
+#### Screenshots
+Mobile:
 <img src="screenshot.png">
+
+Desktop:
+<img src="screenshot2.png">
