@@ -1,6 +1,16 @@
 # Full Stack JS Bootcamp - Jan '19
 ## &#10097; Featured Projects
 
+### WEEK 4: Axios To Do App // <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-04/axios-to-do-project">Files</a>
+
+<a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-04/axios-to-do-project"><img src="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-04/axios-to-do-project/screenshot.png"></a>
+
+
+### WEEK 3: Business Time // <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/index.html">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/">Files</a>
+
+<a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/index.html"><img src="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/screenshot2.png"></a>
+
+
 ### WEEK 2: Mario Pest Control // <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-02/mario-pest-control/index.html">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-02/mario-pest-control">Files</a>
 
 <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-02/mario-pest-control/index.html"><img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/projects/week-02/mario-pest-control/screenshot.png"></a>
