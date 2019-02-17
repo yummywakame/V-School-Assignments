@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 apiUrl = "https://api.vschool.io/oliviameiring/todo"
 
 const containerIncomplete = document.getElementById('containerIncomplete')
