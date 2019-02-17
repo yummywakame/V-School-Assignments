@@ -73,7 +73,7 @@ function listAllToDos(todos) {
         }
 
         if (todos[i].price) {
-            price.textContent = todos[i].price
+            price.textContent = "$" + todos[i].price
             price.classList = "grey-text"
         }
 
