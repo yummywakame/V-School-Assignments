@@ -8,4 +8,9 @@
 - https://coursework.vschool.io/go-speed-clicker/
 
 #### Added extra features:
+- uses LocalStorage to save results, which display when returning to page
+- the game only starts once the button is pressed
+- at the end of the game the user is given the option to reset and restart the game
+
+<img src="screenshot.png" width="50%">
 
