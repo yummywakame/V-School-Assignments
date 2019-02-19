@@ -1,0 +1,12 @@
+{
+  "name": "axios-to-do-project",
+  "version": "1.0.0",
+  "description": "#### Completed according to assignment instructions:  - https://coursework.vschool.io/axios-todo-practice/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
