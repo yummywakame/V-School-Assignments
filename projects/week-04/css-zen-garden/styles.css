@@ -18,20 +18,20 @@
 
 html,
 body {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Libre Baskerville', sans-serif;
     color: #325050;
     background: #fff;
+    font-family: 'Libre Baskerville', sans-serif;
     font-size: 70%;
 }
 
 a {
-    color: #0d8ba1;
     text-decoration: none;
+    color: #0d8ba1;
 }
 
 a:visited {
@@ -40,60 +40,61 @@ a:visited {
 
 a:hover,
 a:focus {
-    color: #0599c2;
     text-decoration: underline;
+    color: #0599c2;
 }
 
 
 header {
     height: 230px;
     padding: 20px 0 70px 0;
+    background-repeat: repeat, repeat, repeat, no-repeat;
     background-attachment: fixed, fixed, fixed, scroll;
     background-image: url("contours.png"), url("noise.png"), url("gridlines.png"), url("huntington.jpg");
     background-position: 0 0, 0 0, -5px -25px, 0 50%;
-    background-repeat: repeat, repeat, repeat, no-repeat;
     background-size: auto, auto, auto, cover;
 }
 
 
 h1 {
-    padding: 0 10%;
-    margin: 0;
-    color: #fff;
-    font-weight: normal;
-    padding-top: 0;
-    padding-bottom: 5px;
-    border-bottom: none;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
+    font-weight: normal;
+    padding: 0 10%;
+    margin: 0;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
+
 }
 
 h1::before {
-    display: inline-block;
-    position: relative;
-    top: 20px;
-    content: "";
-    width: 80px;
-    height: 80px;
-    margin: -20px 20px 0 0;
     background: url(enso.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 0.5;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    content: "";
+    height: 80px;
+    width: 80px;
+    margin: -20px 20px 0 0;
 }
 
 h2 {
+    display: block;
     padding: 0 10%;
     margin: 0;
     font-weight: normal;
-    display: block;
+    font-size: 1.6em;
+    font-style: italic;
     padding-top: 5px;
     padding-bottom: 30px;
     border-top: none;
     color: #ffffff99;
-    font-size: 1.6em;
-    font-style: italic;
 }
 
 h2::before {
@@ -102,12 +103,13 @@ h2::before {
 }
 
 h3 {
+    text-transform: uppercase;
     margin: 2em 0 0 0;
     color: #2e484c;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.8em;
     font-weight: normal;
-    text-transform: uppercase;
+
 }
 
 p {
@@ -122,12 +124,11 @@ p {
 
 .summary,
 .preamble {
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
 }
 
-.supporting h3,
-.supporting p {
+.supporting h3 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -137,6 +138,11 @@ p {
     padding-top: 2em;
 }
 
+.supporting p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .intro a:hover::before {
     color: #fff;
@@ -145,22 +151,16 @@ p {
 
 div.participation,
 div.benefits {
-    background-attachment: scroll, scroll, fixed;
     background-color: #8abc9f80;
     background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
-    background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: scroll, scroll, fixed;
 }
 
 div.benefits {
-    padding-bottom: 3em;
     margin-bottom: 3em;
-}
-
-div.participation h3,
-div.benefits h3 {
-    padding-top: 50px;
-    margin-top: 0;
+    padding-bottom: 3em;
 }
 
 div.participation p,
@@ -168,6 +168,11 @@ div.benefits p {
     margin-bottom: 0;
 }
 
+div.participation h3,
+div.benefits h3 {
+    padding-top: 50px;
+    margin-top: 0;
+}
 
 /* sidebar base styles */
 .sidebar {
@@ -189,8 +194,8 @@ div.benefits p {
 }
 
 .sidebar ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
     overflow: hidden;
 }
@@ -206,16 +211,18 @@ div.benefits p {
     float: left;
     width: 50%;
     padding: 1.5em 10%;
-    border-top: solid 1px #d9e3dc;
     color: #c0cac3;
     font-style: italic;
+    border-top: solid 1px #d9e3dc;
 }
 
 .design-selection li:hover,
 .design-selection li:focus {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, #ffffff00 0%, #ffffff80 50%, #ffffff00 100%);
 }
 
+/* stacks 2 li side by side, clearing after every second one
+so they dont stack up right under each other */
 .design-selection li:nth-child(2n+1),
 .zen-resources li:nth-child(2n+1) {
     clear: left;
@@ -225,11 +232,11 @@ div.benefits p {
 .zen-resources a,
 li.viewall a {
     display: block;
-    margin-bottom: 0.25em;
+    text-transform: uppercase;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.2em;
     font-style: normal;
-    text-transform: uppercase;
+    margin-bottom: 0.25em;
 }
 
 
@@ -240,20 +247,18 @@ li.viewall a {
 
 .design-selection .designer-name {
     color: #616857;
-    font-size: 0.9em;
     font-style: normal;
+    font-size: 0.9em;
 }
-
-
 
 /* archives navigation */
 .design-archives {
     position: absolute;
-    top: 160px;
-    right: 0;
     width: 100%;
     height: 70px;
-    background: rgba(255, 255, 255, 0.2);
+    top: 160px;
+    right: 0;
+    background: #ffffff33;
 }
 
 .design-archives h3 {
@@ -266,9 +271,9 @@ li.viewall a {
 
 .design-archives li {
     position: absolute;
-    top: 0;
     padding: 0;
     margin: 0;
+    top: 0;
     border: none;
     list-style: none;
 }
@@ -276,15 +281,15 @@ li.viewall a {
 .design-archives li.viewall {
     top: 0;
     left: 0;
+    line-height: 50px;
     width: 100%;
     padding: 0 71px;
-    line-height: 50px;
 }
 
 .previous,
 .next {
-    left: 0;
     z-index: 3;
+    left: 0;
 }
 
 .next {
@@ -294,7 +299,7 @@ li.viewall a {
 
 .design-archives a,
 .design-archives a:visited {
-    color: rgba(255, 255, 255, 0.65);
+    color: #ffffffa6;
 }
 
 .design-archives a:hover,
@@ -305,27 +310,27 @@ li.viewall a {
 .design-archives .previous a,
 .design-archives .next a {
     display: block;
+    text-indent: 100%;
+    text-decoration: none;
     overflow: hidden;
     width: 70px;
     height: 70px;
-    text-indent: 100%;
-    text-decoration: none;
     white-space: nowrap;
 }
 
 .design-archives .viewall a {
     z-index: 2;
     width: 100%;
-    min-height: 70px;
     padding: 12px 0 0 0;
+    min-height: 70px;
     text-align: center;
 }
 
 .design-archives a::before {
     position: absolute;
-    left: 0;
     width: 70px;
     height: 70px;
+    left: 0;
     text-align: center;
     text-indent: 0;
     font-size: 44px;
@@ -357,12 +362,10 @@ li.viewall a {
     content: ">";
 }
 
-
-
 /* resources */
 .zen-resources {
     overflow: hidden;
-    background-color: rgba(138, 188, 159, 0.5);
+    background-color: #8abc9f80;
     background-image: url(bamboo.png);
 }
 
@@ -377,18 +380,17 @@ li.viewall a {
     border-bottom: solid 1px #a0b9ad;
 }
 
-
-/* busting out the credits block */
 .requirements p:nth-child(5) {
     padding-bottom: 2em;
 }
 
 .supporting .requirements {
     float: none;
-    clear: both;
-    width: 100%;
     padding-left: 0;
     padding-right: 0;
+    clear: both;
+    width: 100%;
+
 }
 
 .supporting .requirements a {
@@ -408,15 +410,13 @@ li.viewall a {
     width: auto;
     padding: 1em 12%;
     margin: 0;
-    color: rgba(255, 255, 255, 0.4);
+    color: #ffffff66;
     background: #3e5d67;
-
     background-attachment: fixed, fixed, fixed, scroll;
     background-image: url(contours.png), url(gridlines.png), url(noise.png), url(koi.jpg);
     background-position: 0 0, -5px -25px, 0 0, 0 50%;
     background-repeat: repeat, repeat, repeat, no-repeat;
     background-size: auto, auto, auto, cover;
-
     font-size: 2em;
     font-style: italic;
     text-align: center;
@@ -427,36 +427,35 @@ li.viewall a {
     font-style: normal;
 }
 
-
-
-/* main footer */
+/* footer */
 footer {
-    clear: both;
-    padding: 3em 10%;
     color: #fff;
     background: #134347;
+    clear: both;
+    padding: 3em 10%;
     text-align: center;
 }
 
 footer a {
     display: inline-block;
     overflow: hidden;
+    color: #ffffff80;
     width: 40px;
     height: 40px;
-    padding: 40px 0 0 0;
     margin: 0 0.5em;
+    padding: 40px 0 0 0;
     position: relative;
-    color: rgba(255, 255, 255, 0.5);
+
 }
 
 footer a:hover,
 footer a:focus {
-    color: rgba(255, 255, 255, 0.3);
+    color: #ffffff4d;
     text-decoration: none;
 }
 
 footer a:visited {
-    color: rgba(255, 255, 255, 0.2);
+    color: #ffffff33;
 }
 
 footer a::before {
@@ -472,7 +471,6 @@ footer a::before {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
 }
 
 footer a.zen-validate-html::before {
@@ -520,8 +518,6 @@ footer a.zen-github:focus::before {
     content: "G";
 }
 
-
-
 @media only screen and (max-width: 500px) {
 
     header {
@@ -535,15 +531,20 @@ footer a.zen-github:focus::before {
 
     h1::before {
         display: block;
+        margin: 0 0 0 -25px;
+        padding: 0 0 35px 0;
         left: 50%;
         width: 50px;
         height: 50px;
-        margin: 0 0 0 -25px;
-        padding: 0 0 35px 0;
+
     }
 
     h2::before {
         padding: 0;
+    }
+
+    footer a {
+        margin: 0 0.5em;
     }
 
     .design-archives {
@@ -553,10 +554,6 @@ footer a.zen-github:focus::before {
     .design-selection li,
     .zen-resources li {
         padding: 1em 5%;
-    }
-
-    footer a {
-        margin: 0 0.5em;
     }
 
 }
@@ -589,10 +586,10 @@ footer a.zen-github:focus::before {
     }
 
     footer a {
+        margin: 0 0.5em;
+        padding: 35px 0 0 0;
         width: 35px;
         height: 35px;
-        padding: 35px 0 0 0;
-        margin: 0 0.5em;
     }
 
     footer a::before {
@@ -605,7 +602,6 @@ p,
 li {
     font-size: 1.2em;
 }
-
 
 @media only screen and (min-width: 500px) and (max-width: 1150px) {
 
@@ -631,7 +627,6 @@ li {
     }
 }
 
-
 /* wide screen css */
 @media only screen and (min-width: 1132px) {
     body {
@@ -656,13 +651,13 @@ li {
         z-index: 3;
         left: 0;
         width: 100%;
-        background: rgba(0, 39, 43, 0.2);
+        background: #00272b33;
     }
 
     header::after {
         top: 306px;
         height: 4px;
-        background: rgba(0, 39, 43, 0.075);
+        background: #00272b13;
     }
 
     h1 {
@@ -675,16 +670,14 @@ li {
     h1::before {
         display: inline-block;
         position: relative;
+        background: url(enso.svg);
+        background-size: 100%;
         top: 65px;
         content: "";
         width: 125px;
         height: 125px;
         margin: -65px 40px 0 0;
-        background: url(enso.svg);
-        background-size: 100%;
         opacity: 0.6;
-
-        animation: koan 36000s infinite alternate;
     }
 
     h2 {
@@ -738,7 +731,7 @@ li {
     div.benefits {
         width: 100%;
         padding-left: 10%;
-        padding-right: 38%;
+        padding-right: 40%;
         margin: 0;
     }
 
@@ -771,18 +764,18 @@ li {
     .requirements p:last-child {
         padding-bottom: 3em;
         padding-top: 3em;
-        box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+        box-shadow: inset 0 0 100px #ffffff4d;
     }
 
 
     .design-selection,
     .zen-resources {
         position: absolute;
+        margin: 0;
         top: 360px;
         right: 0;
-        width: 33.3%;
         padding: 0 0 20px 0;
-        margin: 0;
+        width: 33.3%;
         overflow: visible;
         background: transparent;
     }
@@ -790,11 +783,11 @@ li {
     .sidebar li {
         float: none;
         width: auto;
+        margin: 0 30% 0 15%;
         padding-left: 0;
         padding-right: 0;
-        margin: 0 30% 0 15%;
-    }
 
+    }
 
     .design-archives {
         position: absolute;
@@ -807,8 +800,9 @@ li {
     }
 
     .design-archives nav {
-        display: block;
         position: absolute;
+        display: block;
+
         right: 1%;
         top: 120px;
         width: 32%;
@@ -820,7 +814,7 @@ li {
 
     .design-archives .viewall a,
     .design-archives a::before {
-        background: rgba(255, 255, 255, 0.1);
+        background: #ffffff1a;
         text-decoration: none;
     }
 
@@ -828,7 +822,6 @@ li {
     .design-archives a:hover::before {
         background-color: #ffffff33;
     }
-
 
     .design-selection li:first-child {
         border-top: 0;
@@ -841,9 +834,9 @@ li {
 
     .zen-resources {
         position: absolute;
+        width: 34%;
         top: 1310px;
         right: 0;
-        width: 34%;
         background: transparent;
     }
 
