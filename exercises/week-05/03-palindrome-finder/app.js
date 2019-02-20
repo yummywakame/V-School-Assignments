@@ -26,6 +26,6 @@ function isPalindrome(str) {
     
 }
 
-console.log(isPalindrome("Star Rats!"))  // true
-console.log(isPalindrome("palindrome"))  // false
-console.log(isPalindrome("I madam, I made radio! So I dared! Am I mad?? Am I?!"))  // true
+console.log('\n1: Is "Star Rats!" a palindrome?\n\t' + isPalindrome("Star Rats!"))  // true
+console.log('\n2: Is "palindrome" a palindrome?\n\t' + isPalindrome("palindrome"))  // false
+console.log('\n3: Is "I madam, I made radio! So I dared! Am I mad?? Am I?!" a palindrome?\n\t' + isPalindrome("I madam, I made radio! So I dared! Am I mad?? Am I?!"))  // true
