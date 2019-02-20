@@ -1,3 +1,6 @@
+let intervalID
+let message = ""
+
 class player {
     constructor(name, totalCoins, status, hasStar, gameActive) {
         this.name = name // String: 'Mario' or 'Luigi'
@@ -17,10 +20,11 @@ class player {
     // sets the 'status' property to: 'Powered Up', 'Big', 'Small' or 'Dead'
     gotHit() {
         if (this.hasStar) {
-            console.log("Your star protected you!")
+            message = "You got hit! But your star protected you!"
             this.hasStar = false
 
         } else {
+            message = "You got hit!"
             if (this.status === 'Powered Up') {
                 this.status = 'Big'
             } else if (this.status === 'Big') {
@@ -36,23 +40,30 @@ class player {
     // sets the 'status' property from 'Small' to 'Big' to 'Powered Up'
     // if already Powered Up you get a star
     gotPowerup() {
+        message = "You got a Power Up!"
         if (this.status === 'Small') {
             this.status = 'Big'
         } else if (this.status === 'Big') {
             this.status = 'Powered Up'
         } else if (this.status === 'Powered Up') {
-            console.log("Congratulations! You got a star!")
+            message = "Congratulations! You got a star!"
             this.hasStar = true
         }
     }
 
     // adds a coin to totalCoins
     addCoin() {
+        message = "You found a coin!"
         this.totalCoins += 1
     }
 
     // prints to the console the name, totalCoins, status, and star properties
-    print() {
+    print(str = "") {
+    
+        if (str !== "") {
+            console.log(message)
+        }
+        
         console.log("Name: " + this.name)
         console.log("Status: " + this.status)
         console.log("Total Coins: " + this.totalCoins)
@@ -68,50 +79,47 @@ class player {
 function startGame() {
     // randomly select a player
     const result = Math.floor(Math.random() * 2)
-
     if (result === 1) {
-        myPlayer.setName = 'Luigi'
+        myPlayer.setName('Luigi')
     }
 
-    myPlayer.print()
+    message = "The game begins!"
 
     gameLoop()
 }
 
 function gameLoop() {
-
-    while (myPlayer.gameActive) {
-        // create a 1.5 second delay
-        setInterval(randomRange, 1500)
-
-        myPlayer.print()
-
-    }
-    
-    endGame()
+    // create a 1.5 second delay
+    intervalID = setInterval(randomRange, 1000)
 
 }
 
 function randomRange() {
-    const result = Math.floor(Math.random() * 3)
+
+    if (myPlayer.gameActive) {
     
-    if (result === 0) {
-        myPlayer.gotHit()
+        myPlayer.print(message)
+        
+        const result = Math.floor(Math.random() * 3)
 
-    } else if (result === 1) {
-        myPlayer.gotPowerup()
+        if (result === 0) {
+            myPlayer.gotHit()
 
+        } else if (result === 1) {
+            myPlayer.gotPowerup()
+
+        } else {
+            myPlayer.addCoin()
+
+        }
+        
     } else {
-        myPlayer.addCoin()
+        // game over - print out the final score
+        myPlayer.print("Your final score is: " + player.totalCoins)
 
+        clearInterval(intervalID)
     }
-}
 
-function endGame() {
-    // game over - print out the final score
-    myPlayer.print("Your final score is: " + player.totalCoins)
-
-    clearInterval(randomRange, 1500)
 }
 
 // instantiate player defaulted to Mario
