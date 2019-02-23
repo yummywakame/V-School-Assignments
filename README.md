@@ -18,17 +18,25 @@
 
 
 ## &#10097; Featured Exercises
+### WEEK 5: 'Clean Blog' React Demo with Props // <a href="https://yw-clean-blog-react.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/07-blog-props/README.md">Files</a>
+
+<img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-05/07-blog-props/screenshot.png">
+
+
 ### WEEK 5: Vacation Destination Cards // <a href="https://yw-react-vacation-spots.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/06-vacation-spots-using-props-and-map">Files</a>
 
 <img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-05/06-vacation-spots-using-props-and-map/screenshot.png">
+
 
 ### WEEK 2: Design a Blog // <a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/07-design-a-blog/index.html">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/07-design-a-blog">Files</a>
 
 <a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/07-design-a-blog/index.html"><img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/exercises/week-02/07-design-a-blog/screenshot.png"></a>
   
+  
 ### WEEK 2: Flags created out of CSS // <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/08-css-flags/index.html">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/08-css-flags">Files</a>
 
 <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/08-css-flags/index.html"><img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/exercises/week-02/08-css-flags/screenshot.png"></a>
+
 
 ### WEEK 2: Random Password Generator // <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/20-random-password-generator">Files</a>
 
