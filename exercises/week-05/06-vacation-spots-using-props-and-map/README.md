@@ -8,10 +8,4 @@
 - https://coursework.vschool.io/vacation-spots/
 
 #### Screenshots:
-<img src="screenshot.png">
-
-
-
-
-
-
+<a href="yw-react-vacation-spots.surge.sh" target="_blank"><img src="screenshot.png"></a>
