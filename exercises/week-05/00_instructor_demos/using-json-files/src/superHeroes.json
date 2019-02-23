@@ -1,0 +1,14 @@
+{
+    "superHeroes": [
+        {
+            "name": "Nicholas Cage",
+            "imgUrl": "https://cdn3-www.comingsoon.net/assets/uploads/2018/08/conair.jpg",
+            "catchPhrase": "We're gunna steal the declaration of independence!!!"
+        },
+        {
+            "name": "Keanu Reeves",
+            "imgUrl": "https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fpeopledotcom.files.wordpress.com%2F2018%2F12%2FSandra-Bullock-Keanu-Reeves-1.jpg%3Fw%3D1024&w=500&h=335&c=sc&poi=face&q=85",
+            "catchPhrase": "I know kung-fu..."
+        }
+    ]
+}
