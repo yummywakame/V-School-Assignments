@@ -1,0 +1,29 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 5px solid green;
+    padding: 3px; */
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    /* border: 5px solid red;
+    padding: 3px; */
+}
+
+.controls-container {
+    height: 50px;
+    background-color: #3339;
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 5px solid purple;
+    padding: 3px; */
+    border-radius: 5px;
+}
