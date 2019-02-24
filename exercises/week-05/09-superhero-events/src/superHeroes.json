@@ -1,0 +1,58 @@
+{
+    "superHeroes": [
+        {
+            "name": "Cheetara",
+            "show": "ThunderCats",
+            "catchPhrase": "I am Cheetara. In my heart, I know I'm the strongest of my kind. The pride of my people. I am unique in this universe. And I will *not be DEFEATED*!",
+            "imageName": "cheetara.jpg"
+        },
+        {
+            "name": "Skeletor",
+            "show": "Masters of the Universe",
+            "catchPhrase": "Listen, I am not nice, I am not kind and I am NOT WONDERFUL!",
+            "imageName": "skeletor.png"
+        },
+        {
+            "name": "Maya",
+            "show": "Maya the Bee",
+            "catchPhrase": "It certainly is a great day to be alive.",
+            "imageName": "maya-the-bee.jpg"
+        },
+        {
+            "name": "Vickie",
+            "show": "Vickie the Viking",
+            "catchPhrase": "Ah-HA!",
+            "imageName": "vickie-the-viking.jpeg"
+        },
+        {
+            "name": "Borrie Veldt",
+            "show": "Die Swart Kat",
+            "catchPhrase": "Die Swart Kat slaan toe.",
+            "imageName": "die-swart-kat.jpg"
+        },
+        {
+            "name": "TinTin",
+            "show": "The Calculus Affair",
+            "catchPhrase": "They're trying to stop us with that ramshackle erection!",
+            "imageName": "tintin.jpg"
+        },
+        {
+            "name": "Obelix",
+            "show": "Asterix and Obelix",
+            "catchPhrase": "Ils sont fous ces romains!",
+            "imageName": "obelix.jpg"
+        },
+        {
+            "name": "Levinia",
+            "show": "Liewe Heksie",
+            "catchPhrase": "O Griet!",
+            "imageName": "liewe-heksie.jpg"
+        },
+        {
+            "name": "Zummi",
+            "show": "Gummy Bears",
+            "catchPhrase": "As you all know, the Great Book of Gummi will never be finished.",
+            "imageName": "zummi.png"
+        }
+    ]
+}
