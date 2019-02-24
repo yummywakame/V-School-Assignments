@@ -18,6 +18,12 @@
 
 
 ## &#10097; Featured Exercises
+### WEEK 5: Rolling Dice with React State // <a href="Yahtzee Random Dice Generator">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/10-rolling-dice-react-state">Files</a>
+
+<img src="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/10-rolling-dice-react-state/screenshot.png">
+
+
+
 ### WEEK 5: 'Clean Blog' React Demo with Props // <a href="https://yw-clean-blog-react.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/07-blog-props/README.md">Files</a>
 
 <img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-05/07-blog-props/screenshot.png">
