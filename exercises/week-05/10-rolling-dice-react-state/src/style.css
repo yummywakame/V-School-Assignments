@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', Serif;
+    font-size: 16px;
+    background: -moz-linear-gradient(270deg, #2f2f2f 0%, #000000 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f2f2f), color-stop(100%, #000000));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, #2f2f2f 0%, #000000 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, #2f2f2f 0%, #000000 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, #2f2f2f 0%, #000000 100%);
+    /* ie10+ */
+    background: linear-gradient(180deg, #2f2f2f 0%, #000000 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f2f2f', endColorstr='#000000', GradientType=0);
+    /* ie6-9 */
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#dice-box {
+    width: 600pt;
+    clear: both;
+    margin: auto !important;
+    margin: 20pt;
+}
+
+#dice-box>div {
+    width: 100pt;
+    height: 160pt;
+    margin: 10pt;
+    float: left;
+    background-size: cover;
+}
+
+#dice-box>div#dice1 {
+    background-image: url('./images/1.png')
+}
+
+#dice-box>div#dice2 {
+    background-image: url('./images/2.png')
+}
+
+#dice-box>div#dice3 {
+    background-image: url('./images/3.png')
+}
+
+#dice-box>div#dice4 {
+    background-image: url('./images/4.png')
+}
+
+#dice-box>div#dice5 {
+    background-image: url('./images/5.png')
+}
+
+#dice-box>div#dice6 {
+    background-image: url('./images/6.png')
+}
+
+h1 {
+    Font-Family: 'Nunito', Sans-Serif;
+    Font-Size: 45px;
+    text-align: center;
+    color: silver;
+    margin-top: 20pt;
+}
+
+p {
+    Font-Family: 'PT Sans', Sans-Serif;
+    Font-Size: 16pt;
+    color: silver;
+    font-weight: 200;
+    letter-spacing: 1pt;
+    text-align: center;
+    margin-bottom: 20pt;
+}
+
+button {
+    color: #fff;
+    font-family: 'PT Sans', Sans-Serif;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 20pt 40% 0 40%;
+    width: 20%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.1) inset, 0 0px 1px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 1px 0px rgba(255, 255, 255, 0.1) inset, 0 0px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 1px 0px rgba(255, 255, 255, 0.1) inset, 0 0px 1px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #141414;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+button:active,
+button:focus,
+button:hover {
+    box-shadow: 0 0 0 transparent inset;
+    background: rgba(0, 0, 0, 0.523);
+}
+
+.no-display {
+    display: none;
+}
+
+@media (max-width:900px) {
+    #dice-box {
+        width: 350pt;
+        clear: both;
+        margin: auto !important;
+        margin: 20pt;
+    }
+
+    #dice-box>div {
+        width: 50pt;
+        height: 80pt;
+        margin: 10pt;
+        float: left;
+        background-size: cover;
+    }
+
+    button {
+        margin: 20pt 33%;
+        width: 33%;
+    }
+}
+
+@media (max-width:500px) {
+    h1 {
+        Font-Size: 35px;
+    }
+
+    #dice-box {
+        width: 200pt;
+        clear: both;
+        margin: auto !important;
+        margin: 20pt;
+    }
+
+    #dice-box>div {
+        width: 30pt;
+        height: 50pt;
+        margin: 5pt;
+        float: left;
+        background-size: cover;
+    }
+
+    button {
+        margin: 20pt 25%;
+        width: 50%;
+    }
+}
