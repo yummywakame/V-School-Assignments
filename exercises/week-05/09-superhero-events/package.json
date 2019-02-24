@@ -1,10 +1,8 @@
 {
-  "name": "07-blog-props",
+  "name": "09-superhero-events",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "proptypes": "^1.1.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5"
@@ -13,8 +11,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "npm run build && mv build/index.html build/200.html && surge build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
