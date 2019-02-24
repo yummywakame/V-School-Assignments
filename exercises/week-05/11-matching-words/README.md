@@ -49,5 +49,5 @@ const matchingWords = (str) => {
     return arr2.join(" ")
 }
 console.log('Original inscription:\n"' + inscription + '"')
-console.log('\nSolution: "' + matchingWords(inscription) + '"') // Returns [ 'pull', 'lever', 'on', 'far', 'right' ]
+console.log('\nSolution: "' + matchingWords(inscription) + '"') // Solution: "pull lever on far right"
 ```
