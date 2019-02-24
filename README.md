@@ -18,7 +18,7 @@
 
 
 ## &#10097; Featured Exercises
-### WEEK 5: Rolling Dice with React State // <a href="Yahtzee Random Dice Generator">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/10-rolling-dice-react-state">Files</a>
+### WEEK 5: Rolling Dice with React State // <a href="https://yw-yahtzee-dicebox.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/10-rolling-dice-react-state">Files</a>
 
 <img src="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/10-rolling-dice-react-state/screenshot.png">
 
