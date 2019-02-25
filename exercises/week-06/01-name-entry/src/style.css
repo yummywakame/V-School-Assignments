@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', Serif;
+    font-size: 14px;
+    background-color: whitesmoke;
+}
+
+.container {
+    margin: 0 auto;
+    width: 350pt;
+}
+
+h1 {
+    font-family: 'Lora', Serif;
+    font-size: 26pt;
+}
+
+form {
+    margin-top: 50pt;
+    border: 1px solid black;
+    width: 350pt;
+    padding: 20pt;
+    border-bottom: none;
+    background-color: white;
+}
+
+input {
+    width: 200pt;
+}
+input,
+button {
+    border: 1px solid #4CAF50;
+    padding: 16pt;
+    margin: 4pt 0;
+    font-size: 12pt;
+    text-decoration: none;
+    font-family: 'Roboto', Sans-Serif;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 100pt;
+}
+
+button:focus {outline:0;}
+
+.name-list {
+    background-color: rgba(76, 175, 79, 0.427);
+    padding: 20pt;
+    width: 350pt;
+    border: 1px solid black;
+    border-top: none;
+}
+
+li {
+    margin: 5pt 0;
+}
