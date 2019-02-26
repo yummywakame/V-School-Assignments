@@ -5,14 +5,14 @@ class App extends React.Component {
     constructor() {
         super()
         this.state = {
-            firstNameInput: "",
-            lastNameInput: "",
-            emailInput: "",
-            pobInput: "",
-            phoneInput: "",
-            favFoodInput: "",
-            aboutInput: "",
-            people: []
+            firstName: "",
+            lastName: "",
+            email: "",
+            pob: "",
+            phone: "",
+            favFood: "",
+            about: "",
+            names: []
         }
     }
 
@@ -25,25 +25,29 @@ class App extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        
+        const nameObj = {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            pob: this.state.pob,
+            phone: this.state.phone,
+            favFood: this.state.favFood,
+            about: this.state.about
+        }
 
         this.setState(prevState => {
             return {
-                firstNameInput: "",
-                lastNameInput: "",
-                emailInput: "",
-                pobInput: "",
-                phoneInput: "",
-                favFoodInput: "",
-                aboutInput: "",
-                people: [
-                    ...prevState.people,
-                    this.state.firstNameInput,
-                    this.state.lastNameInput,
-                    this.state.emailInput,
-                    this.state.pobInput,
-                    this.state.phoneInput,
-                    this.state.favFoodInput,
-                    this.state.aboutInput]
+                names: [
+                    ...prevState.names,
+                    nameObj],
+                firstName: "",
+                lastName: "",
+                email: "",
+                pob: "",
+                phone: "",
+                favFood: "",
+                about: ""
             }
         })
     }
@@ -58,16 +62,16 @@ class App extends React.Component {
                         <form onSubmit={this.handleSubmit}>
                             <div className="row">
                                 <input
-                                    name="firstNameInput"
-                                    value={this.firstNameInput}
+                                    name="firstName"
+                                    value={this.firstName}
                                     onChange={this.handleChange}
                                     placeholder="First Name"
                                     type="text"
                                     required
                                 />
                                 <input
-                                    name="lastNameInput"
-                                    value={this.lastNameInput}
+                                    name="lastName"
+                                    value={this.lastName}
                                     onChange={this.handleChange}
                                     placeholder="Last Name"
                                     type="text"
@@ -76,16 +80,16 @@ class App extends React.Component {
                             </div>
                             <div className="row">
                                 <input
-                                    name="emailInput"
-                                    value={this.emailInput}
+                                    name="email"
+                                    value={this.email}
                                     onChange={this.handleChange}
                                     placeholder="Email"
                                     type="email"
                                     required
                                 />
                                 <input
-                                    name="pobInput"
-                                    value={this.pobInput}
+                                    name="pob"
+                                    value={this.pob}
                                     onChange={this.handleChange}
                                     placeholder="Place of Birth"
                                     type="text"
@@ -94,16 +98,16 @@ class App extends React.Component {
                             </div>
                             <div className="row">
                                 <input
-                                    name="phoneInput"
-                                    value={this.phoneInput}
+                                    name="phone"
+                                    value={this.phone}
                                     onChange={this.handleChange}
                                     placeholder="Mobile Number"
                                     type="number"
                                     required
                                 />
                                 <input
-                                    name="favFoodInput"
-                                    value={this.favFoodInput}
+                                    name="favFood"
+                                    value={this.favFood}
                                     onChange={this.handleChange}
                                     placeholder="Favorite Food"
                                     type="text"
@@ -112,8 +116,8 @@ class App extends React.Component {
                             </div>
                             <div className="row wide">
                                 <textarea
-                                    name="aboutInput"
-                                    value={this.aboutInput}
+                                    name="about"
+                                    value={this.about}
                                     onChange={this.handleChange}
                                     placeholder="About Me..."
                                     type="text"
@@ -130,7 +134,7 @@ class App extends React.Component {
                     </div>
                 </div>
 
-                <Badges people={this.state.people} />
+                <Badges names={this.state.names} />
 
                 <div className="badge-container">
                     <div className="badge">

@@ -2,30 +2,24 @@ import React from 'react'
 import Badge from './Badge.js'
 
 const Badges = (props) => {
-    const mappedBadges = props.people.map((
-        firstName, 
-        lastName, 
-        email, 
-        pob, 
-        phone,
-        favFood, 
-        about, 
-        key) =>
+    console.log("Badges: ")
+    console.log(props)
+    const mappedNames = props.names.map((names, key) =>
         <Badge
             key={key}
-            firstName = {firstName}
-            lastName = {lastName}
-            email = {email}
-            pob = {pob}
-            phone = {phone}
-            favFood = {favFood}
-            about = {about}
+            firstName = {names.firstName}
+            lastName = {names.lastName}
+            email = {names.email}
+            pob = {names.pob}
+            phone = {names.phone}
+            favFood = {names.favFood}
+            about = {names.about}
         />
     )
     
     return (
         <div className="badge-container">
-            {mappedBadges}
+            {mappedNames}
         </div>
     )
 }

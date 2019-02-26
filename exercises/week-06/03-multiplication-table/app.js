@@ -16,7 +16,7 @@
     //  ]
 
     BONUS:
-    Allow for the function to take a parameter n and return a table with n * n cells.
+    Allow for the function to tacole a parameter n and return a table with n * n cells.
     
     //if n === 5
     
@@ -32,21 +32,29 @@
 */
 
 const multiplicationTable = (n) => {
-    console.log("\n" + n + " * " + n +":")
-    let arr = []
+    // notify user which table we are multiplying
+    console.log("\n" + n + " * " + n + ":")
+
+    // fill up the 2D array with multiplication values
     if (n) {
-        for (i = n, j = 1; i > 0; i--, j++) {
-            for (k = 1; k <= n; k++) {
-                arr.push(j * k)
+
+        // initialize arr to have 'n' many rows
+        let arr = []
+        for (let row = n; row > 0; row--) {
+            arr.push([]);
+        }
+
+        // add each multiplication row to the array
+        for (let i = n, row = 1; i > 0; i--, row++) {
+            for (let col = 1; col <= n; col++) {
+                arr[row - 1].push(row * col)
             }
-            console.log(arr.toString())
-            arr = []
-        }    
+        }
+        // finally, show the multiplication table
+        console.log("[\n [" + arr.join("],\n [") + "]\n]")
     } else {
         console.log("0")
     }
-
-    console.log("\n")
 }
 
 multiplicationTable(0)
