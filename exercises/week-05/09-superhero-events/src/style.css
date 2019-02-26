@@ -6,8 +6,8 @@
 
 body {
     margin: 20pt;
-    Font-Family: 'Roboto Slab', Serif;
-    Font-Size: 16px;
+    font-family: 'Roboto Slab', Serif;
+    font-size: 16px;
     background-color: whitesmoke;
 }
 
@@ -36,22 +36,22 @@ body {
 }
 
 h1 {
-    Font-Family: 'Ruda', Sans-Serif;
-    Font-Size: 30pt;
+    font-family: 'Ruda', Sans-Serif;
+    font-size: 30pt;
     text-align: center;
 }
 
 h2 {
-    Font-Family: 'Ruda', Sans-Serif;
-    Font-Size: 30pt;
+    font-family: 'Ruda', Sans-Serif;
+    font-size: 30pt;
     margin-top: 10pt;
     color: rgb(40, 40, 40);
     text-align: center;
 }
 
 p {
-    Font-Family: 'Roboto Slab', Serif;
-    Font-Size: 16pt;
+    font-family: 'Roboto Slab', Serif;
+    font-size: 16pt;
     color: black;
     font-weight: 200;
     letter-spacing: 1pt;

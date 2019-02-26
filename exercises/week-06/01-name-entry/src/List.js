@@ -2,7 +2,9 @@ import React from 'react'
 import Name from './Name.js'
 
 const List = (props) => {
-    const mappedNames = props.names.map((name, key) => 
+    const mappedNames = props.names.map((
+        name, 
+        key) => 
         <Name
             key={key}
             name={name}
