@@ -45,7 +45,6 @@ class App extends React.Component {
                     this.state.favFoodInput,
                     this.state.aboutInput]
             }
-        
         })
     }
 
