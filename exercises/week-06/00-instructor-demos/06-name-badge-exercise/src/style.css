@@ -1,0 +1,11 @@
+.name-badge-list div:nth-child(1n){
+    background-color: blue;
+}
+
+.name-badge-list div:nth-child(2n){
+    background-color: green;
+}
+
+.name-badge-list div:nth-child(3n){
+    background-color: yellow;
+}

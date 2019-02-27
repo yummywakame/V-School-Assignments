@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.nav {
+    width: 100vw;
+    height: 50px;
+    background-color: #3339;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.home,
+.about,
+.services,
+.contact {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.home {
+    background-color: dodgerblue;
+}
+
+.about {
+    background-color: firebrick;
+}
+
+.services {
+    background-color: lightsalmon
+}
+
+.contact {
+    background-color: paleturquoise
+}
