@@ -33,7 +33,6 @@ h1 {
 
 .badge {
     border-radius: 13pt;
-    border: 5px solid #30a7f9;
     background-color: white;
     max-width: 490pt;
     margin: auto;
@@ -41,6 +40,25 @@ h1 {
     -webkit-box-shadow: 0px 0px 5px 0px #a2a2a2;
     -moz-box-shadow: 0px 0px 5px 0px #a2a2a2;
     box-shadow: 0px 0px 5px 0px #a2a2a2;
+}
+
+.badge:nth-child(1n) { 
+    border: 5px solid #e1070d;
+}
+.badge:nth-child(2n) {
+    border: 5px solid #ed5f14;
+}
+.badge:nth-child(3n) {
+    border: 5px solid #f4b234;
+}
+.badge:nth-child(4n) {
+    border: 5px solid #7cc403;
+}
+.badge:nth-child(5n){
+    border: 5px solid #1ccce4;
+}
+.badge:nth-child(6n), .badge.form-badge {
+    border: 5px solid #30a7f9;
 }
 
 .badge a {
@@ -51,13 +69,31 @@ h1 {
     background-image: url("./images/hello-my-name-is.png");
     background-position: center;
     background-size: contain;
-    background-color: #30a7f9;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100pt;
     width: auto;
     margin-bottom: 15pt;
 }
+.badge:nth-child(1n) .header {
+    background-color: #e1070d !important;
+}
+.badge:nth-child(2n) .header {
+    background-color: #ed5f14 !important;
+}
+.badge:nth-child(3n) .header {
+    background-color: #f4b234 !important;
+}
+.badge:nth-child(4n) .header {
+    background-color: #7cc403 !important;
+}
+.badge:nth-child(5n) .header {
+    background-color: #1ccce4 !important;
+}
+.badge:nth-child(6n) .header, .badge .header.form-header {
+    background-color: #30a7f9 !important;
+}
+
 .badge .row {
     margin: 0 20pt;
 }
@@ -116,37 +152,6 @@ button:disabled {
     -moz-box-shadow: none;
     box-shadow: none;
     cursor: auto;
-}
-
-.bg-color-red {
-    border: 5px solid #e1070d;
-}
-.bg-color-orange {
-    border: 5px solid #ed5f14;
-}
-.bg-color-yellow {
-    border: 5px solid #f4b234;
-}
-.bg-color-green {
-    border: 5px solid #7cc403;
-}
-.bg-color-turquoise {
-    border: 5px solid #1ccce4;
-}
-.hdr-color-red {
-    background-color: #e1070d !important;
-}
-.hdr-color-orange {
-    background-color: #ed5f14 !important;
-}
-.hdr-color-yellow {
-    background-color: #f4b234 !important;
-}
-.hdr-color-green {
-    background-color: #7cc403 !important;
-}
-.hdr-color-turquoise {
-    background-color: #1ccce4 !important;
 }
 
 @media (max-width: 1000px) {

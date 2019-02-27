@@ -3,8 +3,8 @@ import React from 'react'
 const Badge = (props) => {
 
     return (
-        <div className={props.colorBorder}>
-            <div className={props.colorHeader}></div>
+        <div className="badge">
+            <div className="header"></div>
             <div className="row">
                 <h1>{props.firstName + " " + props.lastName}</h1>
             </div>
