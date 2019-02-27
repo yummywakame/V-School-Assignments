@@ -10,18 +10,16 @@ body {
     background-color: whitesmoke;
 }
 
-p {}
-
 h1 {
     text-align: center;
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-size: 4vw;
+    color: black;
 }
 
 .form-container {
     margin: 20pt 20pt 0 20pt;
 }
-
-
 
 .badge-container {
     display: grid;
@@ -39,11 +37,15 @@ h1 {
     background-color: white;
     max-width: 490pt;
     margin: auto;
+    color: #666666;
     -webkit-box-shadow: 0px 0px 5px 0px #a2a2a2;
     -moz-box-shadow: 0px 0px 5px 0px #a2a2a2;
     box-shadow: 0px 0px 5px 0px #a2a2a2;
 }
 
+.badge a {
+    color: #30a7f9;
+}
 
 .badge .header {
     background-image: url("./images/hello-my-name-is.png");
@@ -73,14 +75,6 @@ h1 {
 .badge-container .header {
     height: 60pt;
 }
-
-.badge .footer {
-    height: 20pt;
-    width: 100%;
-    background-color: #30a7f9;
-}
-
-/* Form elements */
 
 input,
 textarea,
@@ -116,13 +110,43 @@ button:hover {
     box-shadow: none;
 }
 
-button:focus {
-    /* outline: 0; */
+button:disabled {
+    background-color: gray;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: auto;
 }
 
-
-textarea {
-
+.bg-color-red {
+    border: 5px solid #e1070d;
+}
+.bg-color-orange {
+    border: 5px solid #ed5f14;
+}
+.bg-color-yellow {
+    border: 5px solid #f4b234;
+}
+.bg-color-green {
+    border: 5px solid #7cc403;
+}
+.bg-color-turquoise {
+    border: 5px solid #1ccce4;
+}
+.hdr-color-red {
+    background-color: #e1070d !important;
+}
+.hdr-color-orange {
+    background-color: #ed5f14 !important;
+}
+.hdr-color-yellow {
+    background-color: #f4b234 !important;
+}
+.hdr-color-green {
+    background-color: #7cc403 !important;
+}
+.hdr-color-turquoise {
+    background-color: #1ccce4 !important;
 }
 
 @media (max-width: 1000px) {
