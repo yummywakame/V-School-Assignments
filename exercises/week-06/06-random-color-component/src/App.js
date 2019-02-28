@@ -9,6 +9,7 @@ class App extends Component {
     constructor() {
         super()
         this.state = {
+            colorNum: "",
             data: []
         }
     }
@@ -36,8 +37,7 @@ class App extends Component {
         })
 
         return (
-        // <div></div>
-            <div>{{mappedCharacters}}</div>
+            <div id="container">{mappedCharacters}</div>
         )
     }
 }
