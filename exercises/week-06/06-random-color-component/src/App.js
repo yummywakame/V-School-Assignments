@@ -15,7 +15,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        axios.get("http://www.colr.org/json/schemes/random/5?scheme_size_limit=5")
+        axios.get("http://www.colr.org/json/schemes/random/5?scheme_size_limit=7")
             .then(response => {
                 this.setState({ // setState triggers render()
                     data: response.data.schemes[0].colors
