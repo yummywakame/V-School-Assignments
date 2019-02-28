@@ -1,0 +1,42 @@
+* {
+
+}
+body {
+    margin: 20pt;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+#container {
+    
+}
+#hit-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20pt;
+    width: 500px;
+    margin: auto;
+}
+.person {
+    width: 165px;
+    height: 220px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    text-align: center;
+    color: #18416dc6;
+}
+h2 {
+    display: block;
+    color: white;
+    background-color: #18416dc6;
+    width: 150px;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 0; 
+    font-size: 16px;
+    font-weight: 100;
+    height: auto;
+}
