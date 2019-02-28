@@ -20,6 +20,7 @@ class App extends Component {
                 this.setState({ // setState triggers render()
                     data: response.data.schemes[0].colors
                 })
+                console.log(response.data)
 
             }).catch(error => console.log(error))
     }
@@ -28,16 +29,13 @@ class App extends Component {
         console.log(this.state)
 
         const mappedCharacters = this.state.data.map((item, key) => {
-            console.log(`#${item}`)
-            console.log(key)
-            console.log(mappedCharacters)
             return (
                 <div key={key} style={{backgroundColor: `#${item}`}}></div>
             )
         })
 
         return (
-            <div id="container">{mappedCharacters}</div>
+            <div id="container" style={{gridTemplateColumns: `repeat(${this.state.data.length}, 1fr)`}}>{mappedCharacters}</div>
         )
     }
 }
