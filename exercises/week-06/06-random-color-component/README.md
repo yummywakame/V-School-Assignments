@@ -6,9 +6,8 @@
 
 #### Completed according to assignment instructions: 
 - https://coursework.vschool.io/random-color-component/
-Create a component that uses axios to GET a random color from the random color API and sets that component's background color to that random color.
-
-Upgraded to display a random colorscheme with varying number of columns that are equal width.
+- Create a component that uses axios to GET a random color from the random color API and sets that component's background color to that random color.
+- Upgraded to display a random colorscheme with varying number of columns that are equal width.
 
 #### Screenshots:
 <a href="http://yw-random-color-scheme.surge.sh" target="_blank"><img src="screenshot3.png"></a>
