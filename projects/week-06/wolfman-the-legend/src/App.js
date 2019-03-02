@@ -29,8 +29,9 @@ class App extends Component {
     }
 
     render() {
-        console.log(this.state)
         let str = this.state.data.toString()
+        
+        /* Upgrading all strings from "Chuck Norris" to "Wolfman Steve" */
         str = str.replace(/Chuck Norris'/gi, "Wolfman Steve's")
         str = str.replace(/Chuck Norris's/gi, "Wolfman Steve's")
         str = str.replace(/Chuck Norrises/gi, "Wolfman Steve's")
@@ -39,12 +40,19 @@ class App extends Component {
 
         return (
             <div id="container">
+            
                 <h1>Wolfman Steve, The Legend</h1>
+                
                 <div id="inner-container">
+                
                     <div><p>{str}</p></div>
+                    
                     <div><button onClick={this.moreWisdom}>More Lore!</button></div>
+                    
                 </div>
+                
                 <a href="https://yummy-wakame.com">Archived by Yummy Wakame &copy; All rights reserved: Wolfman Steve.</a>
+            
             </div>
 
         )
