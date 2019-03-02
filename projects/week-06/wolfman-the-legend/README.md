@@ -5,7 +5,7 @@ Extracting Wolfman Steve archives from the Chuck Norris API using Axios and Reac
 
 http://www.icndb.com/api/
 
-#### Demo:
+#### Launch Demo:
 - <a href="https://wolfman-the-legend.surge.sh/" target="_blank">Wolfman The Legend</a>
 
 #### Screenshot:
