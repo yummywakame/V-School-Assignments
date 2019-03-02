@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.app-container > form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.app-container > h1 {
+    text-align: center;
+}
+
+.app-container > h6 {
+    text-align: center;
+}
+
+.app-container > form > input {
+    margin: 2px 0;
+}
+
+.app-container > form > button {
+    padding: 4px 0;
+    border-radius: 3px;
+}
+
+.todo-div {
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 5px; 
+    background-size: cover; 
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.todo-div button {
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.todo-div button:nth-child(4) {
+    background-color: firebrick;
+}
+
+.todo-div button:nth-child(5) {
+    background-color: dodgerblue;
+}
+
+.edit-todo-div {
+    height: 200px; 
+    margin: 5px; 
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-todo-div form {
+    height: 150px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.edit-todo-div form button {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.edit-todo-div form button:nth-child(5) {
+    background-color: green;
+}
+
+.edit-todo-div button:nth-child(2) {
+    background-color: firebrick;
+    padding: 5px;
+    border-radius: 3px;
+}

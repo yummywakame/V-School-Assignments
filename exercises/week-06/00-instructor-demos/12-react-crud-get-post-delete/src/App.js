@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 import TodoList from './components/TodoList.js'
 import AddTodoForm from './components/AddTodoForm.js'
+import { withTodos } from './context/ToDoProvider.js'
 
 
 class App extends Component {
@@ -17,17 +17,7 @@ class App extends Component {
     }
 
     componentDidMount(){
-       this.getTodos()
-    }
-
-    getTodos = () => {
-        axios.get("https://api.vschool.io/attila/todo").then(response => {
-        //resolve
-            this.setState({
-                todos: response.data
-            })
-       }) //reject
-       .catch(error => console.log(error))
+       this.props.getTodos()
     }
 
     handleChange = e => {
@@ -39,39 +29,13 @@ class App extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        const { title, description, price, imgUrl } = this.state
-        // POST request
-            // Create OBJ
-        const newTodo = { title, description, price, imgUrl }
-
-        axios.post("https://api.vschool.io/attila/todo", newTodo).then(response => {
-            // update state 
-            this.setState(prevState => {
-                return {
-                    todos: [response.data, ...prevState.todos],
-                    title: '',
-                    description: '',
-                    price: '',
-                    imgUrl: ''
-                }
-            })
-            // todos: maintain old todos, and add in new todo from DB
-            // input Values: Reset back to empty strings
-        }).catch(error => console.log(error))
-    }
-
-    handleDelete = (_id) => {
-        // DELETE
-        // axios.delete a specific Todo via it's ID
-        axios.delete(`https://api.vschool.io/attila/todo/${_id}`).then(response => {
-            this.setState(prevState => {
-                return {
-                    // Take the previous array of todos, and only return
-                    // todos that don't have the _id of the deleted one
-                    todos: prevState.todos.filter(todo => todo._id !== _id)
-                }
-            })    
-        }).catch(error => console.log(error))
+        this.props.addToDo(this.state)
+        this.setState({
+            title: "",
+            description:"",
+            price:"",
+            imgUrl: ""
+        })
     }
 
     render(){
@@ -85,19 +49,14 @@ class App extends Component {
                     price={this.state.price}
                     imgUrl={this.state.imgUrl} />
                 <TodoList 
-                    todos={this.state.todos}
-                    handleDelete={this.handleDelete}/>
+                    todos={this.props.todos}
+                    handleDelete={this.props.handleDelete}/>
             </div>
         )
     }
 }
 
-export default App
-
-
-
-
-
+export default withTodos(App)
 
 
 // GET - Map out todos

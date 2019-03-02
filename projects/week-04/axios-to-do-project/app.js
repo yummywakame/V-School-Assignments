@@ -1,4 +1,4 @@
-apiUrl = "https://api.vschool.io/oliviameiring/todo"
+apiUrl = "https://api.vschool.io/olivias-cats-in-boxes/todo"
 
 const containerIncomplete = document.getElementById('containerIncomplete')
 const containerComplete = document.getElementById('containerComplete')
