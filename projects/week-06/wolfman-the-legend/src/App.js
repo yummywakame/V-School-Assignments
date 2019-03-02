@@ -11,7 +11,7 @@ class App extends Component {
     }
     
     getData = () => {
-        axios.get("http://api.icndb.com/jokes/random/")
+        axios.get("https://api.icndb.com/jokes/random/")
         .then(response => {
             this.setState({ // setState triggers render()
                 data: response.data.value.joke
@@ -32,10 +32,12 @@ class App extends Component {
         let str = this.state.data.toString()
         
         /* Upgrading all strings from "Chuck Norris" to "Wolfman Steve" */
-        str = str.replace(/Chuck Norris'/gi, "Wolfman Steve's")
         str = str.replace(/Chuck Norris's/gi, "Wolfman Steve's")
+        str = str.replace(/Chuck Norris'/gi, "Wolfman Steve's")
         str = str.replace(/Chuck Norrises/gi, "Wolfman Steve's")
         str = str.replace(/Chuck Norris/gi, "Wolfman Steve")
+        str = str.replace(/Chuck/gi, "Wolf")
+        str = str.replace(/CN-/gi, "WS-")
         str = str.replace(/&quot;/gi, "'")
 
         return (
