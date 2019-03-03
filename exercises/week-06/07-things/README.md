@@ -10,4 +10,4 @@ Combined two assignments into one:
 - <a href="http://coursework.vschool.io/ugly-things/">Ugly Things</a>
 
 #### Screenshot:
-<a href="https://yw-cats.surge.sh" target="_blank"><img src="screenshot.png" border="1"></a>
+<a href="https://yw-cats.surge.sh" target="_blank"><img src="screenshot.png"></a>
