@@ -1,9 +1,16 @@
 # Full Stack JS Bootcamp - Jan '19
 ## &#10097; Featured Projects
 
+### WEEK 6: React App to API // <a href="https://wolfman-the-legend.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-06/wolfman-the-legend">Files</a>
+Personal side-project for Wolfman Steve
+
+<a href="https://wolfman-the-legend.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/projects/week-06/wolfman-the-legend/screenshot.png"></a>
+
+<hr />
+
 ### WEEK 4: Fully CRUD Axios To Do App // <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-04/axios-to-do-project">Files</a>
 
-<a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-04/axios-to-do-project"><img src="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-04/axios-to-do-project/screenshot.png"></a>
+<a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-04/axios-to-do-project"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/projects/week-06/wolfman-the-legend/screenshot.png"></a>
 
 <hr />
 
