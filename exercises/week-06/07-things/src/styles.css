@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    Font-Family: 'Muli', Sans-Serif;
+    Font-Size: 14pt;
+    background-color: whitesmoke;
+}
+
+.light {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-Family: 'Merriweather', Serif;
+    font-Size: 30pt;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Merriweather', Serif;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button.close-button {
+    margin-top: -35px;
+
+}
+/* DARK THEME OVERRIDES */
+
+.dark {
+    background-color: #4b4b4b;
+}
+
+body.dark h1 {
+    color: #dfdfdf;
+    font-weight: 100;
+}
+
+body.dark .card {
+    background-color: silver;
+}
+
+/* Overlay that hides the glitch where the page looks weird before
+ the CSS is fully loaded */
+ #loadOverlay {
+    display: none;
+}
