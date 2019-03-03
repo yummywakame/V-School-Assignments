@@ -18,20 +18,24 @@
 
 
 ## &#10097; Featured Exercises
+### WEEK 6: Fully CRUD React App with Theme Switcher & localStorage // <a href="https://yw-cats.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-06/07-things/">Files</a>
+
+<a href="https://yw-cats.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-06/07-things/screenshot.png"><a/>
+
+
 ### WEEK 5: Rolling Dice with React State // <a href="https://yw-yahtzee-dicebox.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/10-rolling-dice-react-state">Files</a>
 
-<img src="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/10-rolling-dice-react-state/screenshot.png">
-
+<a href="https://yw-yahtzee-dicebox.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/10-rolling-dice-react-state/screenshot.png"></a>
 
 
 ### WEEK 5: 'Clean Blog' React Demo with Props // <a href="https://yw-clean-blog-react.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/07-blog-props/README.md">Files</a>
 
-<img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-05/07-blog-props/screenshot.png">
+<a href="https://yw-clean-blog-react.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-05/07-blog-props/screenshot.png"></a>
 
 
 ### WEEK 5: Vacation Destination Cards // <a href="https://yw-react-vacation-spots.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/06-vacation-spots-using-props-and-map">Files</a>
 
-<img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-05/06-vacation-spots-using-props-and-map/screenshot.png">
+<a href="https://yw-react-vacation-spots.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-05/06-vacation-spots-using-props-and-map/screenshot.png"></a>
 
 
 ### WEEK 2: Design a Blog // <a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-02/07-design-a-blog/index.html">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/07-design-a-blog">Files</a>
