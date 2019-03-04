@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    background-color: #3339;
+}
+
+.home,
+.about,
+.services {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    background-color: dodgerblue;
+}
+
+.about {
+    background-color: firebrick
+}
+
+.services {
+    background-color: teal;
+}
+
+
+.todo-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo-list a {
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+}
+
+.todo-list-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.todo {
+    font-size: 16px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    grid-row: 1 / -1;
+}
+
+.todo-view {
+    grid-column: 2;
+}
