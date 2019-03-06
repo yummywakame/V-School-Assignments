@@ -1,0 +1,49 @@
+body {
+    background-color: #660033;
+}
+
+h1, h2, h3 {
+    color: white;
+    font-weight: 200;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 42px;
+    text-align: center;
+    
+
+    text-shadow:
+        #FFF 0px 0px 5px,
+        #FFF 0px 0px 10px,
+        #FFF 0px 0px 15px,
+        #FF2D95 0px 0px 20px,
+        #FF2D95 0px 0px 30px,
+        #FF2D95 0px 0px 40px,
+        #FF2D95 0px 0px 50px,
+        #FF2D95 0px 0px 75px;
+}
+p, blockquote, li, label {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 200;
+    font-family: 'Open Sans', Sans-Serif;
+    font-size: 15px;
+}
+
+/* Navbar Overrides */
+.tabs {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* Search Area */
+#search-container {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+/* Overlay that hides the glitch where the page looks weird before
+ the CSS is fully loaded */
+ #loadOverlay {
+    display: none;
+}
