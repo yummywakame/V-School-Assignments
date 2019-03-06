@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.home,
+.about,
+.contact {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px
+}
+
+.home {
+    background-color: blue
+}
+
+.about {
+    background-color: green
+}
+
+.contact {
+    background-color: purple
+}
+
+.error-boundary {
+    width: 100vw;
+    height: 70vh;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: firebrick;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-boundary summary,
+.error-boundary details {
+    width: 300px;
+    margin: 5px;
+    border: 2px solid #222;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.four-oh-four {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3339;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: lighter;
+}
