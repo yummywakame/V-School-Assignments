@@ -112,7 +112,7 @@ class App extends Component {
 
                 </header>
 
-                <main className="container">
+                {/* <main className="container">
 
                     <h1>Popular Cocktails</h1>
                     <div id="drink-list" className="row">
@@ -228,7 +228,7 @@ class App extends Component {
 
                     </div>
 
-                </main>
+                </main> */}
 
                 <main className="container">
 
