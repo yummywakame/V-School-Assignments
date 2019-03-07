@@ -12,7 +12,7 @@
     -->
   <!--Import Google Icon Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans:300,400">
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="./css/materialize.min.css">
@@ -43,9 +43,12 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="./js/materialize.min.js"></script>
+  
+  <!-- Import jQuery before materialize.js -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <!-- And then your bundled js -->
+  <!-- <script src="path/to/your/bundle.js"></script> -->
 
 </body>
 
