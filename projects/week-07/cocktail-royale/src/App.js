@@ -68,9 +68,9 @@ class App extends Component {
                                 <form onSubmit={this.handleSubmitIngredient}>
                                     <div className="col s12">
 
-                                        <div className="select-wrapper">
+                                        <div className="select-wrapper col s10">
                                             <div className="input-field">
-                                                <Input s={10} type='select' name="searchIngredient" value={this.state.searchIngredient} onChange={this.handleChange} required >
+                                                <Input s={12} type='select' name="searchIngredient" value={this.state.searchIngredient} onChange={this.handleChange} required >
                                                     <option value=''>Search by ingredient...</option>
                                                     <option value='vodka'>Vodka</option>
                                                     <option value='gin'>Gin</option>
@@ -78,31 +78,29 @@ class App extends Component {
                                                     <option value='tequila'>Tequila</option>
                                                     <option value='whiskey'>Whiskey</option>
                                                 </Input>
-
                                             </div>
                                         </div>
 
-                                        <div className="button-wrapper">
-                                            <Button s={2} waves='light' className="pink" icon='search'></Button>
+                                        <div className="button-wrapper col s2">
+                                            <Button waves='light' className="pink" icon='search'></Button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
 
                             <div className="col s12 m6">
-                                <form id="searchForm" onSubmit={this.handleSubmitSearch}>
+
+                                <form onSubmit={this.handleSubmitSearch}>
                                     <div className="col s12">
 
-                                        <div>
+                                        <div className="search-wrapper col s10">
                                             <div className="input-field">
-                                            <div className="col s10">
-                                                <input type="text" name="searchInput" value={this.state.searchInput} placeholder="Cocktail name..." onChange={this.handleChange} required />
+                                                <Input s={12} type="text" name="searchInput" value={this.state.searchInput} placeholder="Cocktail name..." onChange={this.handleChange} required />
                                             </div>
-                                                
-                                            </div>
-                                            <div className="button-wrapper">
-                                                <Button s={2} waves='light' className="pink" icon='search'></Button>
-                                            </div>
+                                        </div>
+
+                                        <div className="button-wrapper col s2">
+                                            <Button waves='light' className="pink" icon='search'></Button>
                                         </div>
                                     </div>
                                 </form>
@@ -240,10 +238,10 @@ class App extends Component {
                         <div className="row">
 
                             <div className="col s12 m12 l6 pink">
-                                    image
+                                image
                             </div>
                             <div className="col s12 m12 l6 black">
-                                    ingredients
+                                ingredients
                             </div>
 
                         </div>

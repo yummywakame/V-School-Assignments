@@ -54,6 +54,10 @@ p, blockquote, li, label {
 #search-container {
     background-color: rgba(0, 0, 0, 0.5);
 }
+.select-wrapper {
+    position: relative;
+    margin-top: 0.5rem;
+}
 .select-wrapper .caret {
     color: #e91e63;    
     margin-top: 1rem;
@@ -69,8 +73,14 @@ p, blockquote, li, label {
     background-color: #880e4f;
 }
 .button-wrapper {
+    padding-top: 1.5rem !important
+}
+.search-wrapper {
     position: relative;
-    padding-top: 0.5rem;
+    margin-top: 1rem;
+}
+.search-padding {
+    margin-top: 1rem;
 }
 .input-field {
     position: relative;
