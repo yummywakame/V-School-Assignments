@@ -1,4 +1,5 @@
 import React from 'react'
+const apiKey = process.env.REACT_APP_API_KEY
 
 const App = () => {
     return (
@@ -24,7 +25,7 @@ const App = () => {
             <h3>URIs</h3>
                 <ul>
                     <li>Uniform Resource Identifier</li>
-                    <li>www.rickandmortyapi.com/api/characters?api_key={process.env.REACT_APP_API_KEY}</li>
+                    <li>www.rickandmortyapi.com/api/characters?api_key={apiKey}</li>
                 </ul>
 
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withDatas } from './BigDataProvider.js'
 import './style.css'
 
+
 class App extends Component {
     componentDidMount(){
         this.props.getDatas()

@@ -9,29 +9,35 @@ h1, h2, h3 {
     font-size: 42px;
     text-align: center;
 }
+
 h1 {
-    text-shadow:
-        #FFF 0px 0px 5px,
-        #FFF 0px 0px 10px,
-        #FFF 0px 0px 15px,
-        #FF2D95 0px 0px 20px,
-        #FF2D95 0px 0px 30px,
-        #FF2D95 0px 0px 40px,
-        #FF2D95 0px 0px 50px,
-        #FF2D95 0px 0px 75px;
+    margin-bottom: 3rem;
 }
+
+.glow {
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+.textshadow {
+    text-shadow: #660033 1px 1px 0;
+}
+
 h2 {
+    font-size: 32px;
 }
+
 .card h2 {
     font-size: 18px;
     color: whitesmoke;
     text-align: center;
     margin: 0;
 }
+
 .card {
     /* background-color: black; */
     cursor: pointer;
 }
+
 p, blockquote, li, label {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 200;
@@ -40,28 +46,36 @@ p, blockquote, li, label {
 }
 
 /* Navbar Overrides */
+
 .tabs {
     background-color: rgba(0, 0, 0, 0.9);
     font-family: 'Julius Sans One', sans-serif;
     cursor: pointer;
 }
+
 .tabs .tab a:focus, .tabs .tab a:focus.active {
     background-color: #e91e6212;
     outline: none;
 }
+
 /* FORM FIELDS */
+
 /* Search Area */
+
 #search-container {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .select-wrapper {
     position: relative;
     margin-top: 0.5rem;
 }
+
 .select-wrapper .caret {
-    color: #e91e63;    
+    color: #e91e63;
     margin-top: 1rem;
 }
+
 .select-wrapper input.select-dropdown, input[type=text]:not(.browser-default) {
     color: #f8bbd0;
     font-weight: 300;
@@ -72,51 +86,99 @@ p, blockquote, li, label {
     color: white;
     background-color: #880e4f;
 }
+
 .button-wrapper {
     padding-top: 1.5rem !important
 }
+
 .search-wrapper {
     position: relative;
     margin-top: 1rem;
 }
+
 .search-padding {
     margin-top: 1rem;
 }
+
 .input-field {
     position: relative;
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
     color: #f8bbd0 !important;
 }
-::-moz-placeholder { /* Firefox 19+ */
-    color: #f8bbd0 !important;
-}
-:-ms-input-placeholder { /* IE 10+ */
-    color: #f8bbd0 !important;
-}
-:-moz-placeholder { /* Firefox 18- */
-    color: #f8bbd0 !important;
-}
-/* RESULTS STYLING */
-.drink-list {
 
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #f8bbd0 !important;
 }
-.drink-item > div {
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #f8bbd0 !important;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #f8bbd0 !important;
+}
+
+/* RESULTS STYLING */
+
+.drink-list {}
+
+.drink-item>div {
     width: 300px;
     height: 300px;
     background-size: cover;
     background-position: center;
-    
 }
 
+/* COCKTAIL DETALS PAGE OVERRIDES */
 
+#drink-detail .main-image img {
+    width: 100%;
+    height: auto;
+    border: 10px solid white;
+    margin-bottom: 2rem;
+}
 
+#drink-detail h2 {
+    color: #e91e63;
+    margin-top: 0;
+}
+
+#ingredients {
+    text-align: center;
+}
+
+#ingredients img {
+    width: 100%;
+    height: auto;
+}
+
+#instructions {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#instructions h2 {
+    font-size: 32px;
+    margin: 2rem 0 1rem 0;
+}
+#instructions h2:first-child {
+    margin-top: 0;
+}
+#instructions.card {
+    cursor: default;
+}
 
 /* Overlay that hides the glitch where the page looks weird before
  the CSS is fully loaded */
- #loadOverlay {
+
+#loadOverlay {
     display: none;
 }
