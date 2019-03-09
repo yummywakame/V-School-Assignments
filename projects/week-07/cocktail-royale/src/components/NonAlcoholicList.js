@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import { withListData } from '../context/BigDataProvider.js'
 import DrinkThumb from './DrinkThumb.js'
-import { BrowserRouter as Router } from 'react-router-dom'
-// import DrinkDetail from './DrinkDetail.js'
 
-class PopularList extends Component {
+class NonAlcoholicList extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -22,20 +20,17 @@ class PopularList extends Component {
         return (
             <main className="container">
 
-                <h1 className="glow">Popular Cocktails</h1>
+                <h1 className="glow">Non-Alcoholic Cocktails</h1>
                 <div id="drink-list" className="row">
 
-                    {this.props.popularList.map((item) => <Router><DrinkThumb {...item} {...this.props} /></Router>)}
-                    {/* {<DrinkDetail props={this.props.popularList} />} */}
+                    {this.props.nonAlcoholicList.map((item) => <DrinkThumb {...item} />)}
 
                 </div>
 
             </main>
-            // <>
-            //     {this.props.popularList.map((item) => <DrinkDetail {...item} />)}
-            // </>
         )
     }
+
 }
 
-export default withListData(PopularList)
+export default withListData(NonAlcoholicList)

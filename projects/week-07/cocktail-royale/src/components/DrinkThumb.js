@@ -1,0 +1,35 @@
+import React, { Component } from 'react'
+import { withListData } from '../context/BigDataProvider.js'
+
+class DrinkThumb extends Component {
+    // eslint-disable-next-line no-useless-constructor
+    constructor(props) {
+        super(props)
+    }
+
+
+    render() {
+        const { idDrink, strDrinkThumb, strDrink } = this.props
+
+        return (
+            <div key={idDrink} className="col s12 m6 l4" onClick={() => {
+                this.props.runSearch("cocktail", idDrink)
+                this.props.history.push(`/cocktail/${idDrink}`)
+            }}>
+
+                <div className="card waves-effect black">
+                    <div className="card-image">
+                        <img src={strDrinkThumb} alt="{strDrink}" />
+                    </div>
+                    <div className="card-content">
+                        <h2>{strDrink}</h2>
+                    </div>
+                </div>
+
+            </div>
+        )
+    }
+}
+
+export default withListData(DrinkThumb)
+

@@ -20,18 +20,22 @@ class BigDataProvider extends Component {
             nonAlcoholicList: [],
             popularList: [],
             recentList: [],
-            errMsg: ''
+            cocktailID: '',
+            searchType: '',
+            errMsg: '',
+            cocktailDetail: []
         }
     }
 
     getListData = async () => {
-        console.log("this.props")
-        console.log(this.props)
+        // console.log("this.props")
+        // console.log(this.props)
         this.setState({
             errMsg: ''
         })
         try {
-            // get the data
+            //////// get the data
+            // search by ingredient
             if (this.state.componentList.includes("ingredients")) {
                 ingredientsResp   = await axios.get(`${apiBaseUrl}${apiKey}/list.php?i=list`)
             }
@@ -43,6 +47,11 @@ class BigDataProvider extends Component {
             }
             if (this.state.componentList.includes("recent")) {
                 recentResp  = await axios.get(`${apiBaseUrl}${apiKey}/recent.php`)
+            }
+            
+            // search by cocktail ID
+            if (this.state.searchType === "cocktail") {
+                recentResp  = await axios.get(`${apiBaseUrl}${apiKey}/lookup.php?i=${this.state.cocktailID}`)
             }
             
             // Save it to state
@@ -66,6 +75,11 @@ class BigDataProvider extends Component {
                     recentList: recentResp.data.drinks
                 }) 
             }
+            if (this.state.searchType === "cocktail") {
+                this.setState({
+                    cocktailDetail: recentResp.data.drinks
+                }) 
+            }
             
         } catch(err){
             // handle error thrown from ANY request in the TRY
@@ -83,6 +97,19 @@ class BigDataProvider extends Component {
             componentList: arr 
         })
     }
+    
+    runSearch = (str, id) => {
+        this.setState({ 
+            searchType: str 
+        })
+        if (str === "cocktail") {
+            this.setState({ 
+                cocktailID: id 
+            })       
+        }
+        this.getListData()
+
+    }
 
     render(){
 
@@ -90,7 +117,8 @@ class BigDataProvider extends Component {
             <BigDataContext.Provider
                 value={{
                     ...this.state,
-                    getListData: this.getListData
+                    getListData: this.getListData,
+                    runSearch: this.runSearch
                 }}>
                 { this.props.children }
             </BigDataContext.Provider>

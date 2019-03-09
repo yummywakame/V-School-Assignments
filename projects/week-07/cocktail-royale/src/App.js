@@ -6,6 +6,8 @@ import { withListData } from './context/BigDataProvider.js'
 import Menu from './components/Menu.js'
 import PopularList from './components/PopularList.js'
 import RecentList from './components/RecentList.js'
+import NonAlcoholicList from './components/NonAlcoholicList.js'
+import DrinkDetail from './components/DrinkDetail.js'
 
 class App extends Component {
     constructor(props) {
@@ -112,9 +114,9 @@ class App extends Component {
                 <Switch>
                     <Route exact path='/' component={PopularList} />
                     <Route path='/latest' component={RecentList} />
+                    <Route path='/non-alcoholic' component={NonAlcoholicList} />
+                    <Route path='/cocktail/:_id' component={DrinkDetail} />
                 </Switch>
-
-                
 
                 <main className="container">
 

@@ -1,35 +1,35 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { withListData } from '../context/BigDataProvider.js'
+import DrinkThumb from './DrinkThumb.js'
 
-const RecentList = (props) => {
+class RecentList extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
 
-    return (
-        <main className="container">
+        }
+    }
 
-            <h1 className="glow">Latest Cocktails</h1>
-            <div id="drink-list" className="row">
+    componentDidMount() {
+        // get only the data for components specified in componentList
+        this.props.getListData()
+    }
 
-                {props.popularList.map((item) =>
+    render() {
 
-                    <div key={item.idDrink} className="col s12 m6 l4">
+        return (
+            <main className="container">
 
-                        <div className="card waves-effect black">
-                            <div className="card-image">
-                                <img src={item.strDrinkThumb} alt="{item.strDrink}" />
-                            </div>
-                            <div className="card-content">
-                                <h2>{item.strDrink}</h2>
-                            </div>
-                        </div>
-                    </div>
+                <h1 className="glow">Latest Cocktails</h1>
+                <div id="drink-list" className="row">
 
-                )}
+                    {this.props.recentList.map((item) => <DrinkThumb {...item} />)}
 
+                </div>
 
-            </div>
-
-        </main>
-    )
+            </main>
+        )
+    }
 }
 
 export default withListData(RecentList)

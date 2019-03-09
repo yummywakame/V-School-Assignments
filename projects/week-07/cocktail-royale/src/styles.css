@@ -31,11 +31,17 @@ h2 {
     color: whitesmoke;
     text-align: center;
     margin: 0;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .card {
     /* background-color: black; */
     cursor: pointer;
+    width: 100%;
 }
 
 p, blockquote, li, label {
@@ -50,11 +56,21 @@ p, blockquote, li, label {
 .tabs {
     background-color: rgba(0, 0, 0, 0.9);
     font-family: 'Julius Sans One', sans-serif;
+    
+}
+.tabs .tab a {
+    font-weight:bold;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
 
-.tabs .tab a:focus, .tabs .tab a:focus.active {
-    background-color: #e91e6212;
+.tabs .tab a:focus {
+    border-bottom: 3px solid #ffffff;
+    outline: none;
+}
+.tabs .tab a:hover {
+    border-bottom: 3px solid #ffffff77;
+    background-color: #e91e621b;
     outline: none;
 }
 
