@@ -9,13 +9,13 @@ class DrinkDetail extends Component {
 
     componentDidMount() {
         // get only the data for components specified in componentList
-        console.log(this.props.match.params)
+        // console.log(this.props.match.params)
         this.props.getCocktailDetails("cocktail", this.props.match.params._id)
     }
 
     render() {
-        console.log("DrinkDetails Props:")
-        console.log(this.props)
+        // console.log("DrinkDetails Props:")
+        // console.log(this.props)
 
         let {
             strDrink, strDrinkThumb, strGlass, strInstructions
@@ -27,9 +27,9 @@ class DrinkDetail extends Component {
             // strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15
         } = (this.props.cocktailDetail.length) && this.props.cocktailDetail[0]
 
-        console.log("this.props.cocktailDetail")
-        console.log(this.props.cocktailDetail)
-        console.log("strDrink: " + strDrink)
+        // console.log("this.props.cocktailDetail")
+        // console.log(this.props.cocktailDetail)
+        // console.log("strDrink: " + strDrink)
         return (
 
             <main className="container">

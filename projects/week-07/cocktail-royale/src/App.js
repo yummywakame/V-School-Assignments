@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
+import { withRouter } from 'react-router';
 import LoadOverlay from './components/LoadOverlay.js'
 import WelcomeSplash from './components/WelcomeSplash.js'
 import { Input, Button } from 'react-materialize'
@@ -9,35 +10,28 @@ import PopularList from './components/PopularList.js'
 import RecentList from './components/RecentList.js'
 import NonAlcoholicList from './components/NonAlcoholicList.js'
 import DrinkDetail from './components/DrinkDetail.js'
+import SearchResults from './components/SearchResults.js'
 
 // Stylesheets
 import './materialize.css'
 import './styles.css'
 
-// Avoid FOUC (Flash of Unstyled Content) using asyncRoute:
-// and import page components through it
-// import asyncRoute from './context/asyncRoute.js'
-// const PopularList = asyncRoute(() => import('./components/PopularList.js'))
-// const RecentList = asyncRoute(() => import('./components/RecentList.js'))
-// const NonAlcoholicList = asyncRoute(() => import('./components/NonAlcoholicList.js'))
-// const DrinkDetail = asyncRoute(() => import('./components/DrinkDetail.js'))
-
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            welcomeHidden: false,
             searchIngredient: '',
-            searchInput: '',
-            welcomeHidden: false
+            searchInput: ''
         }
     }
 
     componentDidMount() {
         // get only the data for components specified in componentList
         this.props.getListData()
-        
+
         // show welcome message div for 3 seconds
-        setTimeout(() => { this.hideWelcomeMessage() }, 5000)
+        setTimeout(() => { this.hideWelcomeMessage() }, 0)
     }
 
     componentWillUnmount() {
@@ -51,8 +45,13 @@ class App extends Component {
 
     handleSubmitIngredient = (event) => {
         event.preventDefault()
+        console.log("this.state.searchIngredient")
+        console.log(this.state.searchIngredient)
+        // submit the query to the db
+        this.props.setSearchType("ingredient", this.state.searchIngredient)
 
-        // submit the query to the db here later
+        // Redirect to the Search Results component
+        this.props.history.push(`/results/${this.state.searchIngredient}`)
 
         // Reset the form input values for the user
         this.setState({
@@ -78,19 +77,17 @@ class App extends Component {
     }
 
     render() {
-        // console.log("App.js props")
-        // console.log(this.props)
 
         return (
             <div id="container">
-
 
                 <WelcomeSplash welcomeHidden={this.state.welcomeHidden} />
 
                 <LoadOverlay />
 
                 <header>
-                    <Menu setComponentList={() => this.props.setComponentList()} />
+                    {/* <Menu setComponentList={() => this.props.setComponentList()} /> */}
+                    <Menu />
 
                     <div id="search-container">
                         <div className="row">
@@ -148,6 +145,7 @@ class App extends Component {
                     <Route path='/latest' component={RecentList} />
                     <Route path='/non-alcoholic' component={NonAlcoholicList} />
                     <Route path='/cocktail/:_id' component={DrinkDetail} />
+                    <Route path='/results/:_id' component={SearchResults} />
                 </Switch>
 
             </div>
@@ -155,4 +153,4 @@ class App extends Component {
     }
 }
 
-export default withListData(App)
+export default withRouter(withListData(App))

@@ -3,14 +3,14 @@
     left: 0;
     top: 0;
     z-index: 3000;
-    background-image: url("./gfx/cocktail-royale.png");
+    background-image: url("./gfx/cocktail-royale-pink.png");
     background-repeat: none;
     background-size: fit;
     background-repeat: no-repeat;
     background-position: center;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: #660033;
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -87,6 +87,12 @@ h1, h2, h3 {
 
 h1 {
     margin-bottom: 3rem;
+}
+h2 {
+    color: #ffffffb1;
+    text-transform: capitalize;
+    font-family: 'Open Sans', Sans-Serif;
+    font-size: 20px !important;
 }
 
 .glow {
