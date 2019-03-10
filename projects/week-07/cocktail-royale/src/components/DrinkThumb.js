@@ -12,9 +12,8 @@ class DrinkThumb extends Component {
         const { idDrink, strDrinkThumb, strDrink } = this.props
 
         return (
-            <div key={idDrink} className="col s12 m6 l4" onClick={() => {
-                this.props.runSearch("cocktail", idDrink)
-                this.props.history.push(`/cocktail/${idDrink}`)
+            <div className="col s12 m6 l4" onClick={() => {
+                this.props.getCocktailDetails("cocktail", idDrink)
             }}>
 
                 <div className="card waves-effect black">

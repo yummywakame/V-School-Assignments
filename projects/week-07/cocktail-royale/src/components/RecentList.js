@@ -12,7 +12,7 @@ class RecentList extends Component {
 
     componentDidMount() {
         // get only the data for components specified in componentList
-        this.props.getListData()
+        this.props.setComponentList(["recent"])
     }
 
     render() {
@@ -23,7 +23,7 @@ class RecentList extends Component {
                 <h1 className="glow">Latest Cocktails</h1>
                 <div id="drink-list" className="row">
 
-                    {this.props.recentList.map((item) => <DrinkThumb {...item} />)}
+                    {this.props.recentList.map((item) => <DrinkThumb {...item} {...this.props} key={item.idDrink} />)}
 
                 </div>
 

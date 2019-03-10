@@ -6,17 +6,18 @@ class DrinkDetail extends Component {
     constructor(props) {
         super(props)
     }
-    
+
     componentDidMount() {
         // get only the data for components specified in componentList
-        this.props.getListData()
+        console.log(this.props.match.params)
+        this.props.getCocktailDetails("cocktail", this.props.match.params._id)
     }
 
     render() {
         console.log("DrinkDetails Props:")
         console.log(this.props)
 
-        const {
+        let {
             strDrink, strDrinkThumb, strGlass, strInstructions
             // idDrink, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5,
             // strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10,
@@ -24,26 +25,13 @@ class DrinkDetail extends Component {
             // strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5,
             // strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10,
             // strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15
-        } = this.props.cocktailDetail
+        } = (this.props.cocktailDetail.length) && this.props.cocktailDetail[0]
 
         console.log("this.props.cocktailDetail")
         console.log(this.props.cocktailDetail)
         console.log("strDrink: " + strDrink)
         return (
-            // <div className="col s12 m6 l4">
 
-            //     <div className="card waves-effect black">
-            //         <div className="card-image">
-            //             <img src={strDrinkThumb} alt="{strDrink}" />
-            //         </div>
-            //         <div className="card-content">
-            //             <h2>{strDrink}</h2>
-            //             <p>{strInstructions}</p>
-            //             <p>{strGlass}</p>
-            //         </div>
-            //     </div>
-
-            // </div>
             <main className="container">
 
                 <h1 className="glow">{strDrink}</h1>

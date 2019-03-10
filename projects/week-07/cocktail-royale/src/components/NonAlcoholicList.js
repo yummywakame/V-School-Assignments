@@ -12,7 +12,7 @@ class NonAlcoholicList extends Component {
 
     componentDidMount() {
         // get only the data for components specified in componentList
-        this.props.getListData()
+        this.props.setComponentList(["nonalcoholic"])
     }
 
     render() {
@@ -23,7 +23,7 @@ class NonAlcoholicList extends Component {
                 <h1 className="glow">Non-Alcoholic Cocktails</h1>
                 <div id="drink-list" className="row">
 
-                    {this.props.nonAlcoholicList.map((item) => <DrinkThumb {...item} />)}
+                    {this.props.nonAlcoholicList.map((item) => <DrinkThumb {...item} {...this.props} key={item.idDrink} />)}
 
                 </div>
 

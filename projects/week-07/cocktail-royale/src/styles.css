@@ -1,3 +1,78 @@
+#welcome {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3000;
+    background-image: url("./gfx/cocktail-royale.png");
+    background-repeat: none;
+    background-size: fit;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: welcomeAnimation;
+    animation-name: welcomeAnimation;
+}
+
+@keyframes welcomeAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes welcomeAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes welcomeAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes welcomeAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+a {
+    color: #e91e63;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
     background-color: #660033;
 }
@@ -55,11 +130,11 @@ p, blockquote, li, label {
 
 .tabs {
     background-color: rgba(0, 0, 0, 0.9);
-    font-family: 'Julius Sans One', sans-serif;
-    
+    font-family: 'Open Sans', Sans-Serif;
 }
+
 .tabs .tab a {
-    font-weight:bold;
+    font-weight: bold;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
@@ -68,8 +143,28 @@ p, blockquote, li, label {
     border-bottom: 3px solid #ffffff;
     outline: none;
 }
+
 .tabs .tab a:hover {
     border-bottom: 3px solid #ffffff77;
+    background-color: #e91e621b;
+    outline: none;
+}
+
+.tabs .tab#logo div {
+    background-image: url("./gfx/cocktail-royale-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 138px;
+}
+
+.tabs .tab#logo a:focus {
+    border-bottom: inherit;
+    outline: none;
+}
+
+.tabs .tab#logo a:hover {
+    border-bottom: none;
     background-color: #e91e621b;
     outline: none;
 }
@@ -185,16 +280,21 @@ p, blockquote, li, label {
     font-size: 32px;
     margin: 2rem 0 1rem 0;
 }
+
 #instructions h2:first-child {
     margin-top: 0;
 }
+
 #instructions.card {
     cursor: default;
 }
 
-/* Overlay that hides the glitch where the page looks weird before
- the CSS is fully loaded */
+/* removes load overlay after css finishes loading to avoid FOUC */
 
-#loadOverlay {
+#loadOverlay2 {
+    display: none;
+}
+
+.hidden {
     display: none;
 }

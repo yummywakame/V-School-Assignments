@@ -1,20 +1,17 @@
 import React, { Component } from 'react'
 import { withListData } from '../context/BigDataProvider.js'
 import DrinkThumb from './DrinkThumb.js'
-import { BrowserRouter as Router } from 'react-router-dom'
-// import DrinkDetail from './DrinkDetail.js'
 
 class PopularList extends Component {
     constructor(props) {
         super(props)
         this.state = {
-
         }
     }
 
     componentDidMount() {
         // get only the data for components specified in componentList
-        this.props.getListData()
+        this.props.setComponentList(["popular"])
     }
 
     render() {
@@ -24,16 +21,10 @@ class PopularList extends Component {
 
                 <h1 className="glow">Popular Cocktails</h1>
                 <div id="drink-list" className="row">
-
-                    {this.props.popularList.map((item) => <Router><DrinkThumb {...item} {...this.props} /></Router>)}
-                    {/* {<DrinkDetail props={this.props.popularList} />} */}
-
+                    {this.props.popularList.map((item) => <DrinkThumb {...item} {...this.props} key={item.idDrink} />)}
                 </div>
 
             </main>
-            // <>
-            //     {this.props.popularList.map((item) => <DrinkDetail {...item} />)}
-            // </>
         )
     }
 }

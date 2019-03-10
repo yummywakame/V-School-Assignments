@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import LoadOverlay from './components/LoadOverlay.js'
+import WelcomeSplash from './components/WelcomeSplash.js'
 import { Input, Button } from 'react-materialize'
 import { withListData } from './context/BigDataProvider.js'
 import Menu from './components/Menu.js'
@@ -9,18 +10,38 @@ import RecentList from './components/RecentList.js'
 import NonAlcoholicList from './components/NonAlcoholicList.js'
 import DrinkDetail from './components/DrinkDetail.js'
 
+// Stylesheets
+import './materialize.css'
+import './styles.css'
+
+// Avoid FOUC (Flash of Unstyled Content) using asyncRoute:
+// and import page components through it
+// import asyncRoute from './context/asyncRoute.js'
+// const PopularList = asyncRoute(() => import('./components/PopularList.js'))
+// const RecentList = asyncRoute(() => import('./components/RecentList.js'))
+// const NonAlcoholicList = asyncRoute(() => import('./components/NonAlcoholicList.js'))
+// const DrinkDetail = asyncRoute(() => import('./components/DrinkDetail.js'))
+
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
             searchIngredient: '',
-            searchInput: ''
+            searchInput: '',
+            welcomeHidden: false
         }
     }
 
     componentDidMount() {
         // get only the data for components specified in componentList
         this.props.getListData()
+        
+        // show welcome message div for 3 seconds
+        setTimeout(() => { this.hideWelcomeMessage() }, 5000)
+    }
+
+    componentWillUnmount() {
+
     }
 
     handleChange = (event) => {
@@ -50,11 +71,21 @@ class App extends Component {
         })
     }
 
+    hideWelcomeMessage = () => {
+        this.setState({
+            welcomeHidden: true
+        })
+    }
+
     render() {
-        console.log("App.js props")
-        console.log(this.props)
+        // console.log("App.js props")
+        // console.log(this.props)
+
         return (
             <div id="container">
+
+
+                <WelcomeSplash welcomeHidden={this.state.welcomeHidden} />
 
                 <LoadOverlay />
 
@@ -113,79 +144,11 @@ class App extends Component {
 
                 <Switch>
                     <Route exact path='/' component={PopularList} />
+                    <Route exact path='/popular' component={PopularList} />
                     <Route path='/latest' component={RecentList} />
                     <Route path='/non-alcoholic' component={NonAlcoholicList} />
                     <Route path='/cocktail/:_id' component={DrinkDetail} />
                 </Switch>
-
-                <main className="container">
-
-                    <h1 className="glow">Mojito</h1>
-                    <div id="drink-detail">
-
-                        <div className="row">
-
-                            <div className="col s12 m12 l6">
-                                <div className="main-image">
-                                    <img src="https://www.thecocktaildb.com/images/media/drink/rxtqps1478251029.jpg" alt="" />
-                                </div>
-                            </div>
-                            <div className="col s12 m12 l6">
-                                <h2 className="textshadow">Ingredients</h2>
-
-                                <div id="ingredients" className="row">
-
-                                    <div className="col s4">
-                                        <img src="https://www.thecocktaildb.com/images/ingredients/Light%20rum-Medium.png" alt="" />
-                                        <p>2-3 oz Light rum</p>
-                                    </div>
-
-                                    <div className="col s4">
-                                        <img src="https://www.thecocktaildb.com/images/ingredients/Lime-Medium.png" alt="" />
-                                        <p>Juice of 1 lime</p>
-                                    </div>
-
-                                    <div className="col s4">
-                                        <img src="https://www.thecocktaildb.com/images/ingredients/Sugar-Medium.png" alt="" />
-                                        <p>2 tsp sugar</p>
-                                    </div>
-
-                                    <div className="col s4">
-                                        <img src="https://www.thecocktaildb.com/images/ingredients/Mint-Medium.png" alt="" />
-                                        <p>2 - 4 mint</p>
-                                    </div>
-
-                                    <div className="col s4">
-                                        <img src="https://www.thecocktaildb.com/images/ingredients/Soda%20water-Medium.png" alt="" />
-                                        <p>Soda water</p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                        <div className="row">
-                            <div className="col s12">
-                                <div id="instructions" className="card">
-                                    <div className="card-content white-text">
-                                        <h2>Instructions</h2>
-                                        <p>Muddle mint leaves with sugar and lime juice.
-                                        Add a splash of soda water and fill the glass with cracked ice.
-                                        Pour the rum and top with soda water.
-                                    Garnish and serve with straw.</p>
-
-                                        <h2>Glass</h2>
-                                        <p>Serve: Highball glass</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </main>
 
             </div>
         )
