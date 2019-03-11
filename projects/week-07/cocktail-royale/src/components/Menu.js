@@ -6,7 +6,14 @@ class Menu extends Component {
     // eslint-disable-next-line no-useless-constructor
     constructor(props) {
         super(props)
+        this.state = {
+            // randomCocktailID: props.match.params._id || ''
+        }
     }
+
+    // getRandomCocktailArrayId = () => {
+    //     return Math.floor(Math.random() * (92 + 1))
+    // }
 
     render() {
         const { setComponentList, getCocktailDetails } = this.props
@@ -17,9 +24,7 @@ class Menu extends Component {
                 <li className="tab"><Link className="pink-text" to="/popular" onClick={() => setComponentList(["popular"])}>Popular</Link></li>
                 <li className="tab"><Link className="pink-text" to="/latest" onClick={() => setComponentList(["recent"])}>Latest</Link></li>
                 <li className="tab"><Link className="pink-text" to="/non-alcoholic" onClick={() => setComponentList(["nonalcoholic"])}>Non-Alcoholic</Link></li>
-                <li className="tab" onClick={() => { getCocktailDetails("cocktail", 0) }} ><a className="pink-text" href={() => () => {}}>Roulette</a></li>
-                {/* <li className="tab"><Link className="pink-text" to="/roulette/:_id" onClick={() => getCocktailDetails("cocktail", 0)}>Roulette</Link></li> */}
-                {/* <li className="tab"><Link className="pink-text" to="./about">About</Link></li> */}
+                {/* <li className="tab"><Link className="pink-text" to={`/cocktail/${this.state.randomCocktailID}`} onClick={() => getCocktailDetails(this.state.randomCocktailID)}>Roulette</Link></li> */}
             </div>
         )
     }

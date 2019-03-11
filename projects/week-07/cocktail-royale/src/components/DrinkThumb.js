@@ -12,7 +12,7 @@ class DrinkThumb extends Component {
         const { idDrink, strDrinkThumb, strDrink, getCocktailDetails } = this.props
 
         return (
-            <div className="col s12 m6 l4" onClick={() => { getCocktailDetails("cocktail", idDrink) }}>
+            <div className="col s12 m6 l4" onClick={() => { getCocktailDetails(idDrink) }}>
                 <div className="card waves-effect black">
                     <div className="card-image">
                         <img src={strDrinkThumb} alt="{strDrink}" />

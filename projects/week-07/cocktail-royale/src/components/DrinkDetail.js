@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withListData } from '../context/BigDataProvider.js'
+import Ingredient from '../components/Ingredient.js'
 
 class DrinkDetail extends Component {
     // eslint-disable-next-line no-useless-constructor
@@ -10,7 +11,7 @@ class DrinkDetail extends Component {
     componentDidMount() {
         // get only the data for components specified in componentList
         // console.log(this.props.match.params)
-        this.props.getCocktailDetails("cocktail", this.props.match.params._id)
+        this.props.getCocktailDetails(this.props.match.params._id)
     }
 
     render() {
@@ -18,18 +19,38 @@ class DrinkDetail extends Component {
         // console.log(this.props)
 
         let {
-            strDrink, strDrinkThumb, strGlass, strInstructions
-            // idDrink, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5,
-            // strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10,
-            // strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15,
-            // strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5,
-            // strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10,
-            // strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15
+            strDrink, strDrinkThumb, strGlass, strInstructions,
+            idDrink, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5,
+            strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10,
+            strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15,
+            strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5,
+            strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10,
+            strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15
         } = (this.props.cocktailDetail.length) && this.props.cocktailDetail[0]
 
-        // console.log("this.props.cocktailDetail")
-        // console.log(this.props.cocktailDetail)
-        // console.log("strDrink: " + strDrink)
+        let ingredientArr = [
+            strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5,
+            strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10,
+            strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15
+        ]
+        ingredientArr = ingredientArr.filter(Boolean)
+        
+        let measureArray = [
+            strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5,
+            strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10,
+            strMeasure11, strMeasure12, strMeasure13, strMeasure14, strMeasure15
+        ]
+        measureArray = measureArray.filter(Boolean)
+        
+        let combinedIngredientsArr = ingredientArr.map((current, i) => 
+            ({
+                description: (((measureArray[i]) ? (measureArray[i] + ' ') : '') + current),
+                image: ((current) ? 'http://www.thecocktaildb.com/images/ingredients/' + current.split(' ').join('%20') + "-medium.png" : "")
+            })
+        )
+        
+        console.log("combinedIngredientsArr")
+        console.log(combinedIngredientsArr)
         return (
 
             <main className="container">
@@ -44,39 +65,12 @@ class DrinkDetail extends Component {
                                 <img src={strDrinkThumb} alt="{strDrink}" />
                             </div>
                         </div>
+                        
                         <div className="col s12 m12 l6">
                             <h2 className="textshadow">Ingredients</h2>
-
                             <div id="ingredients" className="row">
-
-                                <div className="col s4">
-                                    <img src="https://www.thecocktaildb.com/images/ingredients/Light%20rum-Medium.png" alt="" />
-                                    <p>2-3 oz Light rum</p>
-                                </div>
-
-                                <div className="col s4">
-                                    <img src="https://www.thecocktaildb.com/images/ingredients/Lime-Medium.png" alt="" />
-                                    <p>Juice of 1 lime</p>
-                                </div>
-
-                                <div className="col s4">
-                                    <img src="https://www.thecocktaildb.com/images/ingredients/Sugar-Medium.png" alt="" />
-                                    <p>2 tsp sugar</p>
-                                </div>
-
-                                <div className="col s4">
-                                    <img src="https://www.thecocktaildb.com/images/ingredients/Mint-Medium.png" alt="" />
-                                    <p>2 - 4 mint</p>
-                                </div>
-
-                                <div className="col s4">
-                                    <img src="https://www.thecocktaildb.com/images/ingredients/Soda%20water-Medium.png" alt="" />
-                                    <p>Soda water</p>
-                                </div>
-
+                                {combinedIngredientsArr.map((item, key) => <Ingredient {...item} {...this.props} key={key} />)}
                             </div>
-
-
                         </div>
 
                     </div>

@@ -23,6 +23,7 @@ class BigDataProvider extends Component {
             setSearchType: this.setSearchType,
             getCocktailDetails: this.getCocktailDetails,
             cocktailID: props.match.params._id || '',
+            cocktailArrayIndex: 0,
             searchIngredients: props.match.params._id || '',
             searchString: props.match.params._id || '',
             cocktailDetail: [],
@@ -85,6 +86,22 @@ class BigDataProvider extends Component {
                     cocktailDetail: cocktailResp.data.drinks
                 }, () => this.props.history.push(`/cocktail/${this.state.cocktailID}`))
             }
+
+            // // Get INDIVIDUAL Cocktail by Random Array Index
+            // if (this.state.searchType === "random") {
+            //     cocktailResp = await axios.get(`${apiBaseUrl}${apiKey}/filter.php?c=Cocktail`)
+            //     console.log("cocktailResp")
+            //     console.log(cocktailResp)
+            //     // Extract Cocktail ID from resulting array based on 
+            //     // previosly randomly selected index
+            //     // Then get the cocktail details
+            //     console.log("this.state.cocktailArrayIndex")
+            //     console.log(this.state.cocktailArrayIndex)
+            //     console.log("cocktailResp.data.drinks[this.state.cocktailArrayIndex].idDrink")
+            //     console.log(cocktailResp.data.drinks[`${this.state.cocktailArrayIndex}`].idDrink)
+            //     // this.getCocktailDetails(cocktailResp.data.drinks[`${this.state.cocktailArrayIndex}`].idDrink)
+            // }
+
             // Get all Cocktails by INGREDIENTS
             if (this.state.searchType === "ingredients" && this.state.searchIngredients) {
                 cocktailsByIngResp = await axios.get(`${apiBaseUrl}${apiKey}/filter.php?i=${this.state.searchIngredients}`)
@@ -143,22 +160,14 @@ class BigDataProvider extends Component {
         }
     }
 
-    getCocktailDetails = (str, id) => {
+    getCocktailDetails = (id) => {
         this.setState({
-            searchType: str
+            searchType: "cocktail"
         })
-        if (id === 0) {
-            id = this.getRandomCocktailId()
-        }
-        if (str === "cocktail") {
-            this.setState({
-                cocktailID: id
-            }, () => this.getListData())
-        }
-    }
-    
-    getRandomCocktailId = () => {
-        return Math.floor(Math.random() * (92 + 1))
+
+        this.setState({
+            cocktailID: id
+        }, () => this.getListData())
     }
 
     render() {

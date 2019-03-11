@@ -4,7 +4,7 @@ import { withRouter } from 'react-router';
 import LoadOverlay from './components/LoadOverlay.js'
 import WelcomeSplash from './components/WelcomeSplash.js'
 import { Input, Button } from 'react-materialize'
-import BigDataProvider, { withListData } from './context/BigDataProvider.js'
+import { withListData } from './context/BigDataProvider.js'
 import Menu from './components/Menu.js'
 import PopularList from './components/PopularList.js'
 import RecentList from './components/RecentList.js'
