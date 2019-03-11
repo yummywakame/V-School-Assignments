@@ -5,7 +5,7 @@ class ThemeProvider extends Component {
     constructor(){
         super()
         this.state = {
-            theme: localStorage.theme || "pink"
+            theme: localStorage.theme || "blue"
         }
     }
 
@@ -13,19 +13,19 @@ class ThemeProvider extends Component {
 
         // set theme to opposite of previous theme
         this.setState(prevState => ({
-            theme: (prevState.theme === "pink") ? "blue" : "pink"
+            theme: (prevState.theme === "blue") ? "pink" : "blue"
         }))    
         
         // set localStorage theme to new theme
         localStorage.theme = this.state.theme
     
         // apply the theme to the body tag
-        if (localStorage.theme === "pink") {
-            document.body.classList.remove('blue-theme')
-            document.body.classList.add('pink-theme')        
-        } else {
+        if (localStorage.theme === "blue") {
             document.body.classList.remove('pink-theme')
-            document.body.classList.add('blue-theme')           
+            document.body.classList.add('blue-theme')        
+        } else {
+            document.body.classList.remove('blue-theme')
+            document.body.classList.add('pink-theme')           
         }
     }
 

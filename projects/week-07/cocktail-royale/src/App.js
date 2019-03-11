@@ -35,12 +35,12 @@ class App extends Component {
         setTimeout(() => { this.hideWelcomeMessage() }, 5000)
 
         // Find out if theme previously saved in localStorage and apply it
-        if (localStorage.theme === "blue") {
-            document.body.classList.remove('pink-theme')
-            document.body.classList.add('blue-theme')
-        } else {
+        if (localStorage.theme === "pink") {
             document.body.classList.remove('blue-theme')
             document.body.classList.add('pink-theme')
+        } else {
+            document.body.classList.remove('pink-theme')
+            document.body.classList.add('blue-theme')
         }
     }
 

@@ -3,9 +3,8 @@
     left: 0;
     top: 0;
     z-index: 3000;
-    background-image: url("./gfx/cocktail-royale-pink.png");
     background-repeat: none;
-    background-size: fit;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 100vw;
