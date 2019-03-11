@@ -4,13 +4,14 @@ import { withRouter } from 'react-router';
 import LoadOverlay from './components/LoadOverlay.js'
 import WelcomeSplash from './components/WelcomeSplash.js'
 import { Input, Button } from 'react-materialize'
-import { withListData } from './context/BigDataProvider.js'
+import BigDataProvider, { withListData } from './context/BigDataProvider.js'
 import Menu from './components/Menu.js'
 import PopularList from './components/PopularList.js'
 import RecentList from './components/RecentList.js'
 import NonAlcoholicList from './components/NonAlcoholicList.js'
 import DrinkDetail from './components/DrinkDetail.js'
-import SearchResults from './components/SearchResults.js'
+import SearchResultsIng from './components/SearchResultsIng.js'
+import SearchResultsStr from './components/SearchResultsStr.js'
 
 // Stylesheets
 import './materialize.css'
@@ -21,8 +22,8 @@ class App extends Component {
         super(props)
         this.state = {
             welcomeHidden: false,
-            searchIngredient: '',
-            searchInput: ''
+            searchIngredients: '',
+            searchString: ''
         }
     }
 
@@ -43,30 +44,31 @@ class App extends Component {
         this.setState({ [name]: value })
     }
 
-    handleSubmitIngredient = (event) => {
+    handleSubmitIngredientSearch = (event) => {
         event.preventDefault()
-        console.log("this.state.searchIngredient")
-        console.log(this.state.searchIngredient)
         // submit the query to the db
-        this.props.setSearchType("ingredient", this.state.searchIngredient)
+        this.props.setSearchType("ingredients", this.state.searchIngredients)
 
         // Redirect to the Search Results component
-        this.props.history.push(`/results/${this.state.searchIngredient}`)
+        this.props.history.push(`/results/ingredients/${this.state.searchIngredients}`)
 
         // Reset the form input values for the user
         this.setState({
-            searchIngredient: ''
+            searchIngredients: ''
         })
     }
 
-    handleSubmitSearch = (event) => {
+    handleSubmitStringSearch = (event) => {
         event.preventDefault()
+        // submit the query to the db
+        this.props.setSearchType("string", this.state.searchString)
 
-        // submit the query to the db here later
+        // Redirect to the Search Results component
+        this.props.history.push(`/results/cocktails/${this.state.searchString}`)
 
         // Reset the form input values for the user
         this.setState({
-            searchInput: ''
+            searchString: ''
         })
     }
 
@@ -94,13 +96,13 @@ class App extends Component {
 
                             <div className="col s12 m6">
 
-                                <form onSubmit={this.handleSubmitIngredient}>
+                                <form onSubmit={this.handleSubmitIngredientSearch}>
                                     <div className="col s12">
 
                                         <div className="select-wrapper col s10">
                                             <div className="input-field">
-                                                <Input s={12} type='select' name="searchIngredient" value={this.state.searchIngredient} onChange={this.handleChange} required >
-                                                    <option value=''>Search by ingredient...</option>
+                                                <Input s={12} type='select' name="searchIngredients" value={this.state.searchIngredients} onChange={this.handleChange} required >
+                                                    <option value=''>Search by ingredients...</option>
                                                     {this.props.ingredientsList.map((item, key) =>
                                                         <option key={key} value={item.strIngredient1.split(' ').join('_')}>{item.strIngredient1}</option>
                                                     )}
@@ -117,12 +119,12 @@ class App extends Component {
 
                             <div className="col s12 m6">
 
-                                <form onSubmit={this.handleSubmitSearch}>
+                                <form onSubmit={this.handleSubmitStringSearch}>
                                     <div className="col s12">
 
                                         <div className="search-wrapper col s10">
                                             <div className="input-field">
-                                                <Input s={12} type="text" name="searchInput" value={this.state.searchInput} placeholder="Cocktail name..." onChange={this.handleChange} required />
+                                                <Input s={12} type="text" name="searchString" value={this.state.searchString} placeholder="Cocktail name..." onChange={this.handleChange} required />
                                             </div>
                                         </div>
 
@@ -145,7 +147,9 @@ class App extends Component {
                     <Route path='/latest' component={RecentList} />
                     <Route path='/non-alcoholic' component={NonAlcoholicList} />
                     <Route path='/cocktail/:_id' component={DrinkDetail} />
-                    <Route path='/results/:_id' component={SearchResults} />
+                    <Route path='/results/cocktails/:_id' component={SearchResultsStr} />
+                    <Route path='/results/ingredients/:_id' component={SearchResultsIng} />
+                    <Route path='/roulette/:_id' component={DrinkDetail} />
                 </Switch>
 
             </div>

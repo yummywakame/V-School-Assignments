@@ -12,6 +12,7 @@ let popularResp
 let recentResp
 let cocktailResp
 let cocktailsByIngResp
+let cocktailsByStrResp
 
 class BigDataProvider extends Component {
     constructor(props) {
@@ -22,22 +23,21 @@ class BigDataProvider extends Component {
             setSearchType: this.setSearchType,
             getCocktailDetails: this.getCocktailDetails,
             cocktailID: props.match.params._id || '',
-            searchIngredient: props.match.params._id || '',
+            searchIngredients: props.match.params._id || '',
+            searchString: props.match.params._id || '',
             cocktailDetail: [],
             ingredientsList: [],
             nonAlcoholicList: [],
             cocktailsByIngList: [],
+            cocktailsByStrList: [],
             popularList: [],
             recentList: [],
-            searchType: (typeof props.match.params._id === Number) ? 'cocktail' : '',
-            searchInput: '',
+            searchType: (typeof props.match.params._id === Number) ? 'cocktail' : (typeof props.match.params._id !== Number) ? 'string' : '',
             errMsg: ''
         }
     }
 
     getListData = async () => {
-        // console.log("this.props")
-        // console.log(this.props)
         this.setState({
             errMsg: ''
         })
@@ -45,7 +45,7 @@ class BigDataProvider extends Component {
             ////////////////////////////////////////////////////////////////////////////
             // GET THE DATA 
 
-            // Get ingredient list
+            // Get ingredients list
             if (this.state.componentList.includes("ingredients")) {
                 ingredientsResp = await axios.get(`${apiBaseUrl}${apiKey}/list.php?i=list`)
                 // Save ingredients list to state
@@ -85,31 +85,39 @@ class BigDataProvider extends Component {
                     cocktailDetail: cocktailResp.data.drinks
                 }, () => this.props.history.push(`/cocktail/${this.state.cocktailID}`))
             }
-            // Get all Cocktails by INGREDIENT
-            if (this.state.searchType === "ingredient" && this.state.searchIngredient) {
-                cocktailsByIngResp = await axios.get(`${apiBaseUrl}${apiKey}/filter.php?i=${this.state.searchIngredient}`)
-                // Save all cocktails by INGREDIENT
+            // Get all Cocktails by INGREDIENTS
+            if (this.state.searchType === "ingredients" && this.state.searchIngredients) {
+                cocktailsByIngResp = await axios.get(`${apiBaseUrl}${apiKey}/filter.php?i=${this.state.searchIngredients}`)
+                // Save all cocktails by INGREDIENTS
                 this.setState({
                     cocktailsByIngList: cocktailsByIngResp.data.drinks,
-                    searchIngredient: ''
+                    searchIngredients: ''
+                })
+            }
+            // Get all Cocktails by COCKTAIL NAME string
+            if (this.state.searchType === "string" && this.state.searchString) {
+                cocktailsByStrResp = await axios.get(`${apiBaseUrl}${apiKey}/search.php?s=${this.state.searchString}`)
+                // Save all cocktails found by NAME
+                this.setState({
+                    cocktailsByStrList: cocktailsByStrResp.data.drinks,
+                    searchString: ''
                 })
             }
 
             ////////////////////////////////////////////////////////////////////////////
             // CLEAR STATE
             this.setState({
-                searchType: ''
+                searchType: '',
+                componentList: ''
             })
 
         } catch (err) {
-            console.log('TCL: }catch -> err', err)
             // handle error thrown from ANY request in the TRY
             // if(!this.state.ingredientsList.length || !this.state.nonAlcoholicList.length){
             //     this.setState({
             //         errMsg: "The CocktailDB server is overloaded. Please try again later."
             //     })
             // }
-            // console.log(err)
         }
     }
 
@@ -123,9 +131,14 @@ class BigDataProvider extends Component {
         this.setState({
             searchType: sType
         })
-        if (sType === "ingredient") {
+        if (sType === "ingredients") {
             this.setState({
-                searchIngredient: id
+                searchIngredients: id
+            }, () => this.getListData())
+        }
+        if (sType === "string") {
+            this.setState({
+                searchString: id
             }, () => this.getListData())
         }
     }
@@ -134,11 +147,18 @@ class BigDataProvider extends Component {
         this.setState({
             searchType: str
         })
+        if (id === 0) {
+            id = this.getRandomCocktailId()
+        }
         if (str === "cocktail") {
             this.setState({
                 cocktailID: id
             }, () => this.getListData())
         }
+    }
+    
+    getRandomCocktailId = () => {
+        return Math.floor(Math.random() * (92 + 1))
     }
 
     render() {
