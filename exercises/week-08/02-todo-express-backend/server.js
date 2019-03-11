@@ -5,9 +5,30 @@ const uuid = require('uuid/v4')
 // Fake Database
 let todos = [
     {
-        "name": "The name",
-        "description": "The description of the todo",
-        "imageUrl": "http://www.myimage....",
+        "name": "Make lunch for tomorrow",
+        "description": "Add pickles",
+        "imageUrl": "",
+        "completed": false,
+        "_id": uuid()
+    },
+    {
+        "name": "Feed the cats",
+        "description": "",
+        "imageUrl": "",
+        "completed": false,
+        "_id": uuid()
+    },
+    {
+        "name": "File taxes",
+        "description": "http://www.turbotax.com",
+        "imageUrl": "",
+        "completed": false,
+        "_id": uuid()
+    },
+    {
+        "name": "Shop for groceries",
+        "description": "Milk, Bread, Eggs, Cheese, Apples, Chicken.",
+        "imageUrl": "",
         "completed": false,
         "_id": uuid()
     }

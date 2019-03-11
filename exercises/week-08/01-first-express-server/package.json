@@ -1,0 +1,18 @@
+{
+  "name": "01-first-express-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "init": "^0.1.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
