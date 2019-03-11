@@ -5,8 +5,9 @@ import React from 'react'
 const LoadOverlay = () => {
     return (
         <>
-        <div id="loadOverlay1" style={{backgroundColor:`${localStorage.theme === "blue" ? "#1a237e" : "#660033"}`, zIndex:`5000`, position:`absolute`, top:`0px`, left:`0px`, width:`100vw`, height:`100vh`, zIndex:2000}}></div>
-        <div id="loadOverlay2" style={{backgroundColor:`${localStorage.theme === "blue" ? "#1a237e" : "#660033"}`, zIndex:`5000`, position:`absolute`, top:`0px`, left:`0px`, width:`100vw`, height:`100vh`, zIndex:2000}}></div>        </>
+            <div id="loadOverlay1" style={{backgroundColor:`${localStorage.theme === "blue" ? "#1a237e" : "#660033"}`, zIndex:`5000`, position:`absolute`, top:`0px`, left:`0px`, width:`100vw`, height:`100vh`, ZIndex:`2000`}}></div>
+            <div id="loadOverlay2" style={{backgroundColor:`${localStorage.theme === "blue" ? "#1a237e" : "#660033"}`, zIndex:`5000`, position:`absolute`, top:`0px`, left:`0px`, width:`100vw`, height:`100vh`, ZIndex:`2000`}}></div>
+        </>
     )
 }
 

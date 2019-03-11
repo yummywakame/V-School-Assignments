@@ -1,5 +1,7 @@
 #welcome {
     position: fixed;
+    background-image: url("./gfx/cocktail-royale-pink.png");
+    background-color: #660033;
     left: 0;
     top: 0;
     z-index: 3000;
@@ -9,9 +11,8 @@
     background-position: center;
     width: 100vw;
     height: 100vh;
-    background-color: #660033;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
@@ -378,5 +379,6 @@ body.blue-theme {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
+    z-index: 0;
 }

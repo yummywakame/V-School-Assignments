@@ -22,6 +22,7 @@ class BigDataProvider extends Component {
             setComponentList: this.setComponentList,
             setSearchType: this.setSearchType,
             getCocktailDetails: this.getCocktailDetails,
+            getRandomCocktailDetails: this.getRandomCocktailDetails,
             cocktailID: props.match.params._id || '',
             cocktailArrayIndex: 0,
             searchIngredients: props.match.params._id || '',
@@ -86,22 +87,17 @@ class BigDataProvider extends Component {
                     cocktailDetail: cocktailResp.data.drinks
                 }, () => this.props.history.push(`/cocktail/${this.state.cocktailID}`))
             }
-
-            // // Get INDIVIDUAL Cocktail by Random Array Index
-            // if (this.state.searchType === "random") {
-            //     cocktailResp = await axios.get(`${apiBaseUrl}${apiKey}/filter.php?c=Cocktail`)
-            //     console.log("cocktailResp")
-            //     console.log(cocktailResp)
-            //     // Extract Cocktail ID from resulting array based on 
-            //     // previosly randomly selected index
-            //     // Then get the cocktail details
-            //     console.log("this.state.cocktailArrayIndex")
-            //     console.log(this.state.cocktailArrayIndex)
-            //     console.log("cocktailResp.data.drinks[this.state.cocktailArrayIndex].idDrink")
-            //     console.log(cocktailResp.data.drinks[`${this.state.cocktailArrayIndex}`].idDrink)
-            //     // this.getCocktailDetails(cocktailResp.data.drinks[`${this.state.cocktailArrayIndex}`].idDrink)
-            // }
-
+            // Get INDIVIDUAL Cocktail by Random ID
+            if (this.state.searchType === "random") {
+                cocktailResp = await axios.get(`${apiBaseUrl}${apiKey}/random.php`)
+                console.log("cocktailResp.data.drinks")
+                console.log(cocktailResp.data.drinks)
+                // Save SELECTED Cocktail to state
+                this.setState({
+                    cocktailDetail: cocktailResp.data.drinks,
+                    cocktailID: this.state.cocktailDetail.idDrink
+                }, () => this.props.history.push(`/cocktail/${this.state.cocktailID}`))
+            }
             // Get all Cocktails by INGREDIENTS
             if (this.state.searchType === "ingredients" && this.state.searchIngredients) {
                 cocktailsByIngResp = await axios.get(`${apiBaseUrl}${apiKey}/filter.php?i=${this.state.searchIngredients}`)
@@ -169,6 +165,12 @@ class BigDataProvider extends Component {
             cocktailID: id
         }, () => this.getListData())
     }
+    
+    getRandomCocktailDetails = () => {
+        this.setState({
+            searchType: "random"
+        }, () => this.getListData())
+    }
 
     render() {
         return (
@@ -176,7 +178,8 @@ class BigDataProvider extends Component {
                 value={{
                     ...this.state,
                     getListData: this.getListData,
-                    getCocktailDetails: this.getCocktailDetails
+                    getCocktailDetails: this.getCocktailDetails,
+                    getRandomCocktailDetails: this.getRandomCocktailDetails
                 }}>
                 {this.props.children}
             </BigDataContext.Provider>

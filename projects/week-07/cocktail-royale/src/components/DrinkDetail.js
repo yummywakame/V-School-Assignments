@@ -9,8 +9,6 @@ class DrinkDetail extends Component {
     }
 
     componentDidMount() {
-        // get only the data for components specified in componentList
-        // console.log(this.props.match.params)
         this.props.getCocktailDetails(this.props.match.params._id)
     }
 
@@ -49,8 +47,6 @@ class DrinkDetail extends Component {
             })
         )
         
-        console.log("combinedIngredientsArr")
-        console.log(combinedIngredientsArr)
         return (
 
             <main className="container">

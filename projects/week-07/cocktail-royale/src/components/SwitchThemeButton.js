@@ -3,7 +3,7 @@ import { withTheme } from '../context/ThemeProvider.js'
 
 const SwitchThemeButton = (props) => {
     return (
-        <div className="waves-effect white-text waves-pink btn-flat theme-button  theme-picker" onClick={props.toggleTheme}>
+        <div className="waves-effect white-text waves-pink btn-flat theme-button theme-picker" onClick={props.toggleTheme}>
             <i className="material-icons">colorize</i>
             {/* {localStorage.theme === "blue" ? "pink theme" : "blue theme"} */}
         </div>

@@ -10,6 +10,7 @@ import PopularList from './components/PopularList.js'
 import RecentList from './components/RecentList.js'
 import NonAlcoholicList from './components/NonAlcoholicList.js'
 import DrinkDetail from './components/DrinkDetail.js'
+// import Roulette from './components/Roulette.js'
 import SearchResultsIng from './components/SearchResultsIng.js'
 import SearchResultsStr from './components/SearchResultsStr.js'
 import SwitchThemeButton from './components/SwitchThemeButton.js'
@@ -32,20 +33,22 @@ class App extends Component {
         this.props.getListData()
 
         // show welcome message div for 3 seconds
-        setTimeout(() => { this.hideWelcomeMessage() }, 5000)
+        setTimeout(() => {
+            localStorage.welcomeHidden = true
+            this.forceUpdate()
+        }, 7000)
 
         // Find out if theme previously saved in localStorage and apply it
-        if (localStorage.theme === "pink") {
-            document.body.classList.remove('blue-theme')
-            document.body.classList.add('pink-theme')
-        } else {
+        if (localStorage.theme === "blue") {
             document.body.classList.remove('pink-theme')
             document.body.classList.add('blue-theme')
+        } else {
+            document.body.classList.remove('blue-theme')
+            document.body.classList.add('pink-theme')
         }
     }
 
     componentWillUnmount() {
-
     }
 
     handleChange = (event) => {
@@ -79,10 +82,6 @@ class App extends Component {
         this.setState({
             searchString: ''
         })
-    }
-
-    hideWelcomeMessage = () => {
-        localStorage.welcomeHidden = true
     }
 
     render() {
@@ -153,10 +152,11 @@ class App extends Component {
                     <Route exact path='/popular' component={PopularList} />
                     <Route path='/latest' component={RecentList} />
                     <Route path='/non-alcoholic' component={NonAlcoholicList} />
+                    <Route path='/cocktail/roulette' component={DrinkDetail} />
                     <Route path='/cocktail/:_id' component={DrinkDetail} />
+                    
                     <Route path='/results/cocktails/:_id' component={SearchResultsStr} />
                     <Route path='/results/ingredients/:_id' component={SearchResultsIng} />
-                    <Route path='/roulette/:_id' component={DrinkDetail} />
                 </Switch>
 
             </div>

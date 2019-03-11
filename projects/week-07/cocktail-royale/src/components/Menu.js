@@ -16,7 +16,7 @@ class Menu extends Component {
     // }
 
     render() {
-        const { setComponentList } = this.props
+        const { setComponentList, getRandomCocktailDetails } = this.props
 
         return (
             <div role="navigation" className="tabs">
@@ -24,7 +24,7 @@ class Menu extends Component {
                 <li className="tab"><Link className="pink-text" to="/popular" onClick={() => setComponentList(["popular"])}>Popular</Link></li>
                 <li className="tab"><Link className="pink-text" to="/latest" onClick={() => setComponentList(["recent"])}>Latest</Link></li>
                 <li className="tab"><Link className="pink-text" to="/non-alcoholic" onClick={() => setComponentList(["nonalcoholic"])}>Non-Alcoholic</Link></li>
-                {/* <li className="tab"><Link className="pink-text" to={`/cocktail/${this.state.randomCocktailID}`} onClick={() => getCocktailDetails(this.state.randomCocktailID)}>Roulette</Link></li> */}
+                <li className="tab"><Link className="pink-text" to="/cocktail/roulette" onClick={() => getRandomCocktailDetails()}>Roulette</Link></li>
             </div>
         )
     }
