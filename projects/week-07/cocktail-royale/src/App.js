@@ -6,6 +6,7 @@ import WelcomeSplash from './components/WelcomeSplash.js'
 import { Input, Button } from 'react-materialize'
 import { withListData } from './context/BigDataProvider.js'
 import Menu from './components/Menu.js'
+import SearchByString from './components/SearchByString'
 import PopularList from './components/PopularList.js'
 import RecentList from './components/RecentList.js'
 import NonAlcoholicList from './components/NonAlcoholicList.js'
@@ -88,7 +89,7 @@ class App extends Component {
                 <LoadOverlay />
 
                 <header>
-                    {/* <Menu setComponentList={() => this.props.setComponentList()} /> */}
+
                     <Menu />
 
                     <div id="search-container">
@@ -102,7 +103,7 @@ class App extends Component {
                                         <div className="select-wrapper col s10">
                                             <div className="input-field">
                                                 <Input s={12} type='select' name="searchIngredients" value={this.state.searchIngredients} onChange={this.handleChange} required >
-                                                    <option value=''>Search by ingredients...</option>
+                                                    <option value='' disabled selected>Search by ingredients...</option>
                                                     {this.props.ingredientsList.map((item, key) =>
                                                         <option key={key} value={item.strIngredient1.split(' ').join('_')}>{item.strIngredient1}</option>
                                                     )}

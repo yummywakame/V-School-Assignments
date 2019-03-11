@@ -21,4 +21,3 @@ class Ingredient extends Component {
 }
 
 export default withListData(Ingredient)
-

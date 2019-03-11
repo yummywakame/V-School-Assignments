@@ -16,7 +16,7 @@ class Menu extends Component {
     // }
 
     render() {
-        const { setComponentList, getCocktailDetails } = this.props
+        const { setComponentList } = this.props
 
         return (
             <div role="navigation" className="tabs">
