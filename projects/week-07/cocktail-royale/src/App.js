@@ -12,6 +12,7 @@ import NonAlcoholicList from './components/NonAlcoholicList.js'
 import DrinkDetail from './components/DrinkDetail.js'
 import SearchResultsIng from './components/SearchResultsIng.js'
 import SearchResultsStr from './components/SearchResultsStr.js'
+import SwitchThemeButton from './components/SwitchThemeButton.js'
 
 // Stylesheets
 import './materialize.css'
@@ -21,7 +22,6 @@ class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            welcomeHidden: false,
             searchIngredients: '',
             searchString: ''
         }
@@ -32,7 +32,16 @@ class App extends Component {
         this.props.getListData()
 
         // show welcome message div for 3 seconds
-        setTimeout(() => { this.hideWelcomeMessage() }, 0)
+        setTimeout(() => { this.hideWelcomeMessage() }, 5000)
+
+        // Find out if theme previously saved in localStorage and apply it
+        if (localStorage.theme === "blue") {
+            document.body.classList.remove('pink-theme')
+            document.body.classList.add('blue-theme')
+        } else {
+            document.body.classList.remove('blue-theme')
+            document.body.classList.add('pink-theme')
+        }
     }
 
     componentWillUnmount() {
@@ -73,9 +82,7 @@ class App extends Component {
     }
 
     hideWelcomeMessage = () => {
-        this.setState({
-            welcomeHidden: true
-        })
+        localStorage.welcomeHidden = true
     }
 
     render() {
@@ -83,12 +90,12 @@ class App extends Component {
         return (
             <div id="container">
 
-                <WelcomeSplash welcomeHidden={this.state.welcomeHidden} />
+                <WelcomeSplash />
 
                 <LoadOverlay />
 
                 <header>
-
+                    <SwitchThemeButton />
                     <Menu />
 
                     <div id="search-container">
@@ -102,7 +109,7 @@ class App extends Component {
                                         <div className="select-wrapper col s10">
                                             <div className="input-field">
                                                 <Input s={12} type='select' name="searchIngredients" value={this.state.searchIngredients} onChange={this.handleChange} required >
-                                                    <option value='' disabled selected>Search by ingredients...</option>
+                                                    <option value='' disabled defaultValue>Search by ingredients...</option>
                                                     {this.props.ingredientsList.map((item, key) =>
                                                         <option key={key} value={item.strIngredient1.split(' ').join('_')}>{item.strIngredient1}</option>
                                                     )}
@@ -111,7 +118,7 @@ class App extends Component {
                                         </div>
 
                                         <div className="button-wrapper col s2">
-                                            <Button waves='light' className="pink" icon='search'></Button>
+                                            <Button waves='light' className="tiny-button" icon='search'></Button>
                                         </div>
                                     </div>
                                 </form>
@@ -129,7 +136,7 @@ class App extends Component {
                                         </div>
 
                                         <div className="button-wrapper col s2">
-                                            <Button waves='light' className="pink" icon='search'></Button>
+                                            <Button waves='light' className="tiny-button" icon='search'></Button>
                                         </div>
                                     </div>
                                 </form>

@@ -20,7 +20,7 @@ class Menu extends Component {
 
         return (
             <div role="navigation" className="tabs">
-                <li className="tab" id="logo"><Link className="pink-text" to="/" onClick={() => setComponentList(["popular"])}><div></div></Link></li>
+                <li className="tab" id="logo"><Link to="/" onClick={() => setComponentList(["popular"])}><div></div></Link></li>
                 <li className="tab"><Link className="pink-text" to="/popular" onClick={() => setComponentList(["popular"])}>Popular</Link></li>
                 <li className="tab"><Link className="pink-text" to="/latest" onClick={() => setComponentList(["recent"])}>Latest</Link></li>
                 <li className="tab"><Link className="pink-text" to="/non-alcoholic" onClick={() => setComponentList(["nonalcoholic"])}>Non-Alcoholic</Link></li>

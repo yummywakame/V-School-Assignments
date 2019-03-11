@@ -73,8 +73,17 @@ a {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.blue, .pink {
+    color: #e91e63 !important;
+    transition: all 0.5s ease;
+}
+.tiny-button {
+    background-color: #e91e63 !important;
+}
+
 body {
     background-color: #660033;
+    transition: background-color 0.5s ease;
 }
 
 h1, h2, h3 {
@@ -95,7 +104,16 @@ h1 {
     font-size: 20px !important;
 }
 
+.theme-picker {
+    position: absolute;
+    z-index: 4000;
+    right: 0;
+    top: 0;
+    float: none !important;
+}
+
 .glow {
+    transition: text-shadow 0.5s ease;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
 
@@ -120,7 +138,6 @@ h2 {
 }
 
 .card {
-    /* background-color: black; */
     cursor: pointer;
     width: 100%;
 }
@@ -194,9 +211,9 @@ p, blockquote, li, label {
 }
 
 .select-wrapper input.select-dropdown, input[type=text]:not(.browser-default) {
-    color: #f8bbd0;
+    color: #ffffffb1;
     font-weight: 300;
-    border-bottom: 1px solid #79003d !important;
+    border-bottom: 1px solid #ad1457 !important;
 }
 
 .select-dropdown li span {
@@ -225,27 +242,25 @@ p, blockquote, li, label {
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #f8bbd0 !important;
+    color: #ffffffb1 !important;
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #f8bbd0 !important;
+    color: #ffffffb1 !important;
 }
 
 :-ms-input-placeholder {
     /* IE 10+ */
-    color: #f8bbd0 !important;
+    color: #ffffffb1 !important;
 }
 
 :-moz-placeholder {
     /* Firefox 18- */
-    color: #f8bbd0 !important;
+    color: #ffffffb1 !important;
 }
 
 /* RESULTS STYLING */
-
-.drink-list {}
 
 .drink-item>div {
     width: 300px;
@@ -295,7 +310,69 @@ p, blockquote, li, label {
     cursor: default;
 }
 
-/* removes load overlay after css finishes loading to avoid FOUC */
+
+
+/* //////////////////////////////////////////////////////////////////////////////////*/
+/* OVERRIDES FOR BLUE THEME /////////////////////////////////////////////////////////*/
+.blue-theme #welcome {
+    background-image: url("./gfx/cocktail-royale-blue.png");
+    background-color: #1a237e;
+}
+
+.blue-theme a, .blue-theme .pink-text {
+    color: #03a9f4 !important;
+}
+
+.blue-theme .blue, .blue-theme .pink {
+    color: #03a9f4 !important;
+}
+.blue-theme .tiny-button {
+    background-color: #03a9f4 !important;
+}
+
+body.blue-theme {
+    background-color: #1a237e;
+}
+
+.blue-theme .glow {
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #03a9f4 0px 0px 20px, #03a9f4 0px 0px 30px, #03a9f4 0px 0px 40px, #03a9f4 0px 0px 50px, #03a9f4 0px 0px 75px;
+}
+
+.blue-theme .textshadow {
+    text-shadow: #1a237e 1px 1px 0;
+}
+
+.blue-theme .tabs .tab a:hover {
+    background-color: #401ee91b;
+}
+
+.blue-theme .tabs .tab#logo a:hover {
+    background-color: #401ee91b;
+}
+
+.blue-theme .select-wrapper .caret {
+    color: #2196f3;
+}
+
+.blue-theme .select-wrapper input.select-dropdown, .blue-theme input[type=text]:not(.browser-default) {
+    border-bottom: 1px solid #0d47a1 !important;
+}
+
+.blue-theme .select-dropdown li span {
+    background-color: #283593;
+}
+
+
+
+/* RESULTS STYLING */
+
+.blue-theme #drink-detail h2 {
+    color: #2196f3;
+}
+
+
+
+/* removes load overlay after css finishes loading to avoid FOUC //////////////////////////////*/
 
 #loadOverlay2 {
     display: none;

@@ -3,7 +3,7 @@ import React from 'react'
 const WelcomeSplash = (props) => {
 
     return (
-        <div id="welcome" className={(props.welcomeHidden) ? 'hidden' : ''}></div>
+        <div id="welcome" style={{zIndex:`6000`}} className={(localStorage.welcomeHidden) ? 'hidden' : ''}></div>
     )
 }
 
