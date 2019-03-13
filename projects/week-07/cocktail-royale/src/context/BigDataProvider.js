@@ -96,7 +96,7 @@ class BigDataProvider extends Component {
                 this.setState({
                     cocktailDetail: cocktailResp.data.drinks,
                     cocktailID: this.state.cocktailDetail.idDrink
-                }, () => this.props.history.push(`/cocktail/${this.state.cocktailID}`))
+                }, () => this.props.history.push(`/cocktail/roulette`))
             }
             // Get all Cocktails by INGREDIENTS
             if (this.state.searchType === "ingredients" && this.state.searchIngredients) {

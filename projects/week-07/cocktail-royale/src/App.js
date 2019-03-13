@@ -5,15 +5,14 @@ import LoadOverlay from './components/LoadOverlay.js'
 import WelcomeSplash from './components/WelcomeSplash.js'
 import { Input, Button } from 'react-materialize'
 import { withListData } from './context/BigDataProvider.js'
-import Menu from './components/Menu.js'
+import TopMenu from './components/TopMenu.js'
 import PopularList from './components/PopularList.js'
 import RecentList from './components/RecentList.js'
 import NonAlcoholicList from './components/NonAlcoholicList.js'
 import DrinkDetail from './components/DrinkDetail.js'
-// import Roulette from './components/Roulette.js'
+import Roulette from './components/Roulette.js'
 import SearchResultsIng from './components/SearchResultsIng.js'
 import SearchResultsStr from './components/SearchResultsStr.js'
-import SwitchThemeButton from './components/SwitchThemeButton.js'
 
 // Stylesheets
 import './materialize.css'
@@ -46,9 +45,6 @@ class App extends Component {
             document.body.classList.remove('blue-theme')
             document.body.classList.add('pink-theme')
         }
-    }
-
-    componentWillUnmount() {
     }
 
     handleChange = (event) => {
@@ -92,10 +88,8 @@ class App extends Component {
                 <WelcomeSplash />
 
                 <LoadOverlay />
-
                 <header>
-                    <SwitchThemeButton />
-                    <Menu />
+                    <TopMenu />
 
                     <div id="search-container">
                         <div className="row">
@@ -152,7 +146,7 @@ class App extends Component {
                     <Route exact path='/popular' component={PopularList} />
                     <Route path='/latest' component={RecentList} />
                     <Route path='/non-alcoholic' component={NonAlcoholicList} />
-                    <Route path='/cocktail/roulette' component={DrinkDetail} />
+                    <Route path='/cocktail/roulette' component={Roulette} />
                     <Route path='/cocktail/:_id' component={DrinkDetail} />
                     
                     <Route path='/results/cocktails/:_id' component={SearchResultsStr} />

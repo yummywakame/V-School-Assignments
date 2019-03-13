@@ -77,6 +77,7 @@ a {
     color: #e91e63 !important;
     transition: all 0.5s ease;
 }
+
 .tiny-button {
     background-color: #e91e63 !important;
 }
@@ -97,8 +98,9 @@ h1, h2, h3 {
 h1 {
     margin-bottom: 3rem;
 }
-#search-results h2 {
-    color: #ffffffb1;
+
+#search-results > h2 {
+    color: e91e63;
     text-transform: capitalize;
     font-family: 'Open Sans', Sans-Serif;
     font-size: 20px !important;
@@ -159,7 +161,8 @@ p, blockquote, li, label {
 .tabs .tab a {
     font-weight: bold;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
+    cursor: pointer !important;
+    font-size: 30px;
 }
 
 .tabs .tab a:focus {
@@ -240,6 +243,10 @@ p, blockquote, li, label {
     margin-bottom: 1rem;
 }
 
+#no-search-results {
+    text-align: center;
+}
+
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #ffffffb1 !important;
@@ -310,10 +317,10 @@ p, blockquote, li, label {
     cursor: default;
 }
 
-
-
 /* //////////////////////////////////////////////////////////////////////////////////*/
+
 /* OVERRIDES FOR BLUE THEME /////////////////////////////////////////////////////////*/
+
 .blue-theme #welcome {
     background-image: url("./gfx/cocktail-royale-blue.png");
     background-color: #1a237e;
@@ -323,9 +330,10 @@ p, blockquote, li, label {
     color: #03a9f4 !important;
 }
 
-.blue-theme .blue, .blue-theme .pink {
+.blue-theme .blue, .blue-theme .pink, .blue-theme #search-results > h2 {
     color: #03a9f4 !important;
 }
+
 .blue-theme .tiny-button {
     background-color: #03a9f4 !important;
 }
@@ -362,15 +370,11 @@ body.blue-theme {
     background-color: #283593;
 }
 
-
-
 /* RESULTS STYLING */
 
 .blue-theme #drink-detail h2 {
     color: #2196f3;
 }
-
-
 
 /* removes load overlay after css finishes loading to avoid FOUC //////////////////////////////*/
 
