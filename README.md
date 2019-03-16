@@ -27,6 +27,12 @@ Personal side-project for Wolfman Steve
 <hr />
 
 ## &#10097; Featured Exercises
+### WEEK 8: Fully CRUD app using Mongoose and MongoDB with a client-side React Interface // <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-08/03-the-original-bounty-hunter">Files</a>
+
+<img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/exercises/week-08/03-the-original-bounty-hunter/screenshot3.png">
+
+<hr />
+
 ### WEEK 6: Fully CRUD React App with Theme Switcher & localStorage // <a href="https://yw-cats.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-06/07-things/">Files</a>
 
 <a href="https://yw-cats.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-06/07-things/screenshot.png"><a/>
