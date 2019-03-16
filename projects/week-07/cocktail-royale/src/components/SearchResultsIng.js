@@ -10,10 +10,13 @@ class SearchResultsIng extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         // get only the data for the type of search
         this.props.setSearchType("ingredients", this.props.match.params._id)
         console.log("Search Results: this.props")
         console.log(this.props)
+        // set the page title
+        document.title = "Cocktail Royale | Search results"
     }
 
     render() {

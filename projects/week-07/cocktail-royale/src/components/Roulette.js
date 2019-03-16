@@ -8,7 +8,8 @@ class Roulette extends Component {
     }
 
     componentDidMount() {
-        // this.props.getCocktailDetails(this.props.match.params._id)
+        window.scrollTo(0, 0)
+
     }
 
     render() {

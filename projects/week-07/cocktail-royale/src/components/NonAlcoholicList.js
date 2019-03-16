@@ -11,8 +11,11 @@ class NonAlcoholicList extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         // get only the data for components specified in componentList
         this.props.setComponentList(["nonalcoholic"])
+        // set the page title
+        document.title = "Cocktail Royale | Non-Alcoholic Cocktails"
     }
 
     render() {

@@ -10,8 +10,11 @@ class PopularList extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         // get only the data for components specified in componentList
         this.props.setComponentList(["popular"])
+        // set the page title
+        document.title = "Cocktail Royale | Popular Cocktails"
     }
 
     render() {

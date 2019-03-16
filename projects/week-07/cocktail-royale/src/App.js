@@ -101,13 +101,23 @@ class App extends Component {
 
                                         <div className="select-wrapper col s10">
                                             <div className="input-field">
+                                                {/* <select>
+                                                  <option value="" disabled selected>Choose your option</option>
+                                                  <option value="1">Option 1</option>
+                                                  <option value="2">Option 2</option>
+                                                  <option value="3">Option 3</option>
+                                                </select> */}
+                                            
+                                            
                                                 <Input s={12} type='select' name="searchIngredients" value={this.state.searchIngredients} onChange={this.handleChange} required >
-                                                    <option value='' disabled defaultValue>Search by ingredients...</option>
+                                                    <option value='' defaultValue>Search by ingredients...</option>
                                                     {this.props.ingredientsList.map((item, key) =>
                                                         <option key={key} value={item.strIngredient1.split(' ').join('_')}>{item.strIngredient1}</option>
                                                     )}
                                                 </Input>
                                             </div>
+                                            
+                                            
                                         </div>
 
                                         <div className="button-wrapper col s2">

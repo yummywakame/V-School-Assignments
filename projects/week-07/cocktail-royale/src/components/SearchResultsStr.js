@@ -11,8 +11,11 @@ class SearchResultsStr extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         // get only the data for the type of search
         this.props.setSearchType("string", this.props.match.params._id)
+        // set the page title
+        document.title = "Cocktail Royale | Search results"
     }
 
     render() {

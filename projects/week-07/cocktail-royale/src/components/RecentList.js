@@ -11,8 +11,11 @@ class RecentList extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         // get only the data for components specified in componentList
         this.props.setComponentList(["recent"])
+        // set the page title
+        document.title = "Cocktail Royale | Latest Cocktails"
     }
 
     render() {

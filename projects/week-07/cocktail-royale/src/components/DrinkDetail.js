@@ -9,7 +9,10 @@ class DrinkDetail extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0)
         this.props.getCocktailDetails(this.props.match.params._id)
+        // set the page title
+        document.title = "Cocktail Royale | " + this.props.cocktailDetail[0].strDrink
     }
 
     render() {
