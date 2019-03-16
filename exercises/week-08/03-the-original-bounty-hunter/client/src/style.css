@@ -13,7 +13,7 @@ body {
     background-position: top center;
     background-repeat: repeat;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     
 }
 
