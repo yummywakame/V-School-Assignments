@@ -1,0 +1,22 @@
+{
+  "name": "user-auth-pt1",
+  "version": "1.0.0",
+  "description": "// This Week's Gameplan     `11:45 Today: Group Project Presentations`         - Choose one person in your group that has the App fully running          locally and use their computer for the presentation         - Please have everyone in the group mention/talk about at least 1          part they worked on         - Show the features, responsiveness, and then a part or two in the code         that was particularly difficult     `2:00 Today: User Auth Part 1 - Server setup`     `3:30 Review as needed`     `4:00 Leave Early?` // Wednesday     `9:15: User Auth part 2 - Client setup`     `2:00: Front-end and Full-stack Deployment rundown`",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.20",
+    "morgan": "^1.9.1"
+  }
+}
