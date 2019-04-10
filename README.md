@@ -1,6 +1,13 @@
 # Full Stack JS Bootcamp - Jan '19
 ## &#10097; Featured Projects
 
+### WEEK 11: Fully CRUD MongoDB backend, React Front-end with custom API and Token-Based User Authentication // <a href="https://daily-tarot-reader.herokuapp.com">Launch Live Site</a> | <a href="https://github.com/yummywakame/daily-tarot">Files</a> | <a href="https://www.youtube.com/watch?v=pbbEjv3gvoo">YouTube Demo</a>
+
+<a href="https://daily-tarot-reader.herokuapp.com"><img src="https://github.com/yummywakame/daily-tarot/raw/master/screenshot.png"></a>
+
+
+<hr />
+
 ### WEEK 6: React App to API // <a href="https://wolfman-the-legend.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-06/wolfman-the-legend">Files</a>
 Personal side-project for Wolfman Steve
 
