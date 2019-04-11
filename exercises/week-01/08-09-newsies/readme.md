@@ -4,6 +4,8 @@
 #### DEMO: 
 - <a href="https://yw-newsies.surge.sh/">Newsies</a>*
 
+<a href="https://yw-newsies.surge.sh/"><img src="screenshot.png"></a>
+
 #### Completed according to assignment instructions: 
 1. http://coursework.vschool.io/block-vs-inline-newsies/
 2. https://coursework.vschool.io/replace-all-the-things/
