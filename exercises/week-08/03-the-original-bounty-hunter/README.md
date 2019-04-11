@@ -7,5 +7,7 @@
 - https://coursework.vschool.io/the-original-bounty-hunter/
 - http://coursework.vschool.io/bounty-hunting-with-mongoose/
 
-#### Screenshot:
-<img src="screenshot3.png">
+#### Demo:
+<a href="https://original-bounty-hunter.herokuapp.com/">Original Bounty Hunter Demo</a>
+
+<a href="https://original-bounty-hunter.herokuapp.com/"><img src="screenshot3.png"></a>
