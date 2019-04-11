@@ -32,9 +32,9 @@ Personal side-project for Wolfman Steve
 
 <hr />
 
-### WEEK 2: Mario Pest Control // <a href="yw-mario-pest-control.surge.sh">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-02/mario-pest-control">Files</a>
+### WEEK 2: Mario Pest Control // <a href="https://yw-mario-pest-control.surge.sh">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-02/mario-pest-control">Files</a>
 
-<a href="yw-mario-pest-control.surge.sh"><img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/projects/week-02/mario-pest-control/screenshot.png"></a>
+<a href="https://yw-mario-pest-control.surge.sh"><img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/projects/week-02/mario-pest-control/screenshot.png"></a>
 
 <hr />
 
