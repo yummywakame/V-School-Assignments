@@ -3,7 +3,6 @@ const User = require('../models/user.js')
 const authRouter = express.Router()
 const jwt = require('jsonwebtoken')
 
-
 authRouter.post("/signup", (req, res, next) => {
     // Does a user by the submitted username already exists
     User.findOne({username: req.body.username.toLowerCase()}, (err, user) => {
@@ -32,7 +31,6 @@ authRouter.post("/signup", (req, res, next) => {
     })
 })
 
-
 authRouter.post("/login", (req, res, next) => {
     User.findOne({username: req.body.username.toLowerCase()}, (err, user) => {
         if(err){
@@ -60,6 +58,5 @@ authRouter.post("/login", (req, res, next) => {
         })
     })
 })
-
 
 module.exports = authRouter
