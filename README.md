@@ -5,6 +5,11 @@
 
 <a href="https://daily-tarot-reader.herokuapp.com"><img src="https://github.com/yummywakame/daily-tarot/raw/master/screenshot.png"></a>
 
+<hr />
+
+### WEEK 7: CockTail Royale - React App featuring Axios and React Router // <a href="https://cocktail-royale.surge.sh">Launch Live Site</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-07/cocktail-royale">Files</a>
+
+<a href="https://cocktail-royale.surge.sh"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/projects/week-07/cocktail-royale/screenshot.png"></a>
 
 <hr />
 
