@@ -26,9 +26,9 @@ Personal side-project for Wolfman Steve
 
 <hr />
 
-### WEEK 3: Business Time // <a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/index.html">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/">Files</a>
+### WEEK 3: Business Time // <a href="https://yw-business-time.surge.sh/">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/">Files</a>
 
-<a href="https://htmlpreview.github.io/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/index.html"><img src="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/screenshot2.png"></a>
+<a href="https://yw-business-time.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/screenshot2.png"></a>
 
 <hr />
 
