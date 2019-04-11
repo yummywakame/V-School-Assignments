@@ -5,4 +5,4 @@
 - https://coursework.vschool.io/mario-pest-control/ 
 
 #### Demo:
-<a href="http://htmlpreview.github.com/?https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-02/mario-pest-control/index.html"><img src="./screenshot.png"></a>
+<a href="https://yw-mario-pest-control.surge.sh"><img src="./screenshot.png"></a>
