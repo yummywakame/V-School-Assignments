@@ -39,9 +39,9 @@ Personal side-project for Wolfman Steve
 <hr />
 
 ## &#10097; Featured Exercises
-### WEEK 8: Fully CRUD app using Mongoose and MongoDB with a client-side React Interface // <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-08/03-the-original-bounty-hunter">Files</a>
+### WEEK 8: Fully CRUD app using Mongoose and MongoDB with a client-side React Interface // <a href="https://github.com/yummywakame/original-bounty-hunter">Files</a>
 
-<img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/exercises/week-08/03-the-original-bounty-hunter/screenshot3.png">
+<img src="https://raw.githubusercontent.com/yummywakame/original-bounty-hunter/screenshot3.png">
 
 <hr />
 
