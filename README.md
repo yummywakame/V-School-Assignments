@@ -1,6 +1,12 @@
 # Full Stack JS Bootcamp - Jan '19
 ## &#10097; Featured Projects
 
+### WEEK 12: Fully CRUD MongoDB backend, React Front-end with custom API and Token-Based User Authentication // <a href="https://attache-portfolio.herokuapp.com/">Launch Live Site</a> | <a href="https://github.com/AniTurner/full-stack-group-project">Files</a>
+
+<a href="https://attache-portfolio.herokuapp.com/"><img src="https://github.com/AniTurner/full-stack-group-project/raw/master/screenshot-3.png"></a>
+
+<hr />
+
 ### WEEK 11: Fully CRUD MongoDB backend, React Front-end with custom API and Token-Based User Authentication // <a href="https://daily-tarot-reader.herokuapp.com">Launch Live Site</a> | <a href="https://github.com/yummywakame/daily-tarot">Files</a> | <a href="https://www.youtube.com/watch?v=pbbEjv3gvoo">YouTube Demo</a>
 
 <a href="https://daily-tarot-reader.herokuapp.com"><img src="https://github.com/yummywakame/daily-tarot/raw/master/screenshot.png"></a>
