@@ -6,6 +6,7 @@
 
 #### Features:
 - Theme chooser
+- Fully responsive on any device
 - Discover cocktails by ingredient
 - Cocktail Roulette randomly selects a cocktail for you
 - Non-Alcoholic cocktail options
