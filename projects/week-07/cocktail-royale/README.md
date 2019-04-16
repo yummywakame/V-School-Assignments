@@ -4,6 +4,15 @@
 #### Live Site:
 - <a href="https://cocktail-royale.surge.sh/" target="_blank">Cocktail Royale</a>
 
+#### Features:
+- Theme chooser
+- Discover cocktails by ingredient
+- Cocktail Roulette randomly selects a cocktail for you
+- Non-Alcoholic cocktail options
+- Most recently added cocktails
+- Most popular cocktails
+- High res images of cocktails and ingredients
+
 #### Screenshots:
 - LEFT: Desktop - pink color scheme
 - RIGHT: Responsive - blue color scheme
