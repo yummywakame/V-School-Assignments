@@ -8,7 +8,7 @@
 
 ---
 
-### WEEK 11: Fully CRUD MongoDB backend, React Front-end with custom API and Token-Based User Authentication // [Launch Live Site](https://daily-tarot-reader.herokuapp.com) | [Files](https://github.com/yummywakame/daily-tarot) | [YouTube Demo](https://www.youtube.com/watch?v=pbbEjv3gvoo)
+### WEEK 11: Fully CRUD MongoDB backend, React Front-end with custom API and Token-Based User Authentication // [Launch Live Site](https://yummy-wakame.com/demos/daily-tarot/today) | [Files](https://github.com/yummywakame/daily-tarot) | [YouTube Demo](https://www.youtube.com/watch?v=pbbEjv3gvoo)
 
 
 
