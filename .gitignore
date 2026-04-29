@@ -3,3 +3,5 @@
 /projects/.vscode
 # local agent guidance
 AGENTS.md
+# generated modernization report output
+MODERNIZE_REPORT.md
