@@ -1,95 +1,99 @@
 # Full Stack JS Bootcamp - Jan '19
-## &#10097; Featured Projects
 
-### WEEK 12: Fully CRUD MongoDB backend, React Front-end with custom API and Token-Based User Authentication // <a href="https://attache-portfolio.herokuapp.com/">Launch Live Site</a> | <a href="https://github.com/AniTurner/full-stack-group-project">Files</a>
+## ❱ Featured Projects
 
-<a href="https://attache-portfolio.herokuapp.com/"><img src="https://github.com/AniTurner/full-stack-group-project/raw/master/screenshot-3.png"></a>
+### WEEK 12: Fully CRUD MongoDB backend, React Front-end with custom API and Token-Based User Authentication // [Launch Live Site](https://attache-portfolio.herokuapp.com/) | [Files](https://github.com/AniTurner/full-stack-group-project)
 
-<hr />
 
-### WEEK 11: Fully CRUD MongoDB backend, React Front-end with custom API and Token-Based User Authentication // <a href="https://daily-tarot-reader.herokuapp.com">Launch Live Site</a> | <a href="https://github.com/yummywakame/daily-tarot">Files</a> | <a href="https://www.youtube.com/watch?v=pbbEjv3gvoo">YouTube Demo</a>
 
-<a href="[https://daily-tarot-reader.herokuapp.com](https://yummy-wakame.com/demos/daily-tarot)"><img src="https://github.com/yummywakame/daily-tarot/raw/master/screenshot-new.png"></a>
+---
 
-<hr />
+### WEEK 11: Fully CRUD MongoDB backend, React Front-end with custom API and Token-Based User Authentication // [Launch Live Site](https://daily-tarot-reader.herokuapp.com) | [Files](https://github.com/yummywakame/daily-tarot) | [YouTube Demo](https://www.youtube.com/watch?v=pbbEjv3gvoo)
 
-### WEEK 7: CockTail Royale - React App featuring Axios and React Router // <a href="https://cocktail-royale.surge.sh">Launch Live Site</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-07/cocktail-royale">Files</a>
 
-<a href="https://cocktail-royale.surge.sh"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/projects/week-07/cocktail-royale/screenshot.png"></a>
 
-<hr />
+---
 
-### WEEK 6: React App to API // <a href="https://wolfman-the-legend.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-06/wolfman-the-legend">Files</a>
+### WEEK 7: CockTail Royale - React App featuring Axios and React Router // [Launch Live Site](https://yummy-wakame.com/demos/cocktail-royale-vschool) | [Files](https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-07/cocktail-royale)
+
+
+
+---
+
+### WEEK 6: React App to API // [React Demo](https://wolfman-the-legend.surge.sh/) | [Files](https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-06/wolfman-the-legend)
+
 Personal side-project for Wolfman Steve
 
-<a href="https://wolfman-the-legend.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/projects/week-06/wolfman-the-legend/screenshot.png"></a>
 
-<hr />
 
-### WEEK 4: Fully CRUD Axios To Do App // <a href="https://yw-todo-list.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-04/axios-to-do-project">Files</a>
+---
 
-<a href="https://yw-todo-list.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/projects/week-04/axios-to-do-project/screenshot.png"></a>
+### WEEK 4: Fully CRUD Axios To Do App // [React Demo](https://yw-todo-list.surge.sh/) | [Files](https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-04/axios-to-do-project)
 
-<hr />
 
-### WEEK 3: Business Time // <a href="https://yw-business-time.surge.sh/">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/">Files</a>
 
-<a href="https://yw-business-time.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/screenshot2.png"></a>
+---
 
-<hr />
+### WEEK 3: Business Time // [Demo](https://yw-business-time.surge.sh/) | [Files](https://github.com/yummywakame/V-School-Assignments/blob/master/projects/week-03/business-time/)
 
-### WEEK 2: Mario Pest Control // <a href="https://yw-mario-pest-control.surge.sh">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-02/mario-pest-control">Files</a>
 
-<a href="https://yw-mario-pest-control.surge.sh"><img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/projects/week-02/mario-pest-control/screenshot.png"></a>
 
-<hr />
+---
 
-## &#10097; Featured Exercises
-### WEEK 8: Fully CRUD app using Mongoose and MongoDB with a client-side React Interface // <a href="https://github.com/yummywakame/original-bounty-hunter">Files</a>
+### WEEK 2: Mario Pest Control // [Demo](https://yw-mario-pest-control.surge.sh) | [Files](https://github.com/yummywakame/V-School-Assignments/tree/master/projects/week-02/mario-pest-control)
 
-<img src="https://raw.githubusercontent.com/yummywakame/original-bounty-hunter/screenshot3.png">
 
-<hr />
 
-### WEEK 6: Fully CRUD React App with Theme Switcher & localStorage // <a href="https://yw-cats.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-06/07-things/">Files</a>
+---
 
-<a href="https://yw-cats.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-06/07-things/screenshot.png"><a/>
+## ❱ Featured Exercises
 
-<hr />
+### WEEK 8: Fully CRUD app using Mongoose and MongoDB with a client-side React Interface // [Files](https://github.com/yummywakame/original-bounty-hunter)
 
-### WEEK 5: Rolling Dice with React State // <a href="https://yw-yahtzee-dicebox.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/10-rolling-dice-react-state">Files</a>
 
-<a href="https://yw-yahtzee-dicebox.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/10-rolling-dice-react-state/screenshot.png"></a>
 
-<hr />
+---
 
-### WEEK 5: 'Clean Blog' React Demo with Props // <a href="https://yw-clean-blog-react.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/07-blog-props/README.md">Files</a>
+### WEEK 6: Fully CRUD React App with Theme Switcher & localStorage // [React Demo](https://yw-cats.surge.sh/) | [Files](https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-06/07-things/)
 
-<a href="https://yw-clean-blog-react.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-05/07-blog-props/screenshot.png"></a>
 
-<hr />
 
-### WEEK 5: Vacation Destination Cards // <a href="https://yw-react-vacation-spots.surge.sh/">React Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/06-vacation-spots-using-props-and-map">Files</a>
+---
 
-<a href="https://yw-react-vacation-spots.surge.sh/"><img src="https://github.com/yummywakame/V-School-Assignments/raw/master/exercises/week-05/06-vacation-spots-using-props-and-map/screenshot.png"></a>
+### WEEK 5: Rolling Dice with React State // [React Demo](https://yw-yahtzee-dicebox.surge.sh/) | [Files](https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/10-rolling-dice-react-state)
 
-<hr />
 
-### WEEK 2: Design a Blog // <a href="https://yw-quick-blog.surge.sh/">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/07-design-a-blog">Files</a>
 
-<a href="https://yw-quick-blog.surge.sh/"><img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/exercises/week-02/07-design-a-blog/screenshot.png"></a>
-  
-<hr />
+---
 
-### WEEK 2: Flags created purely out of CSS // <a href="https://yw-css-flags.surge.sh/">Demo</a> | <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/08-css-flags">Files</a>
+### WEEK 5: 'Clean Blog' React Demo with Props // [React Demo](https://yw-clean-blog-react.surge.sh/) | [Files](https://github.com/yummywakame/V-School-Assignments/blob/master/exercises/week-05/07-blog-props/README.md)
 
-<a href="https://yw-css-flags.surge.sh/"><img src="https://raw.githubusercontent.com/yummywakame/V-School-Assignments/master/exercises/week-02/08-css-flags/screenshot.png"></a>
 
-<hr />
 
-### WEEK 2: Random Password Generator // <a href="https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/20-random-password-generator">Files</a>
+---
+
+### WEEK 5: Vacation Destination Cards // [React Demo](https://yw-react-vacation-spots.surge.sh/) | [Files](https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-05/06-vacation-spots-using-props-and-map)
+
+
+
+---
+
+### WEEK 2: Design a Blog // [Demo](https://yw-quick-blog.surge.sh/) | [Files](https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/07-design-a-blog)
+
+
+
+---
+
+### WEEK 2: Flags created purely out of CSS // [Demo](https://yw-css-flags.surge.sh/) | [Files](https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/08-css-flags)
+
+
+
+---
+
+### WEEK 2: Random Password Generator // [Files](https://github.com/yummywakame/V-School-Assignments/tree/master/exercises/week-02/20-random-password-generator)
 
 #### Console:
+
 ```console
 foo@bar:~/assignments/exercises/week-02/20-random-password-generator (master) $ node app.js
 Random 16 character password:
@@ -107,3 +111,4 @@ Random 5 character password containing only letters from 'MyCat1984':
 (string length > charNum)
 yCaMt
 ```
+
