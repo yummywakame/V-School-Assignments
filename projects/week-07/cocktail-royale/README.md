@@ -10,7 +10,7 @@ This is the modernized v2 of Cocktail Royale. It preserves the original look and
 - Vite (replaces legacy Create React App tooling)
 
 #### Live Site:
-- <a href="https://yummy-wakame.com/demos/cocktail-royale" target="_blank">Cocktail Royale</a>
+- <a href="https://yummy-wakame.com/demos/cocktail-royale-vschool" target="_blank">Cocktail Royale</a>
 
 #### Features:
 - Theme chooser
@@ -26,7 +26,7 @@ This is the modernized v2 of Cocktail Royale. It preserves the original look and
 - LEFT: Desktop - pink color scheme
 - RIGHT: Responsive - blue color scheme
 
-<a href="https://yummy-wakame.com/demos/cocktail-royale" target="_blank"><img src="screenshot.png"></a>
+<a href="https://yummy-wakame.com/demos/cocktail-royale-vschool" target="_blank"><img src="screenshot.png"></a>
 
 ## Recent Project Updates
 
