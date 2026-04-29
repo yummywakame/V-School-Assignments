@@ -3,20 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
-    "materialize-css": "^1.0.0-rc.2",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-materialize": "^2.6.0",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5"
+    "axios": "^1.13.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.3.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "npm run build && mv build/index.html build/200.html && surge build"
+    "start": "vite",
+    "dev": "concurrently -k \"vite\" \"node server/index.js\"",
+    "server": "node server/index.js",
+    "refresh-cocktail-names": "node server/index.js --refresh",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && surge dist"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^4.1.0",
+    "concurrently": "^9.2.1",
+    "vite": "^7.1.12"
   },
   "eslintConfig": {
     "extends": "react-app"

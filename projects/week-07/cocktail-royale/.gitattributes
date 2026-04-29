@@ -1,0 +1,9 @@
+# LF in the repository; consistent diffs on macOS, Linux, and Windows (with core.autocrlf).
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary

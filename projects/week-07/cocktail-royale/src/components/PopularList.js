@@ -1,32 +1,32 @@
 import React, { Component } from 'react'
 import { withListData } from '../context/BigDataProvider.js'
-import DrinkThumb from './DrinkThumb.js'
+import SearchDrinkList from './SearchDrinkList.js'
 
 class PopularList extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-        }
+        this.state = {}
     }
 
     componentDidMount() {
         window.scrollTo(0, 0)
-        // get only the data for components specified in componentList
-        this.props.setComponentList(["popular"])
-        // set the page title
-        document.title = "Cocktail Royale | Popular Cocktails"
+        this.props.setComponentList(['popular'])
+        document.title = 'Popular Cocktails | Cocktail Royale'
     }
 
     render() {
+        const popularDrinks = Array.isArray(this.props.popularList)
+            ? [...this.props.popularList].sort((a, b) =>
+                  (a?.strDrink || '').localeCompare(b?.strDrink || '')
+              )
+            : []
 
         return (
             <main className="container">
-
                 <h1 className="glow">Popular Cocktails</h1>
                 <div id="drink-list" className="row">
-                    {this.props.popularList.map((item) => <DrinkThumb {...item} {...this.props} key={item.idDrink} />)}
+                    <SearchDrinkList items={popularDrinks} drinkThumbProps={this.props} />
                 </div>
-
             </main>
         )
     }

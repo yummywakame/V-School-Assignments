@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withListData } from '../context/BigDataProvider.js'
-import DrinkThumb from './DrinkThumb.js'
+import SearchDrinkList from './SearchDrinkList.js'
 import { Link } from 'react-router-dom'
 
 class SearchResultsStr extends Component {
@@ -15,36 +15,58 @@ class SearchResultsStr extends Component {
         // get only the data for the type of search
         this.props.setSearchType("string", this.props.match.params._id)
         // set the page title
-        document.title = "Cocktail Royale | Search results"
+        document.title = 'Search Results | Cocktail Royale'
     }
 
     render() {
+        const list = this.props.cocktailsByStrList
         let cocktailSeachResults
-        if (this.props.cocktailsByStrList) {
-        
-            cocktailSeachResults = this.props.cocktailsByStrList.map((item) => 
-            <DrinkThumb {...item} {...this.props} key={item.idDrink} />)
-        } else {
-            cocktailSeachResults = 
-                <div id="no-search-results">
-                    <p>We're sorry, we found no cocktail names matching your search. Our database is still growing, so please be patient.</p>
-                    <p>In the mean time, you can try a less complex search like "Russian" to see all related cocktails.</p>
-                    
-                    <p>Try the <Link className="pink-text" to="/cocktail/roulette" onClick={() => this.props.getRandomCocktailDetails()}><i className="material-icons">toys</i>ROULETTE</Link> feature for a surprise cocktail!</p>
-                </div>
-        }
-        
-        return (
-            <main className="container search-results" id="search-results">
 
+        if (list === null || list === undefined) {
+            cocktailSeachResults = (
+                <div className="search-results-loading" role="status" aria-live="polite">
+                    Searching…
+                </div>
+            )
+        } else if (list.length === 0) {
+            cocktailSeachResults = (
+                <div id="no-search-results">
+                    <p>
+                        We did not find any cocktail names matching that search. The database is
+                        always growing, so try a shorter or broader term (for example,{' '}
+                        <span className="pink-text">&quot;Russian&quot;</span>).
+                    </p>
+                    <p>
+                        Or try{' '}
+                        <Link
+                            className="pink-text"
+                            to="/cocktail/roulette"
+                            onClick={() => this.props.getRandomCocktailDetails()}
+                        >
+                            <span className="material-symbols-outlined">toys_fan</span>
+                            ROULETTE
+                        </Link>{' '}
+                        for a random pick.
+                    </p>
+                </div>
+            )
+        } else {
+            cocktailSeachResults = (
+                <SearchDrinkList items={list} drinkThumbProps={this.props} />
+            )
+        }
+
+        return (
+            <main
+                key={this.props.match.params._id}
+                className="container search-results"
+                id="search-results"
+            >
                 <h1 className="glow">Search Results</h1>
                 <h2>Cocktails Named: {this.props.match.params._id.split('_').join(' ')}</h2>
                 <div id="drink-list" className="row">
-
-                    { cocktailSeachResults }
-
+                    {cocktailSeachResults}
                 </div>
-
             </main>
         )
     }

@@ -10,24 +10,20 @@ class ThemeProvider extends Component {
     }
 
     toggleTheme = () => {
+        this.setState(prevState => {
+            const nextTheme = prevState.theme === "pink" ? "blue" : "pink"
+            localStorage.theme = nextTheme
 
-        // set theme to opposite of previous theme
-        this.setState(prevState => ({
-            theme: (prevState.theme === "pink") ? "blue" : "pink"
-        }))    
-        
-        // set localStorage theme to new theme
-        localStorage.theme = this.state.theme
-    
-        // apply the theme to the body tag
-        if (localStorage.theme === "blue") {
-            document.body.classList.remove('pink-theme')
-            document.body.classList.add('blue-theme')        
-        } else {
-            document.body.classList.remove('blue-theme')
-            document.body.classList.add('pink-theme')           
-        }
-        this.forceUpdate()
+            if (nextTheme === "blue") {
+                document.body.classList.remove('pink-theme')
+                document.body.classList.add('blue-theme')
+            } else {
+                document.body.classList.remove('blue-theme')
+                document.body.classList.add('pink-theme')
+            }
+
+            return { theme: nextTheme }
+        })
     }
 
     render(){

@@ -1,35 +1,28 @@
 import React, { Component } from 'react'
 import { withListData } from '../context/BigDataProvider.js'
-import DrinkThumb from './DrinkThumb.js'
+import SearchDrinkList from './SearchDrinkList.js'
 
 class RecentList extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-
-        }
+        this.state = {}
     }
 
     componentDidMount() {
         window.scrollTo(0, 0)
-        // get only the data for components specified in componentList
-        this.props.setComponentList(["recent"])
-        // set the page title
-        document.title = "Cocktail Royale | Latest Cocktails"
+        this.props.setComponentList(['recent'])
+        document.title = 'Latest Cocktails | Cocktail Royale'
     }
 
     render() {
+        const recentDrinks = Array.isArray(this.props.recentList) ? this.props.recentList : []
 
         return (
             <main className="container">
-
                 <h1 className="glow">Latest Cocktails</h1>
                 <div id="drink-list" className="row">
-
-                    {this.props.recentList.map((item) => <DrinkThumb {...item} {...this.props} key={item.idDrink} />)}
-
+                    <SearchDrinkList items={recentDrinks} drinkThumbProps={this.props} />
                 </div>
-
             </main>
         )
     }
