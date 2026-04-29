@@ -1,3 +1,5 @@
 .DS_Store
 /exercises/.vscode
 /projects/.vscode
+# local agent guidance
+AGENTS.md
