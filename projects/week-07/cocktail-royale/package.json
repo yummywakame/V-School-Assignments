@@ -13,7 +13,9 @@
     "dev": "concurrently -k \"vite\" \"node server/index.js\"",
     "server": "node server/index.js",
     "refresh-cocktail-names": "node server/index.js --refresh",
+    "prepare-static-cache": "node scripts/build-static-cocktail-cache.js",
     "build": "vite build",
+    "build:vschool-demo": "npm run refresh-cocktail-names && npm run prepare-static-cache && vite build --base=/demos/cocktail-royale-vschool/",
     "preview": "vite preview",
     "deploy": "npm run build && surge dist"
   },

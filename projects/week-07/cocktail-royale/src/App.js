@@ -36,7 +36,13 @@ class App extends Component {
     getCocktailNamesUrl = () => {
         const fromEnv = typeof import.meta !== "undefined" && import.meta.env && import.meta.env.VITE_COCKTAIL_NAMES_URL
         const trimmed = String(fromEnv || "").trim()
-        return trimmed || "/api/cocktail-names"
+        if (trimmed) return trimmed
+
+        const isDev = Boolean(typeof import.meta !== "undefined" && import.meta.env && import.meta.env.DEV)
+        if (isDev) return "/api/cocktail-names"
+
+        const baseUrl = (typeof import.meta !== "undefined" && import.meta.env && import.meta.env.BASE_URL) || "/"
+        return `${baseUrl}data/cocktail-names.json`
     }
 
     loadCocktailNames = () => {
