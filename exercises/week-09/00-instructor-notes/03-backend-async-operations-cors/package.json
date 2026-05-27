@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^1.7.9",
     "express": "^4.16.4",
-    "mongoose": "^5.4.19",
+    "mongoose": "^8.15.0",
     "morgan": "^1.9.1"
   }
 }
