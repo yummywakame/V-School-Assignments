@@ -5,3 +5,10 @@
 AGENTS.md
 # generated modernization report output
 MODERNIZE_REPORT.md
+
+# Dependencies — never commit node_modules
+node_modules/
+
+# Lock files in exercises are historical snapshots and generate Dependabot noise;
+# the source code is what matters for reference. Projects may keep their own lock files.
+exercises/**/package-lock.json

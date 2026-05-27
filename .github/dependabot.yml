@@ -1,0 +1,24 @@
+version: 2
+updates:
+  # Keep cocktail-royale (the actively deployed project) up to date
+  - package-ecosystem: "npm"
+    directory: "/projects/week-07/cocktail-royale"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore(deps)"
+
+  # Keep GitHub Actions workflows up to date
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore(ci)"
