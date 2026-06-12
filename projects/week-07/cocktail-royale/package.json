@@ -22,7 +22,7 @@
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^4.1.0",
     "concurrently": "^9.2.1",
-    "vite": "^7.1.12"
+    "vite": "^8.0.16"
   },
   "eslintConfig": {
     "extends": "react-app"
